@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Target, Lightbulb, TrendingUp } from 'lucide-react';
 import Header from '../components/Header';
@@ -69,7 +68,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Why Choose BusinessForge?
+              Why Choose Sapient Advisors?
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               We combine deep industry expertise with innovative thinking to deliver 
