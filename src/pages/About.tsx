@@ -23,8 +23,42 @@ const About = () => {
       description: "Technology innovator specializing in digital solutions"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Head of Strategy",
+      name: "Sandy McCarron",
+      role: "Chief Operations Officer",
+      description: "Expert in business strategy and organizational development"
+    }
+    return (
+    <div className="min-h-screen bg-white">
+    {
+      name: "Phanom Parker",
+      role: "Chief Product/ML Ops",
+      description: "Strategic visionary with 20+ years in business transformation"
+    },
+    {
+      name: "Richard Vogel",
+      role: "Chief Data Strategist",
+      description: "Technology innovator specializing in digital solutions"
+    },
+    {
+      name: "Kristine Parinelli",
+      role: "Product Manager",
+      description: "Expert in business strategy and organizational development"
+    }
+      return (
+    <div className="min-h-screen bg-white">
+    {
+      name: "Mary Beth Quinn",
+      role: "Product Manager",
+      description: "Strategic visionary with 20+ years in business transformation"
+    },
+    {
+      name: "Daniel Zock",
+      role: "MBA Candidate, Summer Intern",
+      description: "Technology innovator specializing in digital solutions"
+    },
+    {
+      name: "Daniel Rodriguez",
+      role: "UX Associate",
       description: "Expert in business strategy and organizational development"
     }
   ];
