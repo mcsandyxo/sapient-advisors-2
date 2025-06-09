@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Target, Lightbulb, TrendingUp } from 'lucide-react';
 import Header from '../components/Header';
@@ -118,9 +119,9 @@ const Index = () => {
             
             <div className="group">
               <div className="bg-red-700 text-white p-8 rounded-lg hover:bg-red-800 transition-colors">
-                <h3 className="text-2xl font-bold mb-4">Digital Transformation</h3>
+                <h3 className="text-2xl font-bold mb-4">Cloud Infrastructure</h3>
                 <p className="text-red-100 mb-6">
-                  Modernize your operations with cutting-edge technology and digital solutions.
+                  Our team builds scalable pipelines, cloud-native infrastructure, and analytics environments ready for AI.
                 </p>
                 <Link 
                   to="/services" 
