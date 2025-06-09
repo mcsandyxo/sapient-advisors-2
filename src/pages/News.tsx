@@ -57,12 +57,12 @@ const News = () => {
 
   const insights = [
     {
-      title: "2024 Business Transformation Report",
+      title: "Sapient Advisors Lean Canvas",
       description: "Comprehensive analysis of transformation trends across industries",
-      type: "White Paper"
+      type: "Product Discovry"
     },
     {
-      title: "Digital Strategy Playbook",
+      title: "AI Data Readiness Assessment",
       description: "Step-by-step guide to successful digital transformation",
       type: "Guide"
     },
