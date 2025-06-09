@@ -1,35 +1,26 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Target, Lightbulb, TrendingUp } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 const Index = () => {
-  const highlights = [
-    {
-      icon: <Users className="h-8 w-8 text-blue-600" />,
-      title: "Expert Team",
-      description: "Industry-leading professionals with decades of combined experience"
-    },
-    {
-      icon: <Target className="h-8 w-8 text-blue-600" />,
-      title: "Strategic Focus",
-      description: "Targeted solutions that align with your business objectives"
-    },
-    {
-      icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
-      title: "Innovation",
-      description: "Cutting-edge approaches to solve complex business challenges"
-    },
-    {
-      icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
-      title: "Proven Results",
-      description: "Track record of delivering measurable business growth"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-white">
+  const highlights = [{
+    icon: <Users className="h-8 w-8 text-blue-600" />,
+    title: "Expert Team",
+    description: "Industry-leading professionals with decades of combined experience"
+  }, {
+    icon: <Target className="h-8 w-8 text-blue-600" />,
+    title: "Strategic Focus",
+    description: "Targeted solutions that align with your business objectives"
+  }, {
+    icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
+    title: "Innovation",
+    description: "Cutting-edge approaches to solve complex business challenges"
+  }, {
+    icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
+    title: "Proven Results",
+    description: "Track record of delivering measurable business growth"
+  }];
+  return <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
@@ -46,17 +37,11 @@ const Index = () => {
               solutions that drive sustainable growth and competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/services" 
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
-              >
+              <Link to="/services" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
                 Explore Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link 
-                to="/contact" 
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
-              >
+              <Link to="/contact" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors">
                 Get Started
               </Link>
             </div>
@@ -78,13 +63,11 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {highlights.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            {highlights.map((item, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">{item.title}</h3>
                 <p className="text-slate-600">{item.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -104,29 +87,21 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group">
               <div className="bg-slate-900 text-white p-8 rounded-lg hover:bg-blue-900 transition-colors">
-                <h3 className="text-2xl font-bold mb-4">Business Strategy</h3>
-                <p className="text-slate-200 mb-6">
-                  Strategic planning and execution that drives sustainable growth and market leadership.
-                </p>
-                <Link 
-                  to="/services" 
-                  className="text-blue-400 font-semibold group-hover:text-white flex items-center"
-                >
+                <h3 className="text-2xl font-bold mb-4">Business & AI Strategy</h3>
+                <p className="text-slate-200 mb-6">Strategic planning and execution that drives sustainable growth and market leadership, while readying your team for AI expansion.</p>
+                <Link to="/services" className="text-blue-400 font-semibold group-hover:text-white flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
             
             <div className="group">
-              <div className="bg-red-700 text-white p-8 rounded-lg hover:bg-red-800 transition-colors">
-                <h3 className="text-2xl font-bold mb-4">Cloud Infrastructure</h3>
+              <div className="text-white p-8 rounded-lg transition-colors bg-blue-400">
+                <h3 className="text-2xl font-bold mb-4">Data Engineering & Infrastructure</h3>
                 <p className="text-red-100 mb-6">
                   Our team builds scalable pipelines, cloud-native infrastructure, and analytics environments ready for AI.
                 </p>
-                <Link 
-                  to="/services" 
-                  className="text-red-200 font-semibold group-hover:text-white flex items-center"
-                >
+                <Link to="/services" className="text-red-200 font-semibold group-hover:text-white flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -134,14 +109,9 @@ const Index = () => {
             
             <div className="group">
               <div className="bg-slate-900 text-white p-8 rounded-lg hover:bg-blue-900 transition-colors">
-                <h3 className="text-2xl font-bold mb-4">Data Analytics</h3>
-                <p className="text-slate-200 mb-6">
-                  Turn your data into actionable insights that drive informed decision-making.
-                </p>
-                <Link 
-                  to="/services" 
-                  className="text-blue-400 font-semibold group-hover:text-white flex items-center"
-                >
+                <h3 className="text-2xl font-bold mb-4">Product & UX Design</h3>
+                <p className="text-slate-200 mb-6">We design human-centered, client validated digital experiences, ensuring usability, trust and adoption.</p>
+                <Link to="/services" className="text-blue-400 font-semibold group-hover:text-white flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -159,10 +129,7 @@ const Index = () => {
           <p className="text-xl mb-8 text-blue-100">
             Let's discuss how we can help you achieve your strategic objectives
           </p>
-          <Link 
-            to="/contact" 
-            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
-          >
+          <Link to="/contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center">
             Contact Us Today
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
@@ -170,8 +137,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
