@@ -14,26 +14,26 @@ const News = () => {
       featured: true
     },
     {
-      title: "Leveraging AI for Strategic Decision Making",
-      excerpt: "How artificial intelligence is revolutionizing business intelligence and strategic planning processes.",
-      date: "December 10, 2024",
-      category: "Technology",
+      title: "Unlocking the Potential of Generative AI: Real-World Use Cases in 2025",
+      excerpt: "As Generative AI continues to evolve, its potential to transform business operations across industries is becoming clearer.",
+      date: "January 2025",
+      category: "Technology","AI"
       readTime: "7 min read",
       featured: false
     },
     {
-      title: "Building Resilient Supply Chains",
-      excerpt: "Strategies for creating supply chain networks that can withstand global disruptions and market volatility.",
-      date: "December 5, 2024",
+      title: "The Art of (Startup) War: Navigating Uncertainty with Sun Tzu",
+      excerpt: "Today’s unpredictable climate can feel like you’re reenacting The Hunger Games — minus the crossbow and with slightly more stress.",
+      date: "February 2025",
       category: "Operations",
       readTime: "6 min read",
       featured: false
     },
     {
-      title: "Data-Driven Culture: A Competitive Advantage",
+      title: "Discover How to Drive Innovation with  Maribeth Martorana",
       excerpt: "How organizations are fostering data literacy and analytics-driven decision making across all levels.",
-      date: "November 28, 2024",
-      category: "Data Analytics",
+      date: "October 2024",
+      category: "Innovation",
       readTime: "4 min read",
       featured: false
     },
