@@ -6,34 +6,34 @@ import { Calendar, ArrowRight, Tag } from 'lucide-react';
 const News = () => {
   const articles = [
     {
-      title: "Project Raven",
+      title: "The Future of Digital Transformation in 2024",
       excerpt: "Exploring emerging trends and technologies that will shape business transformation strategies in the coming year.",
-      date: "June 2025",
+      date: "December 15, 2024",
       category: "Digital Transformation",
       readTime: "5 min read",
       featured: true
     },
     {
-      title: "Unlocking the Potential of Generative AI: Real-World Use Cases in 2025",
-      excerpt: "As Generative AI continues to evolve, its potential to transform business operations across industries is becoming clearer.",
-      date: "January 2025",
-      category: "Technology","AI"
+      title: "Leveraging AI for Strategic Decision Making",
+      excerpt: "How artificial intelligence is revolutionizing business intelligence and strategic planning processes.",
+      date: "December 10, 2024",
+      category: "Technology",
       readTime: "7 min read",
       featured: false
     },
     {
-      title: "The Art of (Startup) War: Navigating Uncertainty with Sun Tzu",
-      excerpt: "Today’s unpredictable climate can feel like you’re reenacting The Hunger Games — minus the crossbow and with slightly more stress.",
-      date: "February 2025",
+      title: "Building Resilient Supply Chains",
+      excerpt: "Strategies for creating supply chain networks that can withstand global disruptions and market volatility.",
+      date: "December 5, 2024",
       category: "Operations",
       readTime: "6 min read",
       featured: false
     },
     {
-      title: "Discover How to Drive Innovation with  Maribeth Martorana",
+      title: "Data-Driven Culture: A Competitive Advantage",
       excerpt: "How organizations are fostering data literacy and analytics-driven decision making across all levels.",
-      date: "October 2024",
-      category: "Innovation",
+      date: "November 28, 2024",
+      category: "Data Analytics",
       readTime: "4 min read",
       featured: false
     },
@@ -57,12 +57,12 @@ const News = () => {
 
   const insights = [
     {
-      title: "Sapient Advisors Lean Canvas",
+      title: "2024 Business Transformation Report",
       description: "Comprehensive analysis of transformation trends across industries",
-      type: "Product Discovry"
+      type: "White Paper"
     },
     {
-      title: "AI Data Readiness Assessment",
+      title: "Digital Strategy Playbook",
       description: "Step-by-step guide to successful digital transformation",
       type: "Guide"
     },
@@ -166,7 +166,7 @@ const News = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Business Resources</h2>
-            <p className="text-xl text-slate-600">Download our research and tools</p>
+            <p className="text-xl text-slate-600">Download our latest research and insights</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -13,11 +13,11 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center text-slate-300">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>1200 Brickell Avenue, Miami, FL 33131</span>
+                <span>123 Business District, Innovation City, IC 12345</span>
               </div>
               <div className="flex items-center text-slate-300">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+1 (646) 234-4268</span>
+                <span>+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center text-slate-300">
                 <Mail className="h-4 w-4 mr-2" />

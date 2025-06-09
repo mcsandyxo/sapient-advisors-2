@@ -14,7 +14,7 @@ const About = () => {
   const team = [
     {
       name: "Maribeth Martorana, CFA",
-      role: "Co-Founder and Chief Executive Officer",
+      role: "Chief Executive Officer",
       description: "Strategic visionary with 20+ years in business transformation"
     },
     {
@@ -23,8 +23,8 @@ const About = () => {
       description: "Technology innovator specializing in digital solutions"
     },
     {
-      name: "Sandy McCarron",
-      role: "Co-Founder and Chief Operating Officer",
+      name: "Emily Rodriguez",
+      role: "Head of Strategy",
       description: "Expert in business strategy and organizational development"
     }
   ];
@@ -39,9 +39,8 @@ const About = () => {
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Sapient Advisors</h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-Across the globe nations are making bold investments in sovereign data ecosystems, AI-enabled financial services, and talent development—areas where we bring deep, execution-ready expertise. We aim to support this momentum by becoming a trusted regional partner, capable of bridging global innovation practices with local priorities.
-We are a US-based consultancy specializing in Data, UI, and AI product strategy, execution, and monetization. With a proven track record spanning global financial 
-              institutions, big tech, and startups, we deliver tailored, high-impact solutions by tapping into an expansive network of trusted experts.
+              We are a leading consulting firm dedicated to transforming businesses through 
+              strategic innovation and cutting-edge technology solutions.
             </p>
           </div>
         </div>
