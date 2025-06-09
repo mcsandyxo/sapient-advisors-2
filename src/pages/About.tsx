@@ -18,7 +18,7 @@ const About = () => {
       description: "Strategic visionary with 20+ years in business transformation"
     },
     {
-      name: "Michael Chen",
+      name: "Zaid Marji",
       role: "Chief Technology Officer",
       description: "Technology innovator specializing in digital solutions"
     },
