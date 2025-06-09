@@ -31,23 +31,18 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Office Location",
-      details: ["123 Business District", "Innovation City, IC 12345"]
+      details: ["1200 Brickell Avenue", "Miami, FL 33131"]
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568"]
+      details: ["+1 (646)234-4268"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["contact@businessforge.com", "info@businessforge.com"]
+      details: ["info@sapient-advisors.com"]
     },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 2:00 PM"]
-    }
   ];
 
   return (
