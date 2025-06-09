@@ -6,9 +6,9 @@ import { Calendar, ArrowRight, Tag } from 'lucide-react';
 const News = () => {
   const articles = [
     {
-      title: "The Future of Digital Transformation in 2024",
+      title: "Project Raven",
       excerpt: "Exploring emerging trends and technologies that will shape business transformation strategies in the coming year.",
-      date: "December 15, 2024",
+      date: "June 2025",
       category: "Digital Transformation",
       readTime: "5 min read",
       featured: true
@@ -166,7 +166,7 @@ const News = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Business Resources</h2>
-            <p className="text-xl text-slate-600">Download our latest research and insights</p>
+            <p className="text-xl text-slate-600">Download our research and tools</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
