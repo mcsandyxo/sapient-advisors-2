@@ -13,7 +13,7 @@ const About = () => {
 
   const team = [
     {
-      name: "Sarah Johnson",
+      name: "Maribeth Martorana, CFA",
       role: "Chief Executive Officer",
       description: "Strategic visionary with 20+ years in business transformation"
     },
