@@ -20,7 +20,7 @@ const About = () => {
     {
       name: "Zaid Marji",
       role: "Chief Technology Officer",
-      description: "Technology innovator specializing in digital solutions"
+      description: "Technology innovator specializing in data, LLMs and Agentic solutions"
     },
     {
       name: "Sandy McCarron",
