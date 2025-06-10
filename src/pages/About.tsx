@@ -14,7 +14,7 @@ const About = () => {
   const team = [
     {
       name: "Maribeth Martorana, CFA",
-      role: "Chief Executive Officer",
+      role: "Co-Founder & Chief Executive Officer",
       description: "Strategic visionary with 20+ years in business transformation"
     },
     {
@@ -24,11 +24,11 @@ const About = () => {
     },
     {
       name: "Sandy McCarron",
-      role: "Chief Operations Officer",
+      role: "Co-Founder & Chief Operations Officer",
       description: "Expert in business strategy and organizational development"
     }
     return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white"> )
     {
       name: "Phanom Parker",
       role: "Chief Product/ML Ops",
