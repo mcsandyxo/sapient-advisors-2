@@ -36,17 +36,17 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568"]
+      details: ["+1 (646)234-4268", "+1 (848)225-4400"]
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["contact@businessforge.com", "info@businessforge.com"]
+      details: ["info@sapient-advisors.com"]
     },
     {
       icon: <Clock className="h-6 w-6" />,
       title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 2:00 PM"]
+      details: ["24/7"]
     }
   ];
 
@@ -214,7 +214,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Visit Our Office</h2>
-            <p className="text-xl text-slate-600">Located in the heart of the business district</p>
+            <p className="text-xl text-slate-600">Located in the heart of the Brickell business district</p>
           </div>
           
           <div className="bg-slate-200 rounded-lg h-96 flex items-center justify-center">
