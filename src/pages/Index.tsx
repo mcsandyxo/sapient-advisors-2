@@ -1,26 +1,34 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, Target, Lightbulb, TrendingUp } from 'lucide-react';
+import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
 const Index = () => {
-  const highlights = [{
-    icon: <Users className="h-8 w-8 text-blue-600" />,
-    title: "Expert Team",
-    description: "Industry-leading professionals with decades of combined experience"
-  }, {
-    icon: <Target className="h-8 w-8 text-blue-600" />,
-    title: "Strategic Focus",
-    description: "Targeted solutions that align with your business objectives"
-  }, {
-    icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
-    title: "Innovation",
-    description: "Cutting-edge approaches to solve complex business challenges"
-  }, {
-    icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
-    title: "Proven Results",
-    description: "Track record of delivering measurable business growth"
-  }];
-  return <div className="min-h-screen bg-white">
+  const highlights = [
+    {
+      icon: <Users className="h-8 w-8 text-blue-600" />,
+      title: "25+ Years Fintech Experience",
+      description: "Proven expertise with FactSet, Moody's Analytics, Bloomberg, and S&P Global"
+    },
+    {
+      icon: <Target className="h-8 w-8 text-blue-600" />,
+      title: "Success Map Methodology",
+      description: "Strategic blueprints that scale projects from concept to final product"
+    },
+    {
+      icon: <Brain className="h-8 w-8 text-blue-600" />,
+      title: "AI Adoption Specialists",
+      description: "Comprehensive AI integration strategy for financial services organizations"
+    },
+    {
+      icon: <TrendingUp className="h-8 w-8 text-blue-600" />,
+      title: "Measurable Results",
+      description: "500+ clients served with $50M+ in cost savings and 85% AI adoption success rate"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
@@ -29,20 +37,26 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Transforming Visions into 
-              <span className="text-blue-400"> Strategic Solutions</span>
+              Fintech & AI Innovation
+              <span className="text-blue-400"> Experts</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-slate-200">
-              Empowering businesses with innovative strategies and cutting-edge technology 
-              solutions that drive sustainable growth and competitive advantage.
+              25+ years of experience bridging strategic vision with operational execution. 
+              We specialize in AI adoption, fintech education, and data-driven solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/services" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
-                Explore Our Services
+              <Link 
+                to="/services" 
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
+              >
+                Explore Our Expertise
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link to="/contact" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors">
-                Get Started
+              <Link 
+                to="/contact" 
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
+              >
+                Schedule Consultation
               </Link>
             </div>
           </div>
@@ -57,17 +71,19 @@ const Index = () => {
               Why Choose Sapient Advisors?
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We combine deep industry expertise with innovative thinking to deliver 
-              solutions that transform your business landscape.
+              We combine deep fintech industry expertise with proven AI adoption methodologies 
+              to deliver transformational results for financial services organizations.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {highlights.map((item, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            {highlights.map((item, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">{item.title}</h3>
                 <p className="text-slate-600">{item.description}</p>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -77,44 +93,105 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Our Core Services
+              Our Specialized Services
             </h2>
             <p className="text-xl text-slate-600">
-              Comprehensive solutions tailored to your business needs
+              Tailored solutions for fintech and AI transformation
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="group">
-              <div className="bg-slate-900 text-white p-8 rounded-lg hover:bg-blue-900 transition-colors">
-                <h3 className="text-2xl font-bold mb-4">Business & AI Strategy</h3>
-                <p className="text-slate-200 mb-6">Strategic planning and execution that drives sustainable growth and market leadership, while readying your team for AI expansion.</p>
-                <Link to="/services" className="text-blue-400 font-semibold group-hover:text-white flex items-center">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </div>
-            </div>
-            
-            <div className="group">
-              <div className="text-white p-8 rounded-lg transition-colors bg-blue-400">
-                <h3 className="text-2xl font-bold mb-4">Data Engineering & Infrastructure</h3>
-                <p className="text-red-100 mb-6">
-                  Our team builds scalable pipelines, cloud-native infrastructure, and analytics environments ready for AI.
+              <div className="bg-blue-600 text-white p-8 rounded-lg hover:bg-blue-700 transition-colors h-full">
+                <div className="mb-4">
+                  <Target className="h-8 w-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Success Map</h3>
+                <p className="text-blue-100 mb-6">
+                  Strategic blueprints to scale projects from concept to final product using agile and lean methodologies.
                 </p>
-                <Link to="/services" className="text-red-200 font-semibold group-hover:text-white flex items-center">
+                <Link to="/services" className="text-white font-semibold group-hover:text-blue-100 flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
             
             <div className="group">
-              <div className="bg-slate-900 text-white p-8 rounded-lg hover:bg-blue-900 transition-colors">
-                <h3 className="text-2xl font-bold mb-4">Product & UX Design</h3>
-                <p className="text-slate-200 mb-6">We design human-centered, client validated digital experiences, ensuring usability, trust and adoption.</p>
-                <Link to="/services" className="text-blue-400 font-semibold group-hover:text-white flex items-center">
+              <div className="bg-slate-900 text-white p-8 rounded-lg hover:bg-slate-800 transition-colors h-full">
+                <div className="mb-4">
+                  <Brain className="h-8 w-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">AI Adoption</h3>
+                <p className="text-slate-200 mb-6">
+                  Comprehensive AI integration strategy for financial services, from readiness assessment to deployment.
+                </p>
+                <Link to="/services" className="text-blue-400 font-semibold group-hover:text-blue-300 flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
+            </div>
+            
+            <div className="group">
+              <div className="bg-red-700 text-white p-8 rounded-lg hover:bg-red-800 transition-colors h-full">
+                <div className="mb-4">
+                  <GraduationCap className="h-8 w-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Fintech Education</h3>
+                <p className="text-red-100 mb-6">
+                  Specialized training and workshops for financial technology adoption and AI-driven product development.
+                </p>
+                <Link to="/services" className="text-red-200 font-semibold group-hover:text-red-100 flex items-center">
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="bg-green-700 text-white p-8 rounded-lg hover:bg-green-800 transition-colors h-full">
+                <div className="mb-4">
+                  <Users className="h-8 w-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Fractional Services</h3>
+                <p className="text-green-100 mb-6">
+                  Flexible consulting and advisory services including strategic consulting and executive training.
+                </p>
+                <Link to="/services" className="text-green-200 font-semibold group-hover:text-green-100 flex items-center">
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Trusted by Industry Leaders
+            </h2>
+            <p className="text-xl text-slate-600">
+              Our team brings experience from the world's leading financial technology companies
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-2">FactSet</h3>
+              <p className="text-sm text-blue-600">Financial Data Platforms</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Moody's Analytics</h3>
+              <p className="text-sm text-blue-600">Risk Assessment AI</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Bloomberg</h3>
+              <p className="text-sm text-blue-600">Market Intelligence</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-2">S&P Global</h3>
+              <p className="text-sm text-blue-600">Analytics Platforms</p>
             </div>
           </div>
         </div>
@@ -124,19 +201,24 @@ const Index = () => {
       <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Business?
+            Ready to Accelerate Your AI Adoption?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Let's discuss how we can help you achieve your strategic objectives
+            Let's discuss how our fintech expertise can transform your organization
           </p>
-          <Link to="/contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center">
-            Contact Us Today
+          <Link 
+            to="/contact" 
+            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
+          >
+            Schedule Your Consultation
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
