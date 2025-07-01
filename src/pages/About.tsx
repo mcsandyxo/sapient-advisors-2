@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Users, Award, Globe, Clock } from 'lucide-react';
+import { Users, Award, Globe, Clock, Eye, Lightbulb, Palette, Handshake, Linkedin } from 'lucide-react';
 
 const About = () => {
   const stats = [
@@ -10,51 +10,65 @@ const About = () => {
     { icon: <Clock className="h-8 w-8 text-blue-600" />, number: "1000+", label: "Projects Completed" }
   ];
 
+  const values = [
+    {
+      icon: <Eye className="h-8 w-8 text-blue-600" />,
+      title: "Curiosity",
+      description: "A forward-thinking mindset is our compass, guiding us to stay ahead of tech trends and turn into impact."
+    },
+    {
+      icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
+      title: "Innovation", 
+      description: "We continuously seek creative solutions that challenge conventional thinking."
+    },
+    {
+      icon: <Palette className="h-8 w-8 text-blue-600" />,
+      title: "Creativity",
+      description: "Creativity is our engine powering fresh thinking and inventive solutions that turn challenges into opportunities."
+    },
+    {
+      icon: <Handshake className="h-8 w-8 text-blue-600" />,
+      title: "Collaboration",
+      description: "We work side by side with our clients, believing true success is built through partnership and shared commitment."
+    }
+  ];
+
   const team = [
     {
       name: "Maribeth Martorana, CFA",
       role: "Co-Founder & Chief Executive Officer",
-      description: "Fintech and AI leader with experience at FactSet, Moody's Analytics, Aiera, and Spatial Risk Systems"
+      description: "Maribeth is an accomplished product leader with over two decades of experience driving growth, alignment, and transformation at the intersection of finance, data, and technology.",
+      linkedin: true
     },
     {
       name: "Sandy McCarron",
-      role: "Co-Founder & Chief Operations Officer",
-      description: "Digital transformation specialist with experience at Random House, Bloomberg, S&P Global, and Moody's"
+      role: "Co-Founder & Chief Operating Officer", 
+      description: "Sandy is a visionary leader in digital transformation across industries, including transformation initiatives at Penguin Random House, Bloomberg BusinessWeek, S&P Global, and Moody's Analytics.",
+      linkedin: true
     },
     {
       name: "Zaid Marji",
       role: "Chief Technology Officer",
-      description: "Technology innovator specializing in data, LLMs and Agentic solutions"
+      description: "Zaid is a builder, strategist and systems thinker with 30 years experience at the frontier of technology, partnering with teams to scale -- not just scaling or building -- they're performing flows things work.",
+      linkedin: true
     },
     {
-      name: "Phanom Parker",
-      role: "Chief Product/ML Ops",
-      description: "Product and ML operations expert with extensive experience in scalable AI solutions"
+      name: "Phanom Noelani Parker",
+      role: "Chief Operations & Product Strategy",
+      description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
+      linkedin: true
     },
     {
       name: "Richard Vogel",
-      role: "Chief Data Strategist",
-      description: "Data strategy leader specializing in financial services and analytics platforms"
+      role: "Chief Data Strategy",
+      description: "Richard brings 25 years of financial expertise, having held leadership positions at top consulting firms and led financial transformation initiatives for multinational corporations.",
+      linkedin: true
     },
     {
       name: "Kristine Parinelli",
-      role: "Product Manager",
-      description: "Product management expert focused on fintech and AI-driven solutions"
-    },
-    {
-      name: "Mary Beth Quinn",
-      role: "Product Manager",
-      description: "Experienced product manager with focus on user experience and market validation"
-    },
-    {
-      name: "Daniel Zock",
-      role: "MBA Candidate, Summer Intern",
-      description: "Strategic business development with focus on AI adoption and market analysis"
-    },
-    {
-      name: "Daniel Rodriguez",
-      role: "UX Associate",
-      description: "User experience specialist ensuring human-centered design and usability"
+      role: "Chief of Staff",
+      description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
+      linkedin: true
     }
   ];
 
@@ -63,52 +77,53 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16">
+      <section className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Sapient Advisors</h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              A fintech consultancy with 25+ years of experience specializing in data, technology, 
-              finance, and design thinking to bridge strategic vision with operational execution.
+              Rooted in purpose: We lead with integrity, inclusivity, and exceptional excellence.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-16">
+      {/* Mission & Values */}
+      <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
               <p className="text-lg text-slate-600 mb-6">
-                To close the gap between strategic vision and operational execution, applying 
-                agile methodologies, Lean frameworks, and advanced AI tools to accelerate 
-                from concept to final product.
+                Sapient Advisors is a globally experienced consultancy focused on data-driven growth. As trusted B2B products and services.
+              </p>
+              <p className="text-lg text-slate-600 mb-6">
+                At Sapient Advisors, our mission is to <strong>empower organizations to achieve sustainable growth through data-driven strategies and operational excellence.</strong> We partner with our clients to navigate complex challenges and capitalize on emerging opportunities in an ever-changing business landscape.
               </p>
               <p className="text-lg text-slate-600">
-                We specialize in fintech and AI adoption, helping financial services organizations 
-                harness the power of data and artificial intelligence for competitive advantage.
+                We believe that successful transformation requires both analytical rigor and human-centered approaches, which is why our team brings diverse expertise across industries and functions.
               </p>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Vision</h2>
-              <p className="text-lg text-slate-600 mb-6">
-                To be the premier fintech consultancy that empowers financial institutions 
-                to successfully adopt AI technologies and transform their operations through 
-                strategic innovation and data-driven solutions.
-              </p>
-              <p className="text-lg text-slate-600">
-                We envision a future where every financial organization can leverage AI 
-                to deliver exceptional value to their clients and stakeholders.
-              </p>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Values</h2>
+              <div className="space-y-6">
+                {values.map((value, index) => (
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">{value.icon}</div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-slate-900 mb-2">{value.title}</h3>
+                      <p className="text-slate-600">{value.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Impact</h2>
@@ -127,21 +142,31 @@ const About = () => {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-16">
+      {/* Our Team */}
+      <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Leadership Team</h2>
-            <p className="text-xl text-slate-600">Meet the experts driving fintech and AI innovation</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Team</h2>
+            <p className="text-xl text-slate-600">Meet the experienced professionals who lead our consulting practice and drive exceptional results for our clients.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
-                <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-4"></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{member.name}</h3>
-                <p className="text-blue-600 font-semibold mb-4">{member.role}</p>
-                <p className="text-slate-600">{member.description}</p>
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-slate-200 rounded-lg mx-auto mb-6 flex items-center justify-center">
+                  <Users className="h-16 w-16 text-slate-400" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 text-center">{member.name}</h3>
+                <p className="text-blue-600 font-semibold mb-4 text-center">{member.role}</p>
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed">{member.description}</p>
+                {member.linkedin && (
+                  <div className="text-center">
+                    <button className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold">
+                      <Linkedin className="h-4 w-4 mr-2" />
+                      Connect on LinkedIn
+                    </button>
+                  </div>
+                )}
               </div>
             ))}
           </div>
