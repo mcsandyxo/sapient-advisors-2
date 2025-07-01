@@ -1,4 +1,3 @@
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Users, Award, Globe, Clock } from 'lucide-react';
@@ -6,7 +5,7 @@ import { Users, Award, Globe, Clock } from 'lucide-react';
 const About = () => {
   const stats = [
     { icon: <Users className="h-8 w-8 text-blue-600" />, number: "500+", label: "Clients Served" },
-    { icon: <Award className="h-8 w-8 text-blue-600" />, number: "15+", label: "Years Experience" },
+    { icon: <Award className="h-8 w-8 text-blue-600" />, number: "25+", label: "Years Experience" },
     { icon: <Globe className="h-8 w-8 text-blue-600" />, number: "25+", label: "Countries" },
     { icon: <Clock className="h-8 w-8 text-blue-600" />, number: "1000+", label: "Projects Completed" }
   ];
@@ -15,7 +14,12 @@ const About = () => {
     {
       name: "Maribeth Martorana, CFA",
       role: "Co-Founder & Chief Executive Officer",
-      description: "Strategic visionary with 20+ years in business transformation"
+      description: "Fintech and AI leader with experience at FactSet, Moody's Analytics, Aiera, and Spatial Risk Systems"
+    },
+    {
+      name: "Sandy McCarron",
+      role: "Co-Founder & Chief Operations Officer",
+      description: "Digital transformation specialist with experience at Random House, Bloomberg, S&P Global, and Moody's"
     },
     {
       name: "Zaid Marji",
@@ -23,43 +27,34 @@ const About = () => {
       description: "Technology innovator specializing in data, LLMs and Agentic solutions"
     },
     {
-      name: "Sandy McCarron",
-      role: "Co-Founder & Chief Operations Officer",
-      description: "Expert in business strategy and organizational development"
-    }
-    return (
-    <div className="min-h-screen bg-white"> )
-    {
       name: "Phanom Parker",
       role: "Chief Product/ML Ops",
-      description: "Strategic visionary with 20+ years in business transformation"
+      description: "Product and ML operations expert with extensive experience in scalable AI solutions"
     },
     {
       name: "Richard Vogel",
       role: "Chief Data Strategist",
-      description: "Technology innovator specializing in digital solutions"
+      description: "Data strategy leader specializing in financial services and analytics platforms"
     },
     {
       name: "Kristine Parinelli",
       role: "Product Manager",
-      description: "Expert in business strategy and organizational development"
-    }
-      return (
-    <div className="min-h-screen bg-white">
+      description: "Product management expert focused on fintech and AI-driven solutions"
+    },
     {
       name: "Mary Beth Quinn",
       role: "Product Manager",
-      description: "Strategic visionary with 20+ years in business transformation"
+      description: "Experienced product manager with focus on user experience and market validation"
     },
     {
       name: "Daniel Zock",
       role: "MBA Candidate, Summer Intern",
-      description: "Technology innovator specializing in digital solutions"
+      description: "Strategic business development with focus on AI adoption and market analysis"
     },
     {
       name: "Daniel Rodriguez",
       role: "UX Associate",
-      description: "Expert in business strategy and organizational development"
+      description: "User experience specialist ensuring human-centered design and usability"
     }
   ];
 
@@ -73,8 +68,8 @@ const About = () => {
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Sapient Advisors</h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              We are a leading consulting firm dedicated to transforming businesses through 
-              strategic innovation and cutting-edge technology solutions.
+              A fintech consultancy with 25+ years of experience specializing in data, technology, 
+              finance, and design thinking to bridge strategic vision with operational execution.
             </p>
           </div>
         </div>
@@ -87,25 +82,25 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
               <p className="text-lg text-slate-600 mb-6">
-                To empower organizations with innovative strategies and technological solutions 
-                that drive sustainable growth, operational excellence, and competitive advantage 
-                in today's rapidly evolving business landscape.
+                To close the gap between strategic vision and operational execution, applying 
+                agile methodologies, Lean frameworks, and advanced AI tools to accelerate 
+                from concept to final product.
               </p>
               <p className="text-lg text-slate-600">
-                We believe in the power of strategic thinking combined with cutting-edge 
-                technology to unlock unprecedented opportunities for our clients.
+                We specialize in fintech and AI adoption, helping financial services organizations 
+                harness the power of data and artificial intelligence for competitive advantage.
               </p>
             </div>
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Vision</h2>
               <p className="text-lg text-slate-600 mb-6">
-                To be the premier global partner for businesses seeking transformational 
-                change, recognized for our expertise, innovation, and unwavering commitment 
-                to client success.
+                To be the premier fintech consultancy that empowers financial institutions 
+                to successfully adopt AI technologies and transform their operations through 
+                strategic innovation and data-driven solutions.
               </p>
               <p className="text-lg text-slate-600">
-                We envision a future where every organization can harness the full potential 
-                of strategic innovation to achieve extraordinary results.
+                We envision a future where every financial organization can leverage AI 
+                to deliver exceptional value to their clients and stakeholders.
               </p>
             </div>
           </div>
@@ -117,7 +112,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Impact</h2>
-            <p className="text-xl text-slate-600">Delivering results that matter</p>
+            <p className="text-xl text-slate-600">Delivering results that matter in fintech and AI</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -137,7 +132,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Leadership Team</h2>
-            <p className="text-xl text-slate-600">Meet the visionaries driving our success</p>
+            <p className="text-xl text-slate-600">Meet the experts driving fintech and AI innovation</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
