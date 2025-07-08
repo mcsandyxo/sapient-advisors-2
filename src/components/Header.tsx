@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, TrendingUp } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -24,11 +24,21 @@ const Header = () => {
     href: '/contact'
   }];
   return <header className={`shadow-sm border-b ${location.pathname === '/about' ? 'bg-[#1E3A8A]' : 'bg-white'}`}>
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img alt="Sapient Advisors" className="h-8 w-auto" src="/lovable-uploads/34375465-fae0-4a23-a4b0-e61c4d3081ef.jpg" />
+              <div className="w-8 h-8 bg-blue-600 rounded-sm flex items-center justify-center mr-2 relative">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-white">
+                  <rect x="2" y="10" width="2" height="4" fill="currentColor"/>
+                  <rect x="5" y="7" width="2" height="7" fill="currentColor"/>
+                  <rect x="8" y="5" width="2" height="9" fill="currentColor"/>
+                  <rect x="11" y="3" width="2" height="11" fill="currentColor"/>
+                </svg>
+              </div>
+              <span className={`font-semibold text-lg ${location.pathname === '/about' ? 'text-white' : 'text-slate-900'}`}>
+                Sapient Advisors
+              </span>
             </Link>
           </div>
 
