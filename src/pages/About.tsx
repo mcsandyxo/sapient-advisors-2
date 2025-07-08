@@ -278,7 +278,7 @@ const About = () => {
       </section>
 
       {/* Ready to Transform Section */}
-      <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-blue-800 mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">
