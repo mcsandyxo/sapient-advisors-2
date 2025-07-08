@@ -24,7 +24,7 @@ const SuccessStories = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Success Stories Section */}
           <div className="lg:col-span-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Success Stories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">Success Stories</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {stories.map((story, index) => (

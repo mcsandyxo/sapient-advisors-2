@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ExpertiseServices from '../components/ExpertiseServices';
+import Industries from '../components/Industries';
 import ClientSuccess from '../components/ClientSuccess';
 import SuccessStories from '../components/SuccessStories';
 
@@ -11,6 +12,9 @@ const Services = () => {
       
       {/* Expertise & Services Section */}
       <ExpertiseServices />
+
+      {/* Industries Section */}
+      <Industries />
 
       {/* Client Success Section */}
       <ClientSuccess />
