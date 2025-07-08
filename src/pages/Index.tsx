@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, CheckCircle } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Industries from '../components/Industries';
+import ExpertiseServices from '../components/ExpertiseServices';
+import ClientSuccess from '../components/ClientSuccess';
+import SuccessStories from '../components/SuccessStories';
 
 const Index = () => {
   const highlights = [
@@ -219,6 +223,18 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Industries Section */}
+      <Industries />
+
+      {/* Expertise & Services Section */}
+      <ExpertiseServices />
+
+      {/* Client Success Section */}
+      <ClientSuccess />
+
+      {/* Success Stories Section */}
+      <SuccessStories />
 
       {/* Trusted Advisors Network */}
       <section className="py-16 bg-gradient-to-br from-purple-50 to-blue-50">
