@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Check } from 'lucide-react';
 
 const SuccessStories = () => {
   const stories = [
@@ -38,7 +39,7 @@ const SuccessStories = () => {
                   </div>
                   <div className="p-6">
                     <p className="text-blue-600 font-semibold text-sm mb-2">{story.category}</p>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">{story.title}</h3>
+                    <h3 className="text-xl font-bold text-blue-900 mb-3">{story.title}</h3>
                     <p className="text-slate-600 text-sm mb-4">{story.description}</p>
                     <Link 
                       to={story.link} 
@@ -54,7 +55,7 @@ const SuccessStories = () => {
           
           {/* CTA Section */}
           <div className="lg:col-span-1">
-            <div className="bg-blue-600 text-white p-8 rounded-lg h-full flex flex-col justify-center">
+            <div className="bg-blue-900 text-white p-8 rounded-lg h-full flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Business?</h3>
               <p className="text-blue-100 mb-6">
                 Schedule a consultation with our experts to discuss your business challenges and how we can help you achieve your goals.
@@ -62,22 +63,22 @@ const SuccessStories = () => {
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  <Check className="w-5 h-5 text-white mr-3" />
                   <span className="text-sm">Personalized strategic recommendations</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  <Check className="w-5 h-5 text-white mr-3" />
                   <span className="text-sm">Industry-specific insights</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  <Check className="w-5 h-5 text-white mr-3" />
                   <span className="text-sm">Actionable implementation roadmap</span>
                 </div>
               </div>
               
               <Link 
                 to="/contact" 
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
+                className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
               >
                 Explore Our Insights
               </Link>
