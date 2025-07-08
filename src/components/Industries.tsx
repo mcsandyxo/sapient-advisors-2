@@ -27,15 +27,17 @@ const Industries = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Industries</h2>
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Industries</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {industries.map((industry, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
-              <div className="mb-4">{industry.icon}</div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">{industry.title}</h3>
+            <div key={index} className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="flex items-center mb-4">
+                {industry.icon}
+                <h3 className="text-xl font-semibold text-blue-900 ml-3">{industry.title}</h3>
+              </div>
               <p className="text-slate-600 text-sm">{industry.description}</p>
             </div>
           ))}
