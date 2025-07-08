@@ -2,6 +2,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { CheckCircle, ArrowRight, Target, Brain, GraduationCap, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Industries from '../components/Industries';
+import ExpertiseServices from '../components/ExpertiseServices';
+import ClientSuccess from '../components/ClientSuccess';
+import SuccessStories from '../components/SuccessStories';
 
 const Services = () => {
   const services = [
@@ -97,6 +101,18 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Industries Section */}
+      <Industries />
+
+      {/* Expertise & Services Section */}
+      <ExpertiseServices />
+
+      {/* Client Success Section */}
+      <ClientSuccess />
+
+      {/* Success Stories Section */}
+      <SuccessStories />
 
       {/* Core Services */}
       <section className="py-16">
