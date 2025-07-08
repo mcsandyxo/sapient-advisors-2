@@ -12,22 +12,22 @@ const About = () => {
 
   const values = [
     {
-      icon: <Eye className="h-8 w-8 text-blue-600" />,
+      icon: <Eye className="h-6 w-6 text-[#1E88E5]" />,
       title: "Curiosity",
       description: "A forward-thinking mindset is our compass, guiding us to stay ahead of tech trends and turn into impact."
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
+      icon: <Lightbulb className="h-6 w-6 text-[#1E88E5]" />,
       title: "Innovation", 
       description: "We continuously seek creative solutions that challenge conventional thinking."
     },
     {
-      icon: <Palette className="h-8 w-8 text-blue-600" />,
+      icon: <Palette className="h-6 w-6 text-[#1E88E5]" />,
       title: "Creativity",
       description: "Creativity is our engine powering fresh thinking and inventive solutions that turn challenges into opportunities."
     },
     {
-      icon: <Handshake className="h-8 w-8 text-blue-600" />,
+      icon: <Handshake className="h-6 w-6 text-[#1E88E5]" />,
       title: "Collaboration",
       description: "We work side by side with our clients, believing true success is built through partnership and shared commitment."
     }
@@ -77,45 +77,52 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Sapient Advisors</h1>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+      <section className="text-white" style={{ backgroundColor: '#1E3A8A', padding: '4rem 0' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
+          <div style={{ padding: '2rem 1.5rem' }}>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontWeight: 700, letterSpacing: '-0.5px' }}>About Sapient Advisors</h1>
+            <p className="max-w-3xl" style={{ fontWeight: 400, lineHeight: 1.75, fontSize: '1.125rem', color: '#FFFFFF' }}>
               Rooted in purpose: We lead with integrity, inclusivity, and exceptional excellence.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission & Values */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      {/* Mission & Values Section */}
+      <section className="bg-white" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '2rem', padding: '2rem 1.5rem' }}>
+            {/* Our Mission */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-slate-600 mb-6">
-                Sapient Advisors is a globally experienced consultancy focused on data-driven growth. As trusted B2B products and services.
-              </p>
-              <p className="text-lg text-slate-600 mb-6">
-                At Sapient Advisors, our mission is to <strong>empower organizations to achieve sustainable growth through data-driven strategies and operational excellence.</strong> We partner with our clients to navigate complex challenges and capitalize on emerging opportunities in an ever-changing business landscape.
-              </p>
-              <p className="text-lg text-slate-600">
-                We believe that successful transformation requires both analytical rigor and human-centered approaches, which is why our team brings diverse expertise across industries and functions.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Values</h2>
+              <h2 className="mb-8" style={{ color: '#0D1B2A', fontWeight: 700, fontSize: '1.875rem', lineHeight: '2.25rem' }}>Our Mission</h2>
               <div className="space-y-6">
-                {values.map((value, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">{value.icon}</div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-slate-900 mb-2">{value.title}</h3>
-                      <p className="text-slate-600">{value.description}</p>
+                <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
+                  Sapient Advisors is a globally experienced consultancy focused on data-driven, AI-enabled B2B products and services.
+                </p>
+                <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
+                  At Sapient Advisors, our mission is to <span style={{ fontWeight: 600, color: '#0D1B2A' }}>empower organizations to achieve sustainable growth through data-driven strategies and operational excellence.</span> We partner with our clients to navigate complex challenges and capitalize on emerging opportunities in an ever-changing business landscape.
+                </p>
+                <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
+                  We believe that successful transformation requires both analytical rigor and human-centered approaches, which is why our team brings diverse expertise across industries and functions.
+                </p>
+              </div>
+            </div>
+
+            {/* Our Values */}
+            <div>
+              <div style={{ backgroundColor: '#EFF2F5', padding: '2rem', borderRadius: '0.5rem' }}>
+                <h2 className="mb-8" style={{ color: '#0D1B2A', fontWeight: 700, fontSize: '1.875rem', lineHeight: '2.25rem' }}>Our Values</h2>
+                <div className="space-y-8">
+                  {values.map((value, index) => (
+                    <div key={index} className="flex items-start">
+                      <div className="flex-shrink-0 mt-1" style={{ marginRight: '0.5rem' }}>{value.icon}</div>
+                      <div>
+                        <h3 className="mb-3" style={{ color: '#0D1B2A', fontWeight: 700, fontSize: '1.25rem', lineHeight: '1.75rem' }}>{value.title}</h3>
+                        <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>{value.description}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
