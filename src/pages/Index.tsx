@@ -87,32 +87,58 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Fintech & AI Innovation
-              <span className="text-blue-400"> Experts</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-slate-200">
-              25+ years of experience bridging strategic vision with operational execution. 
-              We specialize in AI adoption, fintech education, and data-driven solutions.
+      {/* Pioneering Data & AI Solutions Section */}
+      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
+        {/* Background Data Visualization Elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 w-32 h-32 border border-blue-400 rounded-full"></div>
+          <div className="absolute top-20 right-20 w-48 h-48 border border-blue-300 rounded-lg transform rotate-12"></div>
+          <div className="absolute bottom-10 left-1/4 w-24 h-24 bg-blue-600 rounded-full opacity-30"></div>
+          <div className="absolute bottom-20 right-1/3 w-36 h-36 border-2 border-blue-500 rounded-full"></div>
+          
+          {/* Data Grid Pattern */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-600/5 to-transparent"></div>
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }}></div>
+          
+          {/* Floating Data Elements */}
+          <div className="absolute top-1/4 left-1/4 text-blue-400 font-mono text-sm opacity-50">
+            <div>Analytics Dashboard</div>
+            <div className="mt-2">█████████░ 78%</div>
+          </div>
+          <div className="absolute top-1/3 right-1/4 text-blue-300 font-mono text-sm opacity-50">
+            <div>ML Model Training</div>
+            <div className="mt-2">▲ 94.2% Accuracy</div>
+          </div>
+          <div className="absolute bottom-1/3 left-1/6 text-blue-400 font-mono text-sm opacity-50">
+            <div>Data Processing</div>
+            <div className="mt-2">◆ 2.3M Records/sec</div>
+          </div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left max-w-4xl">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Pioneering Data & AI
+              <span className="block text-blue-400">Solutions</span>
+            </h2>
+            <p className="text-xl md:text-2xl mb-10 text-slate-200 max-w-3xl">
+              Empowering the Data-Driven Future through Scalable AI
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/services" 
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
+                className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center shadow-lg"
               >
-                Explore Our Expertise
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Get Started
               </Link>
               <Link 
-                to="/contact" 
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
+                to="/about" 
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors inline-flex items-center justify-center"
               >
-                Schedule Consultation
+                Learn More
               </Link>
             </div>
           </div>
