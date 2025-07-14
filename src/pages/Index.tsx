@@ -145,235 +145,549 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Highlights Section */}
-      <section className="py-16 bg-slate-50">
+      {/* The World is Evolving Fast Section */}
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Why Choose Sapient Advisors?
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We combine deep fintech industry expertise with proven AI adoption methodologies 
-              to deliver transformational results for financial services organizations.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {highlights.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Preview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Our Specialized Services
-            </h2>
-            <p className="text-xl text-slate-600">
-              Tailored solutions for fintech and AI transformation
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="group">
-              <div className="bg-blue-600 text-white p-8 rounded-lg hover:bg-blue-700 transition-colors h-full">
-                <div className="mb-4">
-                  <Target className="h-8 w-8" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold text-blue-900 mb-6">
+                The world is evolving fast...
+              </h2>
+              <p className="text-lg text-slate-700 mb-8 font-medium">
+                Companies everywhere are investing in data, AI, and talent development, 
+                which are areas where we bring deep, ready-to-implement expertise. 
+                Our goal is to be a trusted partner, connecting global innovation with 
+                local impact.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-slate-700 font-medium">
+                    Comprehensive data assessment and strategy development
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Success Map</h3>
-                <p className="text-blue-100 mb-6">
-                  Strategic blueprints to scale projects from concept to final product using agile and lean methodologies.
-                </p>
-                <Link to="/services" className="text-white font-semibold group-hover:text-blue-100 flex items-center">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-slate-700 font-medium">
+                    Advanced analytics and visualization solutions
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-slate-700 font-medium">
+                    Implementation of data governance frameworks
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-slate-700 font-medium">
+                    Customized solutions for industry-specific challenges
+                  </p>
+                </div>
+              </div>
+              
+              <div className="pt-4">
+                <Link 
+                  to="/services" 
+                  className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
+                >
+                  Explore Our Services
                 </Link>
               </div>
             </div>
             
-            <div className="group">
-              <div className="bg-slate-900 text-white p-8 rounded-lg hover:bg-slate-800 transition-colors h-full">
-                <div className="mb-4">
-                  <Brain className="h-8 w-8" />
+            {/* Right Content - Form */}
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-black text-blue-900 mb-4">
+                Free Data Readiness Assessment
+              </h3>
+              <p className="text-slate-700 mb-6 font-medium">
+                Download our simple guide to evaluating your organization's data 
+                maturity and identifying opportunities for AI implementation.
+              </p>
+              
+              <form className="space-y-4" onSubmit={(e) => {
+                e.preventDefault();
+                // Handle form submission here
+                console.log('Form submitted');
+              }}>
+                <div>
+                  <label htmlFor="fullName" className="block text-sm font-semibold text-slate-800 mb-2">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    placeholder="John Smith"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">AI Adoption</h3>
-                <p className="text-slate-200 mb-6">
-                  Comprehensive AI integration strategy for financial services, from readiness assessment to deployment.
+                
+                <div>
+                  <label htmlFor="businessEmail" className="block text-sm font-semibold text-slate-800 mb-2">
+                    Business Email
+                  </label>
+                  <input
+                    type="email"
+                    id="businessEmail"
+                    placeholder="john@company.com"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="company" className="block text-sm font-semibold text-slate-800 mb-2">
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    placeholder="Your Company"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                  />
+                </div>
+                
+                <div className="flex items-start space-x-3 pt-2">
+                  <input
+                    type="checkbox"
+                    id="agreement"
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5"
+                  />
+                  <label htmlFor="agreement" className="text-sm text-slate-700 font-medium">
+                    I agree to receive communications from Sapient Advisors
+                  </label>
+                </div>
+                
+                <button
+                  type="submit"
+                  className="w-full bg-blue-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-800 transition-colors mt-6"
+                >
+                  Download Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Expertise Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Our Expertise
+            </h2>
+            <p className="text-lg text-slate-700 max-w-3xl mx-auto font-medium">
+              We deliver tailored solutions across multiple industries, helping organizations harness the 
+              full potential of their data assets.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Data Strategy */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-2xl font-black text-blue-900 mb-4">Data Strategy</h3>
+              <p className="text-slate-700 mb-6 font-medium">
+                Develop comprehensive data strategies aligned with your business objectives to maximize the value of your information assets.
+              </p>
+              <Link 
+                to="/services" 
+                className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+            
+            {/* Analytics Implementation */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-2xl font-black text-blue-900 mb-4">Analytics Implementation</h3>
+              <p className="text-slate-700 mb-6 font-medium">
+                Design and implement advanced analytics solutions that transform raw data into actionable business intelligence.
+              </p>
+              <Link 
+                to="/services" 
+                className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+            
+            {/* Data Governance */}
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-2xl font-black text-blue-900 mb-4">Data Governance</h3>
+              <p className="text-slate-700 mb-6 font-medium">
+                Establish robust governance frameworks to ensure data quality, security, and compliance with regulatory requirements.
+              </p>
+              <Link 
+                to="/services" 
+                className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Success Stories
+            </h2>
+            <p className="text-lg text-slate-700 max-w-4xl mx-auto font-medium">
+              See how our clients have transformed their data operations and achieved remarkable results.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Project Raven */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-video bg-gray-900 relative overflow-hidden">
+                <img
+                  src="/public/lovable-uploads/34375465-fae0-4a23-a4b0-e61c4d3081ef.jpg"
+                  alt="Data Analytics Dashboard"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-black text-blue-900 mb-4">Project Raven</h3>
+                <p className="text-slate-700 mb-6 font-medium">
+                  Helped a Fortune 500 financial services company implement a comprehensive data governance framework, resulting in 40% improved data quality.
                 </p>
-                <Link to="/services" className="text-blue-400 font-semibold group-hover:text-blue-300 flex items-center">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                <Link 
+                  to="/case-studies" 
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+                >
+                  Read case study
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
             
-            <div className="group">
-              <div className="bg-red-700 text-white p-8 rounded-lg hover:bg-red-800 transition-colors h-full">
-                <div className="mb-4">
-                  <GraduationCap className="h-8 w-8" />
+            {/* Alexa "Let's Chat" */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-video bg-gray-900 relative overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center">
+                    <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Fintech Education</h3>
-                <p className="text-red-100 mb-6">
-                  Specialized training and workshops for financial technology adoption and AI-driven product development.
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-black text-blue-900 mb-4">Alexa "Let's Chat"</h3>
+                <p className="text-slate-700 mb-6 font-medium">
+                  Developed a custom analytics solution for a tech firm, enabling real-time insights and driving a 25% increase in customer engagement.
                 </p>
-                <Link to="/services" className="text-red-200 font-semibold group-hover:text-red-100 flex items-center">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                <Link 
+                  to="/case-studies" 
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+                >
+                  Read case study
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
-
-            <div className="group">
-              <div className="bg-green-700 text-white p-8 rounded-lg hover:bg-green-800 transition-colors h-full">
-                <div className="mb-4">
-                  <Users className="h-8 w-8" />
+            
+            {/* CVX */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-video bg-gray-900 relative overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+                  <div className="grid grid-cols-3 gap-2 p-4">
+                    <div className="bg-blue-500 h-8 rounded"></div>
+                    <div className="bg-green-500 h-12 rounded"></div>
+                    <div className="bg-orange-500 h-6 rounded"></div>
+                    <div className="bg-purple-500 h-10 rounded"></div>
+                    <div className="bg-yellow-500 h-8 rounded"></div>
+                    <div className="bg-red-500 h-14 rounded"></div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Fractional Services</h3>
-                <p className="text-green-100 mb-6">
-                  Flexible consulting and advisory services including strategic consulting and executive training.
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-black text-blue-900 mb-4">CVX</h3>
+                <p className="text-slate-700 mb-6 font-medium">
+                  Transformed credit risk tool for a global firm through design thinking, reducing default rates by 15% and improving decision accuracy.
                 </p>
-                <Link to="/services" className="text-green-200 font-semibold group-hover:text-green-100 flex items-center">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                <Link 
+                  to="/case-studies" 
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+                >
+                  Read case study
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Trusted Advisors Network */}
-      <section className="py-16 bg-gradient-to-br from-purple-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Trusted Advisors Network
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Our extended network of industry experts brings specialized knowledge and capabilities to complement our core team.
-            </p>
-          </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {trustedAdvisors.map((advisor, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{advisor.name}</h3>
-                <p className="text-blue-600 font-semibold mb-4">{advisor.subtitle}</p>
-                <p className="text-slate-600">{advisor.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Process */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Our Process
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{step.title}</h3>
-                <p className="text-slate-600">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Trusted by Industry Leaders
-            </h2>
-            <p className="text-xl text-slate-600">
-              Our team brings experience from the world's leading financial technology companies
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold text-slate-900 mb-2">FactSet</h3>
-              <p className="text-sm text-blue-600">Financial Data Platforms</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Moody's Analytics</h3>
-              <p className="text-sm text-blue-600">Risk Assessment AI</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Bloomberg</h3>
-              <p className="text-sm text-blue-600">Market Intelligence</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold text-slate-900 mb-2">S&P Global</h3>
-              <p className="text-sm text-blue-600">Analytics Platforms</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ready to Transform Section */}
-      <section className="py-16 bg-white border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-            Explore how our expertise can help your organization achieve sustainable growth and operational excellence.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              to="/services" 
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center"
-            >
-              Explore Our Services
-            </Link>
+          <div className="text-center">
             <Link 
               to="/case-studies" 
-              className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center text-lg"
             >
-              View Case Studies
-            </Link>
-            <Link 
-              to="/news" 
-              className="bg-slate-100 text-slate-700 px-8 py-3 rounded-lg font-semibold hover:bg-slate-200 transition-colors"
-            >
-              Read Our Insights
+              View All Case Studies
             </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Accelerate Your AI Adoption?
+      {/* Ready to Transform Your Data Strategy Section */}
+      <section className="bg-blue-900 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-black mb-4">
+            Ready to Transform Your Data Strategy?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Let's discuss how our fintech expertise can transform your organization
+            Schedule a free 30-minute consultation with our experts to discuss your specific challenges and opportunities.
           </p>
-          <Link 
-            to="/contact" 
-            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
-          >
-            Schedule Your Consultation
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
+          <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            Book Your Consultation
+          </button>
+        </div>
+      </section>
+
+      {/* Latest Insights Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-black text-blue-900 mb-4">
+              Latest Insights
+            </h2>
+            <p className="text-xl text-gray-600">
+              Stay updated with the latest trends and best practices in data strategy and analytics.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Future of AI in Data Analytics */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 w-40 h-32 flex items-center justify-center">
+                    <BarChart3 className="h-20 w-20 text-white" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-sm text-blue-600 font-semibold mb-2">Future Sights</p>
+                <h3 className="text-xl font-black text-blue-900 mb-3">
+                  The Future of AI in Data Analytics
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Explore how artificial intelligence is revolutionizing the way organizations analyze and interpret complex data sets.
+                </p>
+                <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                  Read more →
+                </button>
+              </div>
+            </div>
+
+            {/* Building Effective Data Governance */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-gray-600 to-blue-700 relative">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 w-40 h-32 flex items-center justify-center">
+                    <Users className="h-20 w-20 text-white" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-sm text-blue-600 font-semibold mb-2">Webinar</p>
+                <h3 className="text-xl font-black text-blue-900 mb-3">
+                  Building Effective Data Governance
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Join our experts for a comprehensive discussion on implementing robust data governance frameworks in your organization.
+                </p>
+                <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                  Watch recording →
+                </button>
+              </div>
+            </div>
+
+            {/* Data Security in the Cloud Era */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-teal-600 to-blue-800 relative">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 w-40 h-32 flex items-center justify-center">
+                    <Eye className="h-20 w-20 text-white" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-sm text-blue-600 font-semibold mb-2">Future Sights</p>
+                <h3 className="text-xl font-black text-blue-900 mb-3">
+                  Data Security in the Cloud Era
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Discover essential strategies for maintaining data security and compliance when leveraging cloud-based analytics platforms.
+                </p>
+                <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                  Read more →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <button className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+              View All Insights
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted by Industry Leaders Section */}
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Left Side - Trusted by Industry Leaders */}
+            <div>
+              <h2 className="text-3xl font-black text-blue-900 mb-4">
+                Trusted by Industry Leaders
+              </h2>
+              <p className="text-gray-600 mb-8">
+                We've helped organizations across industries transform their approach to data and analytics.
+              </p>
+              
+              {/* Company Logos Grid */}
+              <div className="grid grid-cols-3 gap-6 mb-8">
+                {/* Row 1 */}
+                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
+                  <div className="text-blue-600 text-2xl font-bold">PayPal</div>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
+                  <div className="text-teal-600 text-2xl font-bold">25</div>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
+                  <div className="text-orange-600 text-2xl font-bold">📚</div>
+                </div>
+                
+                {/* Row 2 */}
+                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
+                  <div className="text-blue-400 text-2xl font-bold">🏢</div>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
+                  <div className="text-teal-500 text-2xl font-bold">Ion</div>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
+                  <div className="text-purple-600 text-2xl font-bold">🎵</div>
+                </div>
+              </div>
+              
+              {/* Testimonial */}
+              <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-600">
+                <div className="text-blue-600 text-4xl mb-4">"</div>
+                <p className="text-gray-700 mb-4 italic">
+                  "Sapient Advisors transformed our approach to data analytics. Their strategic guidance and technical expertise helped us implement solutions that have significantly improved our decision-making capabilities and operational efficiency."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                    <span className="text-gray-600 font-bold">SJ</span>
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Sarah Johnson</p>
+                    <p className="text-sm text-gray-600">Chief Technology Officer, Credit Vision</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right Side - Our Locations */}
+            <div>
+              <h2 className="text-3xl font-black text-blue-900 mb-8">
+                Our Locations
+              </h2>
+              
+              <div className="space-y-6 mb-8">
+                {/* Miami */}
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4"></div>
+                  <div>
+                    <p className="font-black text-blue-900">Miami</p>
+                    <p className="text-gray-600">1200 Brickell Avenue, Suite 1950</p>
+                    <p className="text-gray-600">Miami, FL 33131</p>
+                  </div>
+                </div>
+                
+                {/* Houston */}
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4"></div>
+                  <div>
+                    <p className="font-black text-blue-900">Houston</p>
+                    <p className="text-gray-600">2000 West Sam Houston Parkway, Suite 200</p>
+                    <p className="text-gray-600">Houston, TX 77042</p>
+                  </div>
+                </div>
+                
+                {/* NYC Metro */}
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4"></div>
+                  <div>
+                    <p className="font-black text-blue-900">NYC Metro</p>
+                    <p className="text-gray-600">340 Park Avenue, 15th Floor</p>
+                    <p className="text-gray-600">New York, NY 10022</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Map */}
+              <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <div className="text-gray-500 text-center">
+                  <div className="text-4xl mb-2">🗺️</div>
+                  <p>Location Map</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
