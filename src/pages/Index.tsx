@@ -1,9 +1,69 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, CheckCircle } from 'lucide-react';
+import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, CheckCircle, Loader2 } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useState } from 'react';
+import useHubSpot from '../hooks/useHubSpot';
 
 const Index = () => {
+  // HubSpot integration
+  const { isSubmitting, isSuccess, error, submitForm, reset } = useHubSpot();
+  
+  // Form state
+  const [formData, setFormData] = useState({
+    fullName: '',
+    businessEmail: '',
+    company: '',
+    agreement: false,
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }));
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Validate form
+    if (!formData.fullName || !formData.businessEmail || !formData.company) {
+      alert('Please fill in all required fields');
+      return;
+    }
+    
+    if (!formData.agreement) {
+      alert('Please agree to receive communications');
+      return;
+    }
+
+    // Split full name into first and last name
+    const nameParts = formData.fullName.trim().split(' ');
+    const firstName = nameParts[0] || '';
+    const lastName = nameParts.slice(1).join(' ') || '';
+
+    // Submit to HubSpot
+    await submitForm({
+      firstName,
+      lastName,
+      email: formData.businessEmail,
+      company: formData.company,
+      message: 'Data Readiness Assessment Request',
+    });
+
+    // Reset form if successful
+    if (isSuccess) {
+      setFormData({
+        fullName: '',
+        businessEmail: '',
+        company: '',
+        agreement: false,
+      });
+    }
+  };
+
   const highlights = [
     {
       icon: <Users className="h-8 w-8 text-blue-600" />,
@@ -227,44 +287,82 @@ const Index = () => {
                 maturity and identifying opportunities for AI implementation.
               </p>
               
-              <form className="space-y-4" onSubmit={(e) => {
-                e.preventDefault();
-                // Handle form submission here
-                console.log('Form submitted');
-              }}>
+              {/* Success Message */}
+              {isSuccess && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="text-green-800 font-medium">
+                    ✅ Thank you! Your request has been submitted successfully.
+                  </div>
+                  <div className="text-green-700 text-sm mt-1">
+                    We'll send you the Data Readiness Assessment shortly.
+                  </div>
+                </div>
+              )}
+
+              {/* Error Message */}
+              {error && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="text-red-800 font-medium">
+                    ❌ Error: {error}
+                  </div>
+                  <button
+                    onClick={reset}
+                    className="text-red-600 text-sm mt-1 hover:text-red-800"
+                  >
+                    Try again
+                  </button>
+                </div>
+              )}
+
+              <form className="space-y-4" onSubmit={handleFormSubmit}>
                 <div>
                   <label htmlFor="fullName" className="block text-sm font-semibold text-slate-800 mb-2">
-                    Full Name
+                    Full Name *
                   </label>
                   <input
                     type="text"
                     id="fullName"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleInputChange}
                     placeholder="John Smith"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    required
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed"
                   />
                 </div>
                 
                 <div>
                   <label htmlFor="businessEmail" className="block text-sm font-semibold text-slate-800 mb-2">
-                    Business Email
+                    Business Email *
                   </label>
                   <input
                     type="email"
                     id="businessEmail"
+                    name="businessEmail"
+                    value={formData.businessEmail}
+                    onChange={handleInputChange}
                     placeholder="john@company.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    required
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed"
                   />
                 </div>
                 
                 <div>
                   <label htmlFor="company" className="block text-sm font-semibold text-slate-800 mb-2">
-                    Company
+                    Company *
                   </label>
                   <input
                     type="text"
                     id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleInputChange}
                     placeholder="Your Company"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    required
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed"
                   />
                 </div>
                 
@@ -272,18 +370,31 @@ const Index = () => {
                   <input
                     type="checkbox"
                     id="agreement"
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5"
+                    name="agreement"
+                    checked={formData.agreement}
+                    onChange={handleInputChange}
+                    required
+                    disabled={isSubmitting}
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5 disabled:cursor-not-allowed"
                   />
                   <label htmlFor="agreement" className="text-sm text-slate-700 font-medium">
-                    I agree to receive communications from Sapient Advisors
+                    I agree to receive communications from Sapient Advisors *
                   </label>
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-blue-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-800 transition-colors mt-6"
+                  disabled={isSubmitting}
+                  className="w-full bg-blue-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-800 transition-colors mt-6 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
                 >
-                  Download Now
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin mr-2" />
+                      Submitting...
+                    </>
+                  ) : (
+                    'Download Now'
+                  )}
                 </button>
               </form>
             </div>
