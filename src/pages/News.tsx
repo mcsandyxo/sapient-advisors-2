@@ -39,11 +39,11 @@ const News = () => {
                         <div className="text-4xl mb-2">🏢</div>
                         <p className="text-sm">Conference Room</p>
                         <p className="text-xs">Office Presentation Setup</p>
-                      </div>
-                    </div>
-                    
+          </div>
+        </div>
+
                     {/* Content */}
-                    <div>
+              <div>
                       <h2 className="text-2xl font-black text-blue-900 mb-3">
                         Office Hours with Avatar Buddy - July 15, 2025
                       </h2>
@@ -103,10 +103,10 @@ const News = () => {
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
                       <span className="text-gray-600 font-bold text-xs">MM</span>
-                    </div>
+          </div>
                     <div>
                       <p className="font-black text-blue-900 text-sm">AI Things Tech Leadership</p>
-                    </div>
+          </div>
                   </div>
                   <button className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors">
                     Read Full Post
@@ -124,7 +124,7 @@ const News = () => {
                   your approach to problem-solving and strategic thinking.
                 </p>
                 
-                <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
                       <span className="text-gray-600 font-bold text-xs">CC</span>
@@ -204,8 +204,8 @@ const News = () => {
                 <div className="text-center text-white">
                   <div className="text-4xl mb-2">🔮</div>
                   <p className="text-sm font-semibold">Future Vision</p>
-                </div>
-              </div>
+          </div>
+        </div>
               
               <div>
                 <h3 className="text-2xl font-black text-blue-900 mb-4">
@@ -222,7 +222,7 @@ const News = () => {
               </div>
             </div>
           </div>
-
+          
           {/* Sponsor Section */}
           <div className="mt-16 bg-blue-50 rounded-lg p-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
