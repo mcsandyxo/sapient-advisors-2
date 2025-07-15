@@ -23,7 +23,7 @@ const CaseStudies = () => {
           {/* Case Studies Grid */}
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Project Raven */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
               <h2 className="text-2xl font-black text-blue-900 mb-4">
                 Project Raven
               </h2>
@@ -35,13 +35,13 @@ const CaseStudies = () => {
               
               {/* Tags */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Design Sprints
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Innovation
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Data Strategy
                 </span>
               </div>
@@ -49,7 +49,7 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
                     <span className="text-gray-600 font-bold text-sm">MM</span>
                   </div>
                   <div>
@@ -57,14 +57,14 @@ const CaseStudies = () => {
                     <p className="text-sm text-gray-600">CEO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
                   Read Case Study
                 </button>
               </div>
             </div>
 
             {/* Amazon Alexa "Let's Chat" */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
               <h2 className="text-2xl font-black text-blue-900 mb-4">
                 Amazon Alexa "Let's Chat"
               </h2>
@@ -77,13 +77,13 @@ const CaseStudies = () => {
               
               {/* Tags */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   AI Development
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   IoT
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   MLOps
                 </span>
               </div>
@@ -91,7 +91,7 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
                     <span className="text-gray-600 font-bold text-sm">PP</span>
                   </div>
                   <div>
@@ -99,14 +99,14 @@ const CaseStudies = () => {
                     <p className="text-sm text-gray-600">Chief MLOps</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
                   Read Case Study
                 </button>
               </div>
             </div>
 
             {/* CVX */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
               <h2 className="text-2xl font-black text-blue-900 mb-4">
                 CVX
               </h2>
@@ -117,13 +117,13 @@ const CaseStudies = () => {
               
               {/* Tags */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   AI Development
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   UX Research
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Rapid prototyping
                 </span>
               </div>
@@ -131,7 +131,7 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
                     <span className="text-gray-600 font-bold text-sm">SM</span>
                   </div>
                   <div>
@@ -139,14 +139,14 @@ const CaseStudies = () => {
                     <p className="text-sm text-gray-600">COO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
                   Read Case Study
                 </button>
               </div>
             </div>
 
             {/* Knowledge Graphs for Risk Management */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
               <h2 className="text-2xl font-black text-blue-900 mb-4">
                 Knowledge Graphs for Risk Management
               </h2>
@@ -158,13 +158,13 @@ const CaseStudies = () => {
               
               {/* Tags */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Data Strategy
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Data Visualization
                 </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Knowledge graphs
                 </span>
               </div>
@@ -172,7 +172,7 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
                     <span className="text-gray-600 font-bold text-sm">MM</span>
                   </div>
                   <div>
@@ -180,7 +180,7 @@ const CaseStudies = () => {
                     <p className="text-sm text-gray-600">CEO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
                   Read Case Study
                 </button>
               </div>
@@ -188,42 +188,37 @@ const CaseStudies = () => {
           </div>
 
           {/* Book@Random Section */}
-          <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
+          <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100">
             <h2 className="text-2xl font-black text-blue-900 mb-6">
               Book@Random
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Left side - Quote and Comment */}
+              {/* Left side - Quote and Contact */}
               <div>
-                <div className="text-4xl text-blue-600 mb-4">"</div>
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                <div className="text-4xl text-blue-900 mb-4">"</div>
+                <p className="text-gray-700 mb-8 text-lg leading-relaxed italic">
                   Put a quote here about the original data cleanup proj
                 </p>
                 
-                {/* Comment Section */}
-                <div className="bg-yellow-100 p-4 rounded-lg border-l-4 border-yellow-500">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-gray-200 rounded-full mr-3 flex items-center justify-center flex-shrink-0">
-                      <span className="text-gray-600 font-bold text-xs">SM</span>
-                    </div>
-                    <div>
-                      <p className="font-black text-blue-900 text-sm">Sandy McCarron</p>
-                      <p className="text-xs text-gray-600 mb-2">Member of Random House web team Book@Random</p>
-                      <p className="text-sm text-gray-700">
-                        <strong>Fede - we can hide/comment this one out for now</strong>
-                      </p>
-                    </div>
+                {/* Contact Info */}
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                    <span className="text-gray-600 font-bold text-sm">SM</span>
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Sandy McCarron</p>
+                    <p className="text-sm text-gray-600">Member of Random House web team Book@Random</p>
                   </div>
                 </div>
               </div>
 
               {/* Right side - Bookstore Image */}
-              <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+              <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center border border-gray-200">
                 <div className="text-center text-gray-500">
                   <div className="text-4xl mb-2">📚</div>
-                  <p className="text-sm">Bookstore with Digital Display</p>
-                  <p className="text-xs mt-1">Library/Bookstore Interior</p>
+                  <p className="text-sm font-medium">Bookstore with Digital Display</p>
+                  <p className="text-xs mt-1 text-gray-400">Library/Bookstore Interior</p>
                 </div>
               </div>
             </div>
