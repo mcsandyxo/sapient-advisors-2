@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -24,9 +24,6 @@ const Footer = () => {
             <div className="flex space-x-3">
               <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
                 <Linkedin className="h-4 w-4 text-gray-300 hover:text-white" />
-              </div>
-              <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
-                <Twitter className="h-4 w-4 text-gray-300 hover:text-white" />
               </div>
               <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
                 <Instagram className="h-4 w-4 text-gray-300 hover:text-white" />
@@ -61,15 +58,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-start text-gray-300">
-                <MapPin className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-blue-400" />
+                <MapPin className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
                 <span>Miami / NYC Metro / Houston</span>
               </div>
               <div className="flex items-start text-gray-300">
-                <Phone className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-blue-400" />
+                <Phone className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
                 <span>+1 (646) 234-4268</span>
               </div>
               <div className="flex items-start text-gray-300">
-                <Mail className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-blue-400" />
+                <Mail className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
                 <span>info@sapientadvisors.com</span>
               </div>
             </div>
