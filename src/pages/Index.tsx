@@ -213,7 +213,7 @@ const Index = () => {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-blue-900 mb-6">
                 The world is evolving fast...
-              </h2>
+            </h2>
               <p className="text-lg text-slate-700 mb-8 font-medium">
                 Companies everywhere are investing in data, AI, and talent development, 
                 which are areas where we bring deep, ready-to-implement expertise. 
@@ -252,9 +252,9 @@ const Index = () => {
                   </div>
                   <p className="text-slate-700 font-medium">
                     Implementation of data governance frameworks
-                  </p>
-                </div>
-                
+            </p>
+          </div>
+          
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -435,7 +435,7 @@ const Index = () => {
               >
                 Learn more
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+                </Link>
             </div>
             
             {/* Analytics Implementation */}
@@ -548,7 +548,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            
+
             {/* CVX */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
@@ -638,8 +638,8 @@ const Index = () => {
                 <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
                   Read more →
                 </button>
-              </div>
-            </div>
+          </div>
+        </div>
 
             {/* Building Effective Data Governance */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -662,8 +662,8 @@ const Index = () => {
                   Watch recording →
                 </button>
               </div>
-            </div>
-
+          </div>
+          
             {/* Data Security in the Cloud Era */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-teal-600 to-blue-800 relative">
@@ -703,8 +703,8 @@ const Index = () => {
             {/* Left Side - Trusted by Industry Leaders */}
             <div>
               <h2 className="text-3xl font-black text-blue-900 mb-4">
-                Trusted by Industry Leaders
-              </h2>
+              Trusted by Industry Leaders
+            </h2>
               <p className="text-gray-600 mb-8">
                 We've helped organizations across industries transform their approach to data and analytics.
               </p>
@@ -732,8 +732,8 @@ const Index = () => {
                 <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
                   <div className="text-purple-600 text-2xl font-bold">🎵</div>
                 </div>
-              </div>
-              
+          </div>
+          
               {/* Testimonial */}
               <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-600">
                 <div className="text-blue-600 text-4xl mb-4">"</div>
@@ -795,8 +795,8 @@ const Index = () => {
                 <div className="text-gray-500 text-center">
                   <div className="text-4xl mb-2">🗺️</div>
                   <p>Location Map</p>
-                </div>
-              </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
