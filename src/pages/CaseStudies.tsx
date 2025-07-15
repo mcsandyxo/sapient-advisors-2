@@ -225,15 +225,118 @@ const CaseStudies = () => {
           </div>
 
           {/* Ready to Transform Your Business Section */}
-          <div className="mt-16 text-center">
-            <h2 className="text-3xl font-black text-blue-900">
+          <div className="mt-20 text-center bg-white py-16">
+            <h2 className="text-3xl font-black text-blue-900 mb-6">
               Ready to Transform Your Business?
             </h2>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Let's discuss how our strategic consulting services can help you achieve your 
+              business goals and drive meaningful results.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                Explore Our Services
+              </button>
+              <button className="border-2 border-blue-900 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                View Latest Insights
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      <Footer />
+      {/* Custom Footer */}
+      <footer className="bg-gray-800 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-blue-600 rounded mr-3 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">📊</span>
+                </div>
+                <h3 className="text-xl font-bold">Sapient Advisors</h3>
+              </div>
+              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                Transforming businesses through strategic consulting and innovative solutions since 2005.
+              </p>
+              <div className="flex space-x-3">
+                <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
+                  <span className="text-xs">📱</span>
+                </div>
+                <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
+                  <span className="text-xs">🐦</span>
+                </div>
+                <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
+                  <span className="text-xs">📘</span>
+                </div>
+                <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
+                  <span className="text-xs">📷</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/services" className="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                <li><a href="/case-studies" className="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                <li><a href="/insights" className="text-gray-300 hover:text-white transition-colors">Insights</a></li>
+                <li><a href="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</a></li>
+                <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+              </ul>
+            </div>
+
+            {/* Our Services */}
+            <div>
+              <h3 className="text-lg font-bold mb-4">Our Services</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Strategic Planning</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Digital Transformation</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Financial Advisory</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Operational Excellence</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Market Research</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Risk Management</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Us */}
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start">
+                  <span className="text-blue-400 mr-2">📍</span>
+                  <div>
+                    <p className="text-gray-300">123 Business Avenue, Suite 500</p>
+                    <p className="text-gray-300">New York, NY 10001</p>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-blue-400 mr-2">📞</span>
+                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-blue-400 mr-2">✉️</span>
+                  <span className="text-gray-300">info@sapientadvisors.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Footer */}
+          <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">© 2023 Sapient Advisors. All rights reserved.</p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
