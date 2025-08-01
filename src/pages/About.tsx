@@ -274,7 +274,7 @@ const About = () => {
           <div className="text-left mb-8">
             <h2 className="text-3xl font-bold text-blue-800 mb-4">Trusted Advisors Network</h2>
             <p className="text-lg text-slate-600 max-w-4xl">
-              Our extended network of industry experts brings specialized knowledge and capabilities to complement our core team.
+              Our Trusted Advisors Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
             </p>
           </div>
           
