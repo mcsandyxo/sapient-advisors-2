@@ -8,18 +8,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-sm flex items-center justify-center mr-2">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-white">
-                  <rect x="2" y="10" width="2" height="4" fill="currentColor"/>
-                  <rect x="5" y="7" width="2" height="7" fill="currentColor"/>
-                  <rect x="8" y="5" width="2" height="9" fill="currentColor"/>
-                  <rect x="11" y="3" width="2" height="11" fill="currentColor"/>
-                </svg>
+              <div className="w-12 h-12 mr-2">
+                <img 
+                  src="/sapient-logo.png" 
+                  alt="Sapient Advisors Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-semibold text-white">Sapient Advisors</h3>
             </div>
             <p className="text-gray-300 mb-6 max-w-md text-sm leading-relaxed">
-              Transforming businesses through strategic consulting and innovative solutions since 2005.
+              Transforming businesses through strategic consulting and innovative solutions.
             </p>
             <div className="flex space-x-3">
               <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer">
@@ -45,12 +44,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Our Services</h4>
             <ul className="space-y-2 text-sm">
-              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Strategic Planning</li>
-              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Digital Transformation</li>
-              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Functional Advisory</li>
+              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">AI Blueprint Sprint</li>
+              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Data Lifecycle Strategy</li>
+              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Fractional Advisory</li>
               <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Operational Excellence</li>
-              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Market Research</li>
+              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">ML Ops & AI Readiness</li>
               <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Design Sprints</li>
+              <li className="text-gray-300 hover:text-white cursor-pointer transition-colors">Engineering & Architecture</li>
             </ul>
           </div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-start text-gray-300">
                 <MapPin className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
-                <span>Miami / NYC Metro / Houston</span>
+                <span>999 Brickell Ave Suite 410 Miami, FL 33131</span>
               </div>
               <div className="flex items-start text-gray-300">
                 <Phone className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
