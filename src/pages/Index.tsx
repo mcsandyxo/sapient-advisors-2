@@ -148,9 +148,21 @@ const Index = () => {
       <Header />
       
       {/* Pioneering Data & AI Solutions Section */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
+      <section className="relative py-48 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/public/lovable-uploads/banner index.png" 
+            alt="Data Analytics Dashboard" 
+            className="w-full h-full object-cover opacity-70"
+            style={{ objectPosition: 'center 30%' }}
+          />
+          {/* Blue overlay to maintain text readability */}
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+        </div>
+        
         {/* Background Data Visualization Elements */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 border border-blue-400 rounded-full"></div>
           <div className="absolute top-20 right-20 w-48 h-48 border border-blue-300 rounded-lg transform rotate-12"></div>
           <div className="absolute bottom-10 left-1/4 w-24 h-24 bg-blue-600 rounded-full opacity-30"></div>
@@ -178,7 +190,8 @@ const Index = () => {
           </div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left max-w-4xl">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Pioneering Data & AI
@@ -201,99 +214,108 @@ const Index = () => {
                 Learn More
               </Link>
             </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* The World is Evolving Fast Section */}
+      {/* From Strategy to Shipped Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:grid-rows-1">
             {/* Left Content */}
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-blue-900 mb-6">
-                The world is evolving fast...
+                From strategy to shipped for<br/>mid-market financial services
             </h2>
               <p className="text-lg text-slate-700 mb-8 font-medium">
-                Companies everywhere are investing in data, AI, and talent development, 
-                which are areas where we bring deep, ready-to-implement expertise. 
-                Our goal is to be a trusted partner, connecting global innovation with 
-                local impact.
+                We help alternative asset managers, PE-backed RIA platforms & large 
+                enterprise RIAs, and commercial real estate turn AI/data investments 
+                into secure, production-ready solutions and measurable results.
               </p>
               
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="mt-8">
+                <h3 className="text-3xl font-bold text-blue-900 mb-6">
+                  At-a-Glance
+                </h3>
+                <p className="text-lg text-slate-700 font-medium mb-8">
+                  Sapient Advisors is a U.S.-based, women-led consultancy specializing in data, AI, and product & UX strategy, execution, and monetization for mid-market financial services.
+                </p>
+
+                <div className="space-y-8">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-slate-700 font-medium">
-                    Comprehensive data assessment and strategy development
-                  </p>
+                    <div>
+                      <h4 className="text-blue-900 font-semibold mb-2 text-lg">What we do:</h4>
+                      <p className="text-slate-700 text-base leading-relaxed">
+                        Develop comprehensive data strategies, Internal AI solutions, workflow automation, data productization.
+                      </p>
+                    </div>
                 </div>
                 
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-slate-700 font-medium">
-                    Advanced analytics and visualization solutions
-                  </p>
+                    <div>
+                      <h4 className="text-blue-900 font-semibold mb-2 text-lg">How we do it:</h4>
+                      <p className="text-slate-700 text-base leading-relaxed">
+                        Rapidly implement solutions that transform ideas and raw data into actionable business intelligence through Design Sprints, Strategy workshops, and roadmap development.
+                      </p>
+                    </div>
                 </div>
                 
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-slate-700 font-medium">
-                    Implementation of data governance frameworks
+                    <div>
+                      <h4 className="text-blue-900 font-semibold mb-2 text-lg">Why it works:</h4>
+                      <p className="text-slate-700 text-base leading-relaxed">
+                        Faster time-to-value, lower risk, and outcomes your ops can run on day one. We support regulated industries (e.g., law) and select startups by fit.
             </p>
           </div>
-          
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="text-slate-700 font-medium">
-                    Customized solutions for industry-specific challenges
-                  </p>
                 </div>
               </div>
               
-              <div className="pt-4">
+                <div className="pt-6">
                 <Link 
                   to="/services" 
                   className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
                 >
                   Explore Our Services
                 </Link>
+                </div>
               </div>
             </div>
             
-            {/* Right Content - Form */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-black text-blue-900 mb-4">
-                Free Data Readiness Assessment
+            {/* Right Content - Form and Testimonial */}
+            <div className="flex flex-col space-y-8 h-full">
+              {/* Form */}
+              <div className="bg-white px-6 pt-6 pb-6 rounded-lg shadow-lg">
+              <h3 className="text-3xl font-bold text-blue-900 mb-3">
+                Are you ready for AI?
               </h3>
-              <p className="text-slate-700 mb-6 font-medium">
+              <p className="text-slate-700 mb-4 font-medium text-sm">
                 Download our simple guide to evaluating your organization's data 
-                maturity and identifying opportunities for AI implementation.
+                maturity and identifying opportunities for AI Implementation.
               </p>
               
               {/* Success Message */}
               {isSuccess && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                  <div className="text-green-800 font-medium">
+                <div className="mb-3 p-2 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="text-green-800 font-medium text-xs">
                     ✅ Thank you! Your request has been submitted successfully.
                   </div>
-                  <div className="text-green-700 text-sm mt-1">
+                  <div className="text-green-700 text-xs mt-1">
                     We'll send you the Data Readiness Assessment shortly.
                   </div>
                 </div>
@@ -301,23 +323,23 @@ const Index = () => {
 
               {/* Error Message */}
               {error && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <div className="text-red-800 font-medium">
+                <div className="mb-3 p-2 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="text-red-800 font-medium text-xs">
                     ❌ Error: {error}
                   </div>
                   <button
                     onClick={reset}
-                    className="text-red-600 text-sm mt-1 hover:text-red-800"
+                    className="text-red-600 text-xs mt-1 hover:text-red-800"
                   >
                     Try again
                   </button>
                 </div>
               )}
 
-              <form className="space-y-4" onSubmit={handleFormSubmit}>
+              <form className="space-y-2" onSubmit={handleFormSubmit}>
                 <div>
-                  <label htmlFor="fullName" className="block text-sm font-semibold text-slate-800 mb-2">
-                    Full Name *
+                  <label htmlFor="fullName" className="block text-xs font-medium text-slate-700 mb-1">
+                    Full Name
                   </label>
                   <input
                     type="text"
@@ -328,13 +350,13 @@ const Index = () => {
                     placeholder="John Smith"
                     required
                     disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed text-sm"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="businessEmail" className="block text-sm font-semibold text-slate-800 mb-2">
-                    Business Email *
+                  <label htmlFor="businessEmail" className="block text-xs font-medium text-slate-700 mb-1">
+                    Business Email
                   </label>
                   <input
                     type="email"
@@ -345,13 +367,13 @@ const Index = () => {
                     placeholder="john@company.com"
                     required
                     disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed text-sm"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-semibold text-slate-800 mb-2">
-                    Company *
+                  <label htmlFor="company" className="block text-xs font-medium text-slate-700 mb-1">
+                    Company
                   </label>
                   <input
                     type="text"
@@ -362,11 +384,11 @@ const Index = () => {
                     placeholder="Your Company"
                     required
                     disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed text-sm"
                   />
                 </div>
                 
-                <div className="flex items-start space-x-3 pt-2">
+                <div className="flex items-start space-x-2 pt-1">
                   <input
                     type="checkbox"
                     id="agreement"
@@ -375,21 +397,21 @@ const Index = () => {
                     onChange={handleInputChange}
                     required
                     disabled={isSubmitting}
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5 disabled:cursor-not-allowed"
+                    className="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5 disabled:cursor-not-allowed"
                   />
-                  <label htmlFor="agreement" className="text-sm text-slate-700 font-medium">
-                    I agree to receive communications from Sapient Advisors *
+                  <label htmlFor="agreement" className="text-xs text-slate-700 font-medium">
+                    I agree to receive communications from Sapient Advisors
                   </label>
                 </div>
                 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-800 transition-colors mt-6 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
+                  className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors mt-4 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center text-sm"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="w-5 h-5 animate-spin mr-2" />
+                      <Loader2 className="w-4 h-4 animate-spin mr-2" />
                       Submitting...
                     </>
                   ) : (
@@ -398,96 +420,44 @@ const Index = () => {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Expertise Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-              Our Expertise
-            </h2>
-            <p className="text-lg text-slate-700 max-w-3xl mx-auto font-medium">
-              We deliver tailored solutions across multiple industries, helping organizations harness the 
-              full potential of their data assets.
+              
+              {/* Testimonial below form */}
+              <div className="flex-1">
+                <div className="text-left mb-6">
+                  <h3 className="text-2xl font-bold text-blue-900 mb-2">
+                    Trusted by Industry Leaders
+                  </h3>
+                  <p className="text-sm text-slate-700">
+                    We've helped organizations across industries transform their approach to data and analytics.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Data Strategy */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
+                <div className="flex items-start space-x-3">
+                  <div className="w-1 h-32 bg-blue-900 rounded-full flex-shrink-0"></div>
+                  <div className="flex-1">
+                    <blockquote className="text-base text-slate-700 mb-3 italic leading-relaxed">
+                      "Working with you both has been one of the highest-leverage decisions we've made so far. You jumped in, understood our product architecture, user dynamics, and go-to-market goals faster than anyone—and helped us identify and close critical gaps..."
+                    </blockquote>
+                    <blockquote className="text-base text-slate-700 mb-0 italic leading-relaxed">
+                      "Your ability to cut through complexity, align the team, and keep momentum high made a real difference. As we head into the scaling phase, I'm genuinely excited to continue building with you. Your partnership isn't just valuable—it's foundational."
+                    </blockquote>
+                    
+                    <div className="mt-6">
+                      <div className="font-semibold text-blue-900 text-sm">Yurek Vazquez</div>
+                      <div className="text-slate-600 text-sm">Chief Executive Officer, Yurek.com</div>
                 </div>
               </div>
-              <h3 className="text-2xl font-black text-blue-900 mb-4">Data Strategy</h3>
-              <p className="text-slate-700 mb-6 font-medium">
-                Develop comprehensive data strategies aligned with your business objectives to maximize the value of your information assets.
-              </p>
-              <Link 
-                to="/services" 
-                className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-            </div>
-            
-            {/* Analytics Implementation */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-black text-blue-900 mb-4">Analytics Implementation</h3>
-              <p className="text-slate-700 mb-6 font-medium">
-                Design and implement advanced analytics solutions that transform raw data into actionable business intelligence.
-              </p>
-              <Link 
-                to="/services" 
-                className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-            
-            {/* Data Governance */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-2xl font-black text-blue-900 mb-4">Data Governance</h3>
-              <p className="text-slate-700 mb-6 font-medium">
-                Establish robust governance frameworks to ensure data quality, security, and compliance with regulatory requirements.
-              </p>
-              <Link 
-                to="/services" 
-                className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
             </div>
           </div>
+          
+
         </div>
       </section>
 
       {/* Success Stories Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -498,24 +468,24 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:grid-rows-1">
             {/* Project Raven */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
-                  src="/public/lovable-uploads/34375465-fae0-4a23-a4b0-e61c4d3081ef.jpg"
+                  src="/public/lovable-uploads/proyect raven index.png"
                   alt="Data Analytics Dashboard"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-black text-blue-900 mb-4">Project Raven</h3>
-                <p className="text-slate-700 mb-6 font-medium">
-                  Helped a Fortune 500 financial services company implement a comprehensive data governance framework, resulting in 40% improved data quality.
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Project Raven</h3>
+                <p className="text-slate-700 mb-4 text-sm flex-1">
+                  Helped a Fortune 500 financial services company implement a comprehensive data governance and collection using AI and NLP, resulting in improved data quality.
                 </p>
                 <Link 
                   to="/case-studies" 
-                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read case study
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -524,24 +494,22 @@ const Index = () => {
             </div>
             
             {/* Alexa "Let's Chat" */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-                    </svg>
-                  </div>
-                </div>
+                <img
+                  src="/public/lovable-uploads/alexa index.png"
+                  alt="Alexa Let's Chat Device"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-black text-blue-900 mb-4">Alexa "Let's Chat"</h3>
-                <p className="text-slate-700 mb-6 font-medium">
-                  Developed a custom analytics solution for a tech firm, enabling real-time insights and driving a 25% increase in customer engagement.
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Alexa "Let's Chat"</h3>
+                <p className="text-slate-700 mb-4 text-sm flex-1">
+                  Developed a custom analytics solution for a tech giant, enabling real-time insights and driving a 25% increase in customer engagement.
                 </p>
                 <Link 
                   to="/case-studies" 
-                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read case study
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -550,27 +518,22 @@ const Index = () => {
             </div>
 
             {/* CVX */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                  <div className="grid grid-cols-3 gap-2 p-4">
-                    <div className="bg-blue-500 h-8 rounded"></div>
-                    <div className="bg-green-500 h-12 rounded"></div>
-                    <div className="bg-orange-500 h-6 rounded"></div>
-                    <div className="bg-purple-500 h-10 rounded"></div>
-                    <div className="bg-yellow-500 h-8 rounded"></div>
-                    <div className="bg-red-500 h-14 rounded"></div>
-                  </div>
-                </div>
+                <img
+                  src="/public/lovable-uploads/cvx index.png"
+                  alt="CVX Credit Risk Tool"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-black text-blue-900 mb-4">CVX</h3>
-                <p className="text-slate-700 mb-6 font-medium">
-                  Transformed credit risk tool for a global firm through design thinking, reducing default rates by 15% and improving decision accuracy.
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">CVX</h3>
+                <p className="text-slate-700 mb-4 text-sm flex-1">
+                  Transformed credit risk tool for a global firm through design thinking, rebuilding a scalable, secure platform to improve decision-making.
                 </p>
                 <Link 
                   to="/case-studies" 
-                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors"
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read case study
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -582,7 +545,7 @@ const Index = () => {
           <div className="text-center">
             <Link 
               to="/case-studies" 
-              className="bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center text-lg"
+              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
             >
               View All Case Studies
             </Link>
@@ -590,219 +553,226 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Ready to Transform Your Data Strategy Section */}
-      <section className="bg-blue-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-black mb-4">
-            Ready to Transform Your Data Strategy?
+      {/* Kick-Start Your AI Journey Section */}
+      <section className="py-16 bg-blue-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Kick-Start Your AI Journey
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
-            Schedule a free 30-minute consultation with our experts to discuss your specific challenges and opportunities.
-          </p>
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+              In one 30-minute call, surface challenges, reveal quick wins, and<br/>map the fastest path to ROI.
+            </p>
+            
+            <div className="flex justify-center">
+              <Link 
+                to="/contact" 
+                className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
+              >
             Book Your Consultation
-          </button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Latest Insights Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-blue-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
               Latest Insights
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg text-slate-700 max-w-4xl mx-auto font-medium">
               Stay updated with the latest trends and best practices in data strategy and analytics.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Future of AI in Data Analytics */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 w-40 h-32 flex items-center justify-center">
-                    <BarChart3 className="h-20 w-20 text-white" />
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:grid-rows-1">
+                          {/* The Future of AI in Data Analytics */}
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+                <div className="aspect-video bg-gray-900 relative overflow-hidden">
+                  <img
+                    src="/public/lovable-uploads/the future of ai index.png"
+                    alt="The Future of AI in Data Analytics"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-              <div className="p-6">
-                <p className="text-sm text-blue-600 font-semibold mb-2">Future Sights</p>
-                <h3 className="text-xl font-black text-blue-900 mb-3">
+              <div className="p-6 flex flex-col flex-1">
+                <p className="text-sm text-blue-900 font-semibold mb-2">Future Sights</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">
                   The Future of AI in Data Analytics
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-slate-700 mb-4 text-sm flex-1">
                   Explore how artificial intelligence is revolutionizing the way organizations analyze and interpret complex data sets.
                 </p>
-                <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
-                  Read more →
-                </button>
+                <Link 
+                  to="/news" 
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
+                >
+                  Read more
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
           </div>
         </div>
 
-            {/* Building Effective Data Governance */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-gray-600 to-blue-700 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 w-40 h-32 flex items-center justify-center">
-                    <Users className="h-20 w-20 text-white" />
-                  </div>
+                          {/* Building Effective Data Governance */}
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+                <div className="aspect-video bg-gray-200 relative overflow-hidden">
+                  <img
+                    src="/public/lovable-uploads/building effective index.png"
+                    alt="Building Effective Data Governance"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-              <div className="p-6">
-                <p className="text-sm text-blue-600 font-semibold mb-2">Webinar</p>
-                <h3 className="text-xl font-black text-blue-900 mb-3">
+              <div className="p-6 flex flex-col flex-1">
+                <p className="text-sm text-blue-900 font-semibold mb-2">Webinar</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">
                   Building Effective Data Governance
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-slate-700 mb-4 text-sm flex-1">
                   Join our experts for a comprehensive discussion on implementing robust data governance frameworks in your organization.
                 </p>
-                <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
-                  Watch recording →
-                </button>
+                <Link 
+                  to="/news" 
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
+                >
+                  Watch recording
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </div>
           </div>
           
-            {/* Data Security in the Cloud Era */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-teal-600 to-blue-800 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 w-40 h-32 flex items-center justify-center">
-                    <Eye className="h-20 w-20 text-white" />
-                  </div>
+                          {/* Data Security in the Cloud Era */}
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+                <div className="aspect-video bg-slate-900 relative overflow-hidden">
+                  <img
+                    src="/public/lovable-uploads/data security index.png"
+                    alt="Data Security in the Cloud Era"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-              <div className="p-6">
-                <p className="text-sm text-blue-600 font-semibold mb-2">Future Sights</p>
-                <h3 className="text-xl font-black text-blue-900 mb-3">
+              <div className="p-6 flex flex-col flex-1">
+                <p className="text-sm text-blue-900 font-semibold mb-2">Future Sights</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">
                   Data Security in the Cloud Era
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-slate-700 mb-4 text-sm flex-1">
                   Discover essential strategies for maintaining data security and compliance when leveraging cloud-based analytics platforms.
                 </p>
-                <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
-                  Read more →
-                </button>
+                <Link 
+                  to="/news" 
+                  className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
+                >
+                  Read more
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="text-center">
-            <button className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+            <Link 
+              to="/news" 
+              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
+            >
               View All Insights
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Trusted by Industry Leaders Section */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Side - Trusted by Industry Leaders */}
-            <div>
-              <h2 className="text-3xl font-black text-blue-900 mb-4">
-              Trusted by Industry Leaders
-            </h2>
-              <p className="text-gray-600 mb-8">
-                We've helped organizations across industries transform their approach to data and analytics.
+      {/* Footer */}
+      <footer className="bg-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Sapient Advisors */}
+            <div className="lg:col-span-1">
+              <div className="flex items-center mb-4">
+                <BarChart3 className="h-8 w-8 text-blue-400 mr-2" />
+                <span className="text-xl font-bold">Sapient Advisors</span>
+              </div>
+              <p className="text-gray-300 mb-6">
+                Transforming businesses through strategic consulting and innovative solutions.
               </p>
-              
-              {/* Company Logos Grid */}
-              <div className="grid grid-cols-3 gap-6 mb-8">
-                {/* Row 1 */}
-                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
-                  <div className="text-blue-600 text-2xl font-bold">PayPal</div>
+              <div className="flex space-x-4">
+                <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 transition-colors">
+                  <span className="text-xs">📧</span>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
-                  <div className="text-teal-600 text-2xl font-bold">25</div>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
-                  <div className="text-orange-600 text-2xl font-bold">📚</div>
-                </div>
-                
-                {/* Row 2 */}
-                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
-                  <div className="text-blue-400 text-2xl font-bold">🏢</div>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
-                  <div className="text-teal-500 text-2xl font-bold">Ion</div>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20">
-                  <div className="text-purple-600 text-2xl font-bold">🎵</div>
-                </div>
-          </div>
-          
-              {/* Testimonial */}
-              <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-600">
-                <div className="text-blue-600 text-4xl mb-4">"</div>
-                <p className="text-gray-700 mb-4 italic">
-                  "Sapient Advisors transformed our approach to data analytics. Their strategic guidance and technical expertise helped us implement solutions that have significantly improved our decision-making capabilities and operational efficiency."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
-                    <span className="text-gray-600 font-bold">SJ</span>
-                  </div>
-                  <div>
-                    <p className="font-black text-blue-900">Sarah Johnson</p>
-                    <p className="text-sm text-gray-600">Chief Technology Officer, Credit Vision</p>
-                  </div>
+                <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 transition-colors">
+                  <span className="text-xs">📱</span>
                 </div>
               </div>
             </div>
             
-            {/* Right Side - Our Locations */}
+            {/* Quick Links */}
             <div>
-              <h2 className="text-3xl font-black text-blue-900 mb-8">
-                Our Locations
-              </h2>
-              
-              <div className="space-y-6 mb-8">
-                {/* Miami */}
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4"></div>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+                <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+                <li><Link to="/case-studies" className="text-gray-300 hover:text-white transition-colors">Case Studies</Link></li>
+                <li><Link to="/news" className="text-gray-300 hover:text-white transition-colors">Insights</Link></li>
+              </ul>
+            </div>
+
+            {/* Our Services */}
                   <div>
-                    <p className="font-black text-blue-900">Miami</p>
-                    <p className="text-gray-600">1200 Brickell Avenue, Suite 1950</p>
-                    <p className="text-gray-600">Miami, FL 33131</p>
-                  </div>
+              <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+              <ul className="space-y-2">
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">AI Blueprint Sprint</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Data Lifecycle Strategy</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Fractional Advisory</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Operational Excellence</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">ML Ops & AI Readiness</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Design Sprints</Link></li>
+                <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Engineering & Architecture</Link></li>
+              </ul>
                 </div>
                 
-                {/* Houston */}
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4"></div>
+            {/* Contact Us */}
                   <div>
-                    <p className="font-black text-blue-900">Houston</p>
-                    <p className="text-gray-600">2000 West Sam Houston Parkway, Suite 200</p>
-                    <p className="text-gray-600">Houston, TX 77042</p>
+              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-2">
+                  <span className="text-blue-400 mt-1">📍</span>
+                  <div className="text-gray-300">
+                    <p>999 Brickell Ave</p>
+                    <p>Suite 410</p>
+                    <p>Miami, FL 33131</p>
                   </div>
                 </div>
-                
-                {/* NYC Metro */}
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4"></div>
-                  <div>
-                    <p className="font-black text-blue-900">NYC Metro</p>
-                    <p className="text-gray-600">340 Park Avenue, 15th Floor</p>
-                    <p className="text-gray-600">New York, NY 10022</p>
+                <div className="flex items-center space-x-2">
+                  <span className="text-blue-400">📞</span>
+                  <span className="text-gray-300">+1 (646) 234-4268</span>
                   </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-blue-400">✉️</span>
+                  <span className="text-gray-300">info@sapientadvisors.com</span>
                 </div>
               </div>
-              
-              {/* Map */}
-              <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
-                <div className="text-gray-500 text-center">
-                  <div className="text-4xl mb-2">🗺️</div>
-                  <p>Location Map</p>
             </div>
+          </div>
+        </div>
+
+        {/* Bottom Footer */}
+        <div className="border-t border-gray-700">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm">
+                © 2025 Sapient Advisors. All rights reserved.
+              </p>
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+                <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+                <Link to="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
+                <Link to="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</Link>
             </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <Footer />
+      </footer>
     </div>
   );
 };
