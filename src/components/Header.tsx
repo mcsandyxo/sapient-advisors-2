@@ -34,18 +34,18 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-[#1E3A8A] shadow-sm border-b">
+    <header className="bg-[#1E3A8A] shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex items-center h-16 relative">
+          {/* Logo - Left */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center mr-3 relative">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-blue-600">
-                  <rect x="2" y="10" width="2" height="4" fill="currentColor"/>
-                  <rect x="5" y="7" width="2" height="7" fill="currentColor"/>
-                  <rect x="8" y="5" width="2" height="9" fill="currentColor"/>
-                  <rect x="11" y="3" width="2" height="11" fill="currentColor"/>
-                </svg>
+              <div className="w-12 h-12 mr-3 relative">
+                <img 
+                  src="/sapient-logo.png" 
+                  alt="Sapient Advisors Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-semibold text-lg text-white">
                 Sapient Advisors
@@ -53,8 +53,8 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Center */}
+          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
             <div className="flex items-center space-x-8">
               {navigation.map((item) => (
                 <Link
@@ -68,8 +68,10 @@ const Header = () => {
                 </Link>
               ))}
             </div>
+          </div>
             
-            {/* Get Started Button */}
+          {/* Get Started Button - Right */}
+          <div className="hidden md:flex ml-auto">
             <button className="bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Get Started
             </button>
