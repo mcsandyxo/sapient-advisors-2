@@ -35,34 +35,34 @@ const About = () => {
 
   const trustedNetwork = [
     {
-      title: "Salesfy",
-      subtitle: "Sales Transformation",
-      description: "Elena specializes in sales process optimization and CRM implementation, helping organizations accelerate revenue growth through data-driven sales strategies."
-    },
-    {
       title: "Avatar Buddy",
       subtitle: "Digital Twin Experience",
-      description: "Avatar Buddy is an expert in user experience design and digital product strategy, having led digital transformation initiatives for leading brands across retail and financial services."
+      description: "Avatar Buddy creates AI-powered digital experiences that help businesses build stronger customer relationships through personalized interactions and data-driven insights."
+    },
+    {
+      title: "Neural Seek",
+      subtitle: "AI-Powered Knowledge Management",
+      description: "Neural Seek specializes in AI-driven knowledge management solutions that help organizations unlock insights from their data and improve decision-making processes."
+    },
+    {
+      title: "NRoad",
+      subtitle: "Collaborative Digital Management",
+      description: "NRoad provides collaborative digital management platforms that streamline workflows and enhance team productivity through innovative technology solutions."
+    },
+    {
+      title: "Salesfy",
+      subtitle: "Sales Transformation",
+      description: "Salesfy focuses on sales process optimization and CRM implementation, helping organizations accelerate revenue growth through data-driven sales strategies."
     },
     {
       title: "Superposition",
       subtitle: "Project Alignment and Facilitation",
-      description: "Sophia brings deep expertise in advanced analytics and machine learning, helping organizations unlock insights from complex data sets to drive strategic decision-making."
+      description: "Superposition brings expertise in project alignment and facilitation, helping teams coordinate complex initiatives and achieve strategic objectives efficiently."
     },
     {
-      title: "Neural Seek",
-      subtitle: "Project Alignment and Facilitation",
-      description: "Sophia brings deep expertise in advanced analytics and machine learning, helping organizations unlock insights from complex data sets to drive strategic decision-making."
-    },
-    {
-      title: "Working Live",
+      title: "Working Line",
       subtitle: "Data Transformation",
-      description: "Sophia brings deep expertise in advanced analytics and machine learning, helping organizations unlock insights from complex data sets to drive strategic decision-making."
-    },
-    {
-      title: "NRoad",
-      subtitle: "Project Alignment and Facilitation",
-      description: "Sophia brings deep expertise in advanced analytics and machine learning, helping organizations unlock insights from complex data sets to drive strategic decision-making."
+      description: "Working Line specializes in data transformation services, helping organizations modernize their data infrastructure and analytics capabilities for better business outcomes."
     }
   ];
 
@@ -94,55 +94,64 @@ const About = () => {
       name: "Maribeth Martorana, CFA",
       role: "Co-Founder & Chief Executive Officer",
       description: "Maribeth is an accomplished product leader with over two decades of experience driving growth, alignment, and transformation at the intersection of finance, data, and technology.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/maribeth-martorana.png"
     },
     {
       name: "Sandy McCarron",
       role: "Co-Founder & Chief Operating Officer", 
       description: "Sandy is a visionary leader in digital transformation across industries, including transformation initiatives at Penguin Random House, Bloomberg BusinessWeek, S&P Global, and Moody's Analytics.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/sandy-mccarron.png"
     },
     {
       name: "Zaid Marji",
       role: "Chief Technology Officer",
       description: "Zaid is a builder, strategist and systems thinker with 30 years experience at the frontier of technology, partnering with teams to scale -- not just scaling or building -- they're redefining how things work.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/zaid-marji.png"
     },
     {
       name: "Phanom Noelani Parker",
       role: "Chief AI, Operations & Product Strategy",
       description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/phanom-parker.png"
     },
     {
       name: "Richard Vogel",
       role: "Chief Data Strategy",
       description: "Richard brings 25 years of financial expertise, having held leadership positions at top consulting firms and led financial transformation initiatives for multinational corporations.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/richard-vogel.png"
     },
     {
       name: "Kristine Parrinelli",
       role: "Agile Product Manager & Chief of Staff",
       description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/kristine-parrinelli.png"
     },
     {
       name: "Daniel Zook",
       role: "Business Development Lead",
       description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/daniel-zook.png"
     },
     {
       name: "Mary Beth Quinn",
       role: "Product & Marketing Operations Manager",
       description: "Richard brings 25 years of financial expertise, having held leadership positions at top consulting firms and led financial transformation initiatives for multinational corporations.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/mary-beth-quinn.png"
     },
     {
       name: "Fede Crespo",
       role: "Lead Data Scientist",
       description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
-      linkedin: true
+      linkedin: true,
+      image: "/team/fede-crespo.png"
     }
   ];
 
@@ -205,7 +214,7 @@ const About = () => {
 
       {/* Our Process Section */}
       <section className="py-12 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-blue-800 mb-4">Our Process</h2>
           </div>
@@ -226,8 +235,8 @@ const About = () => {
 
       {/* Our Team */}
       <section className="py-12 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left mb-8">
             <h2 className="text-3xl font-bold text-blue-800 mb-4">Our Team</h2>
             <p className="text-xl text-slate-600">Meet the experienced professionals who lead our consulting practice and drive exceptional results for our clients.</p>
           </div>
@@ -235,8 +244,12 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member, index) => (
               <div key={index} className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-100 to-slate-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-12 w-12 text-slate-400" />
+                <div className="w-64 h-64 mb-4 overflow-hidden rounded-lg">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-lg font-bold text-blue-800 mb-2 text-left">{member.name}</h3>
                 <p className="text-slate-900 font-medium mb-4 text-left text-sm">{member.role}</p>
@@ -257,11 +270,11 @@ const About = () => {
 
       {/* Trusted Advisors Network Section */}
       <section className="py-12 bg-blue-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-8">
             <h2 className="text-3xl font-bold text-blue-800 mb-4">Trusted Advisors Network</h2>
             <p className="text-lg text-slate-600 max-w-4xl">
-              Our extended network of industry experts brings specialized knowledge and capabilities to complement our core team.
+              Our Trusted Advisors Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
             </p>
           </div>
           
@@ -279,7 +292,7 @@ const About = () => {
 
       {/* Ready to Transform Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-blue-800 mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">
             Explore how our expertise can help your organization achieve sustainable growth and operational excellence.
