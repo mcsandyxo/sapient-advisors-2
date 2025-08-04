@@ -149,15 +149,24 @@
 
   /* Buttons */
   .btn-primary {
-    @apply bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors;
+    @apply bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 
+           transform transition-all duration-300 ease-out
+           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+           active:scale-95 active:translate-y-0;
   }
   
   .btn-secondary {
-    @apply border border-blue-800 text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors;
+    @apply border border-blue-800 text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 
+           transform transition-all duration-300 ease-out
+           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+           active:scale-95 active:translate-y-0;
   }
   
   .btn-accent {
-    @apply bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors;
+    @apply bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 
+           transform transition-all duration-300 ease-out
+           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+           active:scale-95 active:translate-y-0;
   }
 
   /* Categories and Tags */

@@ -2,12 +2,32 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, CheckCircle, Loader2 } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useHubSpot from '../hooks/useHubSpot';
 
 const Index = () => {
   // HubSpot integration
   const { isSubmitting, isSuccess, error, submitForm, reset } = useHubSpot();
+  
+  // Parallax effect state
+  const [scrollY, setScrollY] = useState(0);
+  
+  useEffect(() => {
+    let ticking = false;
+    
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   // Form state
   const [formData, setFormData] = useState({
@@ -155,40 +175,17 @@ const Index = () => {
             src="/public/lovable-uploads/banner index.png" 
             alt="Data Analytics Dashboard" 
             className="w-full h-full object-cover opacity-70"
-            style={{ objectPosition: 'center 30%' }}
+            style={{ 
+              objectPosition: 'center 30%',
+              transform: `translate3d(0, ${scrollY * 0.2}px, 0)`,
+              willChange: 'transform'
+            }}
           />
           {/* Blue overlay to maintain text readability */}
           <div className="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
         </div>
         
-        {/* Background Data Visualization Elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 border border-blue-400 rounded-full"></div>
-          <div className="absolute top-20 right-20 w-48 h-48 border border-blue-300 rounded-lg transform rotate-12"></div>
-          <div className="absolute bottom-10 left-1/4 w-24 h-24 bg-blue-600 rounded-full opacity-30"></div>
-          <div className="absolute bottom-20 right-1/3 w-36 h-36 border-2 border-blue-500 rounded-full"></div>
-          
-          {/* Data Grid Pattern */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-600/5 to-transparent"></div>
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)',
-            backgroundSize: '50px 50px'
-          }}></div>
-          
-          {/* Floating Data Elements */}
-          <div className="absolute top-1/4 left-1/4 text-blue-400 font-mono text-sm opacity-50">
-            <div>Analytics Dashboard</div>
-            <div className="mt-2">█████████░ 78%</div>
-          </div>
-          <div className="absolute top-1/3 right-1/4 text-blue-300 font-mono text-sm opacity-50">
-            <div>ML Model Training</div>
-            <div className="mt-2">▲ 94.2% Accuracy</div>
-          </div>
-          <div className="absolute bottom-1/3 left-1/6 text-blue-400 font-mono text-sm opacity-50">
-            <div>Data Processing</div>
-            <div className="mt-2">◆ 2.3M Records/sec</div>
-          </div>
-        </div>
+
         
         <div className="relative w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,13 +200,21 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/services" 
-                className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center shadow-lg"
+                className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 
+                           transform transition-all duration-300 ease-out
+                           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                           active:scale-95 active:translate-y-0
+                           inline-flex items-center justify-center shadow-lg"
               >
                 Get Started
               </Link>
               <Link 
                 to="/about" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors inline-flex items-center justify-center"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 
+                           transform transition-all duration-300 ease-out
+                           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                           active:scale-95 active:translate-y-0
+                           inline-flex items-center justify-center"
               >
                 Learn More
               </Link>
@@ -244,8 +249,13 @@ const Index = () => {
 
                 <div className="space-y-8">
                   <div className="flex items-start space-x-4">
-                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1
+                                    transform transition-all duration-300 ease-out
+                                    hover:scale-110 hover:shadow-lg hover:bg-blue-800
+                                    group cursor-pointer">
+                    <svg className="w-4 h-4 text-white transition-transform duration-300
+                                    group-hover:scale-125 group-hover:rotate-12" 
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -258,8 +268,13 @@ const Index = () => {
                 </div>
                 
                   <div className="flex items-start space-x-4">
-                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1
+                                    transform transition-all duration-300 ease-out
+                                    hover:scale-110 hover:shadow-lg hover:bg-blue-800
+                                    group cursor-pointer">
+                    <svg className="w-4 h-4 text-white transition-transform duration-300
+                                    group-hover:scale-125 group-hover:rotate-12" 
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -272,8 +287,13 @@ const Index = () => {
                 </div>
                 
                   <div className="flex items-start space-x-4">
-                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1
+                                    transform transition-all duration-300 ease-out
+                                    hover:scale-110 hover:shadow-lg hover:bg-blue-800
+                                    group cursor-pointer">
+                    <svg className="w-4 h-4 text-white transition-transform duration-300
+                                    group-hover:scale-125 group-hover:rotate-12" 
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -300,7 +320,9 @@ const Index = () => {
             {/* Right Content - Form and Testimonial */}
             <div className="flex flex-col space-y-8 h-full">
               {/* Form */}
-              <div className="bg-white px-6 pt-6 pb-6 rounded-lg shadow-lg">
+              <div className="bg-white px-6 pt-6 pb-6 rounded-lg shadow-lg
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01]">
               <h3 className="heading-secondary mb-3">
                 Are you ready for AI?
               </h3>
@@ -470,7 +492,10 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:grid-rows-1">
             {/* Project Raven */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
                   src="/public/lovable-uploads/proyect raven index.png"
@@ -494,7 +519,10 @@ const Index = () => {
             </div>
             
             {/* Alexa "Let's Chat" */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
                   src="/public/lovable-uploads/alexa index.png"
@@ -518,7 +546,10 @@ const Index = () => {
             </div>
 
             {/* CVX */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
                   src="/public/lovable-uploads/cvx index.png"
@@ -545,7 +576,11 @@ const Index = () => {
           <div className="text-center">
             <Link 
               to="/case-studies" 
-              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
+                              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 
+                           transform transition-all duration-300 ease-out
+                           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                           active:scale-95 active:translate-y-0
+                           inline-flex items-center"
             >
               View All Case Studies
             </Link>
@@ -567,7 +602,11 @@ const Index = () => {
             <div className="flex justify-center">
               <Link 
                 to="/contact" 
-                className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
+                className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 
+                           transform transition-all duration-300 ease-out
+                           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                           active:scale-95 active:translate-y-0
+                           inline-flex items-center"
               >
             Book Your Consultation
               </Link>
@@ -590,7 +629,10 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:grid-rows-1">
                           {/* The Future of AI in Data Analytics */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer flex flex-col">
                 <div className="aspect-video bg-gray-900 relative overflow-hidden">
                   <img
                     src="/public/lovable-uploads/the future of ai index.png"
@@ -617,7 +659,10 @@ const Index = () => {
         </div>
 
                           {/* Building Effective Data Governance */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer flex flex-col">
                 <div className="aspect-video bg-gray-200 relative overflow-hidden">
                   <img
                     src="/public/lovable-uploads/building effective index.png"
@@ -644,7 +689,10 @@ const Index = () => {
           </div>
           
                           {/* Data Security in the Cloud Era */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer flex flex-col">
                 <div className="aspect-video bg-slate-900 relative overflow-hidden">
                   <img
                     src="/public/lovable-uploads/data security index.png"
@@ -674,7 +722,11 @@ const Index = () => {
           <div className="text-center">
             <Link 
               to="/news" 
-              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
+                              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 
+                           transform transition-all duration-300 ease-out
+                           hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                           active:scale-95 active:translate-y-0
+                           inline-flex items-center"
             >
               View All Insights
             </Link>

@@ -221,7 +221,10 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
-                              <div key={index} className="bg-white p-4 rounded-lg shadow-sm text-left">
+                              <div key={index} className="bg-white p-4 rounded-lg shadow-sm text-left
+                                         transform transition-all duration-300 ease-out
+                                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                                         cursor-pointer">
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-blue-800 text-lg font-bold">{step.number}</span>
                 </div>
@@ -243,12 +246,18 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-64 h-64 mb-4 overflow-hidden rounded-lg">
+              <div key={index} className="bg-white p-4 rounded-lg shadow-sm 
+                                         transform transition-all duration-300 ease-out
+                                         hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02]
+                                         group cursor-pointer">
+                <div className="w-64 h-64 mb-4 overflow-hidden rounded-lg
+                               transform transition-transform duration-300
+                               group-hover:scale-105">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300
+                               group-hover:scale-110"
                   />
                 </div>
                 <h3 className="heading-tertiary mb-2 text-left">{member.name}</h3>
@@ -256,8 +265,11 @@ const About = () => {
                 <p className="text-slate-600 mb-4 text-xs leading-relaxed">{member.description}</p>
                 {member.linkedin && (
                   <div className="text-left">
-                    <button className="inline-flex items-center text-blue-800 hover:text-blue-900 font-medium text-xs">
-                      <Linkedin className="h-3 w-3 mr-1" />
+                    <button className="inline-flex items-center text-blue-800 hover:text-blue-900 font-medium text-xs
+                                      transform transition-all duration-200 ease-out
+                                      hover:scale-105 hover:translate-x-1">
+                      <Linkedin className="h-3 w-3 mr-1 transition-transform duration-200 
+                                          group-hover:rotate-12" />
                       Connect on LinkedIn
                     </button>
                   </div>
@@ -280,7 +292,10 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {trustedNetwork.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm
+                                         transform transition-all duration-300 ease-out
+                                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                                         cursor-pointer">
                 <h3 className="heading-tertiary mb-2">{item.title}</h3>
                 <p className="text-slate-500 font-medium mb-4 text-sm">{item.subtitle}</p>
                 <p className="text-slate-600 leading-relaxed text-sm">{item.description}</p>

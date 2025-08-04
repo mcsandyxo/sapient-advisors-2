@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Check, MapPin } from 'lucide-react';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -15,10 +16,18 @@ const Contact = () => {
     consent: false
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
+    setIsSubmitting(true);
+    
+    try {
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      console.log('Form submitted:', formData);
+      // Handle form submission here
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -46,11 +55,14 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
               <h2 className="heading-secondary mb-8">Contact Form</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2 
+                         transition-colors duration-200 hover:text-blue-600">
                     Full Name*
                   </label>
                   <input
@@ -60,13 +72,18 @@ const Contact = () => {
                     required
                     value={formData.fullName}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
+                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                               transition-all duration-300 ease-out
+                               hover:border-blue-400 hover:shadow-md
+                               focus:scale-[1.02] focus:shadow-lg"
                     placeholder="John Smith"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2 
+                         transition-colors duration-200 hover:text-blue-600">
                     Email Address*
                   </label>
                   <input
@@ -76,13 +93,18 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
+                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                               transition-all duration-300 ease-out
+                               hover:border-blue-400 hover:shadow-md
+                               focus:scale-[1.02] focus:shadow-lg"
                     placeholder="john.smith@company.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2 
+                         transition-colors duration-200 hover:text-blue-600">
                     Phone Number
                   </label>
                   <input
@@ -91,13 +113,18 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
+                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                               transition-all duration-300 ease-out
+                               hover:border-blue-400 hover:shadow-md
+                               focus:scale-[1.02] focus:shadow-lg"
                     placeholder="(555) 123-4567"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2 
+                         transition-colors duration-200 hover:text-blue-600">
                     Company Name
                   </label>
                   <input
@@ -106,13 +133,18 @@ const Contact = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
+                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                               transition-all duration-300 ease-out
+                               hover:border-blue-400 hover:shadow-md
+                               focus:scale-[1.02] focus:shadow-lg"
                     placeholder="Your Company, Inc."
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2 
+                         transition-colors duration-200 hover:text-blue-600">
                     Service of Interest
                   </label>
                   <select
@@ -132,7 +164,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2 
+                         transition-colors duration-200 hover:text-blue-600">
                     Your Message*
                   </label>
                   <textarea
@@ -164,15 +197,31 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#1E3A8A] text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-800 transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#1E3A8A] text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-800 
+                             transform transition-all duration-300 ease-out
+                             hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                             active:scale-95 active:translate-y-0
+                             focus:ring-4 focus:ring-blue-300 focus:outline-none
+                             disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  Submit Inquiry
+                  {isSubmitting ? (
+                    <div className="flex items-center justify-center">
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                      Submitting...
+                    </div>
+                  ) : (
+                    'Submit Inquiry'
+                  )}
                 </button>
               </form>
             </div>
 
             {/* Why Work With Us */}
-            <div className="bg-blue-50 p-8 rounded-lg">
+            <div className="bg-blue-50 p-8 rounded-lg shadow-sm
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer">
               <h2 className="heading-secondary mb-8">Why Work With Us</h2>
               
               <div className="space-y-8">

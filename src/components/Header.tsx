@@ -39,15 +39,17 @@ const Header = () => {
         <div className="flex items-center h-16 relative">
           {/* Logo - Left */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <div className="w-12 h-12 mr-3 relative">
+            <Link to="/" className="flex items-center group">
+              <div className="w-12 h-12 mr-3 relative transform transition-transform duration-300
+                              group-hover:scale-110 group-hover:rotate-3">
                 <img 
                   src="/sapient-logo.png" 
                   alt="Sapient Advisors Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="font-semibold text-lg text-white">
+              <span className="font-semibold text-lg text-white transition-all duration-300
+                              group-hover:text-gray-100">
                 Sapient Advisors
               </span>
             </Link>
@@ -60,11 +62,15 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-white hover:text-gray-200 transition-colors font-medium ${
+                  className={`text-white hover:text-gray-200 transition-all duration-300 font-medium
+                             transform hover:scale-105 hover:-translate-y-0.5
+                             relative group ${
                     location.pathname === item.href ? 'text-white font-semibold' : ''
                   }`}
                 >
                   {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white 
+                                   transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
             </div>
@@ -72,7 +78,10 @@ const Header = () => {
             
           {/* Get Started Button - Right */}
           <div className="hidden md:flex ml-auto">
-            <button className="bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 
+                               transform transition-all duration-200 ease-out
+                               hover:scale-[1.03] hover:shadow-md
+                               active:scale-[0.98]">
               Get Started
             </button>
           </div>

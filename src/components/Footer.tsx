@@ -33,11 +33,41 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
-              <li><Link to="/case-studies" className="text-gray-300 hover:text-white transition-colors">Case Studies</Link></li>
-              <li><Link to="/news" className="text-gray-300 hover:text-white transition-colors">Insights</Link></li>
+              <li><Link to="/" className="text-gray-300 hover:text-white transition-all duration-300 
+                                         transform hover:translate-x-2 hover:scale-105
+                                         relative group">
+                Home
+                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-white 
+                                 transition-all duration-300 group-hover:w-full"></span>
+              </Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-all duration-300 
+                                             transform hover:translate-x-2 hover:scale-105
+                                             relative group">
+                About Us
+                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-white 
+                                 transition-all duration-300 group-hover:w-full"></span>
+              </Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-all duration-300 
+                                               transform hover:translate-x-2 hover:scale-105
+                                               relative group">
+                Services
+                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-white 
+                                 transition-all duration-300 group-hover:w-full"></span>
+              </Link></li>
+              <li><Link to="/case-studies" className="text-gray-300 hover:text-white transition-all duration-300 
+                                                     transform hover:translate-x-2 hover:scale-105
+                                                     relative group">
+                Case Studies
+                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-white 
+                                 transition-all duration-300 group-hover:w-full"></span>
+              </Link></li>
+              <li><Link to="/news" className="text-gray-300 hover:text-white transition-all duration-300 
+                                            transform hover:translate-x-2 hover:scale-105
+                                            relative group">
+                Insights
+                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-white 
+                                 transition-all duration-300 group-hover:w-full"></span>
+              </Link></li>
             </ul>
           </div>
 
@@ -57,16 +87,25 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Contact Us</h4>
             <div className="space-y-3 text-sm">
-              <div className="flex items-start text-gray-300">
-                <MapPin className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
+              <div className="flex items-start text-gray-300 hover:text-white transition-all duration-300
+                              transform hover:translate-x-1 group cursor-pointer">
+                <MapPin className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300 
+                                  transition-all duration-300 group-hover:text-white 
+                                  group-hover:scale-110 group-hover:rotate-12" />
                 <span>999 Brickell Ave Suite 410 Miami, FL 33131</span>
               </div>
-              <div className="flex items-start text-gray-300">
-                <Phone className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
+              <div className="flex items-start text-gray-300 hover:text-white transition-all duration-300
+                              transform hover:translate-x-1 group cursor-pointer">
+                <Phone className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300 
+                                 transition-all duration-300 group-hover:text-white 
+                                 group-hover:scale-110 group-hover:rotate-12" />
                 <span>+1 (646) 234-4268</span>
               </div>
-              <div className="flex items-start text-gray-300">
-                <Mail className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300" />
+              <div className="flex items-start text-gray-300 hover:text-white transition-all duration-300
+                              transform hover:translate-x-1 group cursor-pointer">
+                <Mail className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300 
+                                transition-all duration-300 group-hover:text-white 
+                                group-hover:scale-110 group-hover:rotate-12" />
                 <span>info@sapientadvisors.com</span>
               </div>
             </div>

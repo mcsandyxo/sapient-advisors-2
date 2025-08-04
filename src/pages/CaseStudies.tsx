@@ -23,7 +23,10 @@ const CaseStudies = () => {
           {/* Case Studies Grid */}
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Project Raven */}
-            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
               <h2 className="heading-secondary mb-4">
                 Project Raven
               </h2>
@@ -64,7 +67,10 @@ const CaseStudies = () => {
             </div>
 
             {/* Amazon Alexa "Let's Chat" */}
-            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
               <h2 className="heading-secondary mb-4">
                 Amazon Alexa "Let's Chat"
               </h2>
@@ -106,7 +112,10 @@ const CaseStudies = () => {
             </div>
 
             {/* CVX */}
-            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
               <h2 className="heading-secondary mb-4">
                 CVX
               </h2>
@@ -146,7 +155,10 @@ const CaseStudies = () => {
             </div>
 
             {/* Knowledge Graphs for Risk Management */}
-            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
               <h2 className="heading-secondary mb-4">
                 Knowledge Graphs for Risk Management
               </h2>
@@ -188,7 +200,10 @@ const CaseStudies = () => {
           </div>
 
           {/* Book@Random Section */}
-          <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100">
+          <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
             <h2 className="heading-secondary mb-6">
               Book@Random
             </h2>

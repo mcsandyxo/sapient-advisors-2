@@ -26,7 +26,10 @@ const News = () => {
             {/* Left Column - Main Content */}
             <div className="lg:col-span-2 space-y-8">
               {/* Upcoming Webinar */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                           cursor-pointer">
                 <div className="bg-blue-100 px-6 py-3">
                   <span className="text-blue-800 font-semibold text-sm">Upcoming Webinar</span>
                 </div>
@@ -66,7 +69,10 @@ const News = () => {
               </div>
 
               {/* Office Hours with Richard Vogel */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
                 <h3 className="heading-tertiary mb-3">
                   Office Hours with Richard Vogel - Aug 15, 2025
                 </h3>
@@ -90,7 +96,10 @@ const News = () => {
             {/* Right Sidebar */}
             <div className="space-y-6">
               {/* AI Things Tech Leadership */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
                 <h3 className="text-lg font-black text-blue-900 mb-3">
                   AI Things Tech Leadership - Product Leadership with Michaela Martorana
                 </h3>
@@ -115,7 +124,10 @@ const News = () => {
               </div>
 
               {/* Curiosity Code */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
                 <h3 className="text-lg font-black text-blue-900 mb-3">
                   Curiosity Code
                 </h3>
@@ -145,7 +157,10 @@ const News = () => {
           <div className="mt-16">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Technology Article */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Technology</span>
                   <span className="text-gray-400 text-sm ml-4">June 2024</span>
@@ -162,7 +177,10 @@ const News = () => {
               </div>
 
               {/* Machine Trends Article */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Machine Trends</span>
                   <span className="text-gray-400 text-sm ml-4">May 2024</span>
@@ -179,7 +197,10 @@ const News = () => {
               </div>
 
               {/* Strategy Article */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Strategy</span>
                   <span className="text-gray-400 text-sm ml-4">April 2024</span>
@@ -224,7 +245,10 @@ const News = () => {
           </div>
 
           {/* Sponsor Section */}
-          <div className="mt-16 bg-blue-50 rounded-lg p-8">
+          <div className="mt-16 bg-blue-50 rounded-lg p-8 shadow-sm
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
                 <h3 className="heading-tertiary mb-2">
@@ -249,7 +273,10 @@ const News = () => {
           </div>
 
           {/* Specialized Expertise Section */}
-          <div className="mt-16 bg-gray-100 rounded-lg p-8">
+          <div className="mt-16 bg-gray-100 rounded-lg p-8 shadow-sm
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
             <div className="text-center">
               <h3 className="heading-tertiary mb-4">
                 Looking for specialized expertise?
