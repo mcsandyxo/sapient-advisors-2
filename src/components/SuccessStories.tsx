@@ -32,9 +32,13 @@ const SuccessStories = () => {
                 <div key={index} className="bg-white rounded-lg border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 bg-slate-200 relative">
                     <img 
-                      src={story.image} 
+                      src={encodeURI(story.image)} 
                       alt={story.title}
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.error('Image failed to load:', story.image);
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
                     />
                   </div>
                   <div className="p-6">
