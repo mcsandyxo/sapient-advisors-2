@@ -6,7 +6,7 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!lovable-uploads).*)",
+      "source": "/((?!api|_next/static|_next/image|favicon.ico|lovable-uploads|.*\\.(png|jpg|jpeg|gif|svg|ico|css|js)).*)",
       "destination": "/index.html"
     }
   ],
