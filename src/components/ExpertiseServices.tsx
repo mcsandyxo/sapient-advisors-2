@@ -93,7 +93,7 @@ const ExpertiseServices = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <div className="mb-12">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">Our Services</h3>
+              <h3 id="our-services" className="text-2xl font-bold text-blue-900 mb-4">Our Services</h3>
               <p className="text-lg text-slate-600">
                 At Sapient Advisors, we offer comprehensive consulting services designed to transform your business operations, enhance strategic decision-making, and drive sustainable growth across various industries.
               </p>

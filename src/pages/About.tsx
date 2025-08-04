@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Users, Award, Globe, Clock, Eye, Lightbulb, Palette, Handshake, Linkedin, Shield, CheckCircle, FileText, Star, ArrowRight } from 'lucide-react';
@@ -313,15 +314,27 @@ const About = () => {
             Explore how our expertise can help your organization achieve sustainable growth and operational excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">
+            <Link 
+              to="/services" 
+              onClick={() => window.scrollTo(0, 0)}
+              className="btn-primary"
+            >
               Explore Our Services
-            </button>
-            <button className="btn-secondary">
+            </Link>
+            <Link 
+              to="/case-studies" 
+              onClick={() => window.scrollTo(0, 0)}
+              className="btn-secondary"
+            >
               View Case Studies
-            </button>
-            <button className="btn-accent">
+            </Link>
+            <Link 
+              to="/news" 
+              onClick={() => window.scrollTo(0, 0)}
+              className="btn-accent"
+            >
               Read Our Insights
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -286,12 +287,20 @@ const News = () => {
                 We offer research as a service, connect on our custom reporting.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                <Link 
+                  to="/case-studies" 
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center justify-center"
+                >
                   View Case Studies
-                </button>
-                <button className="border-2 border-blue-900 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                </Link>
+                <Link 
+                  to="/contact" 
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="border-2 border-blue-900 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center"
+                >
                   Contact Us
-                </button>
+                </Link>
               </div>
             </div>
           </div>

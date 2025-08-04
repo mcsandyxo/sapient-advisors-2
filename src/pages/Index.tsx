@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, CheckCircle, Loader2 } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -8,6 +8,44 @@ import useHubSpot from '../hooks/useHubSpot';
 const Index = () => {
   // HubSpot integration
   const { isSubmitting, isSuccess, error, submitForm, reset } = useHubSpot();
+  const navigate = useNavigate();
+
+  // Function to navigate to contact form
+  const handleGetStarted = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/contact');
+    
+    // Scroll to contact form after navigation
+    setTimeout(() => {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }
+    }, 100);
+  };
+
+  // Function to navigate to services section
+  const handleExploreServices = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/services');
+    
+    // Scroll to our services section with offset after navigation
+    setTimeout(() => {
+      const ourServices = document.getElementById('our-services');
+      if (ourServices) {
+        const yOffset = -80; // Offset to leave space above the title
+        const y = ourServices.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ 
+          top: y, 
+          behavior: 'smooth' 
+        });
+      }
+    }, 100);
+  };
   
   // Parallax effect state
   const [scrollY, setScrollY] = useState(0);
@@ -198,16 +236,17 @@ const Index = () => {
               Empowering the Data-Driven Future through Scalable AI
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                to="/services" 
+              <a 
+                href="/contact" 
+                onClick={handleGetStarted}
                 className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
                            active:scale-95 active:translate-y-0
-                           inline-flex items-center justify-center shadow-lg"
+                           inline-flex items-center justify-center shadow-lg cursor-pointer"
               >
                 Get Started
-              </Link>
+              </a>
               <Link 
                 to="/about" 
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 
@@ -307,12 +346,13 @@ const Index = () => {
               </div>
               
                 <div className="pt-6">
-                <Link 
-                  to="/services" 
-                  className="btn-primary inline-flex items-center"
+                <a 
+                  href="/services" 
+                  onClick={handleExploreServices}
+                  className="btn-primary inline-flex items-center cursor-pointer"
                 >
                   Explore Our Services
-                </Link>
+                </a>
                 </div>
               </div>
             </div>
@@ -510,6 +550,7 @@ const Index = () => {
                 </p>
                 <Link 
                   to="/case-studies" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read case study
@@ -537,6 +578,7 @@ const Index = () => {
                 </p>
                 <Link 
                   to="/case-studies" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read case study
@@ -564,6 +606,7 @@ const Index = () => {
                 </p>
                 <Link 
                   to="/case-studies" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read case study
@@ -576,6 +619,7 @@ const Index = () => {
           <div className="text-center">
             <Link 
               to="/case-studies" 
+              onClick={() => window.scrollTo(0, 0)}
                               className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
@@ -602,6 +646,7 @@ const Index = () => {
             <div className="flex justify-center">
               <Link 
                 to="/contact" 
+                onClick={() => window.scrollTo(0, 0)}
                 className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
@@ -650,6 +695,7 @@ const Index = () => {
                 </p>
                 <Link 
                   to="/news" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read more
@@ -680,6 +726,7 @@ const Index = () => {
                 </p>
                 <Link 
                   to="/news" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Watch recording
@@ -710,6 +757,7 @@ const Index = () => {
                 </p>
                 <Link 
                   to="/news" 
+                  onClick={() => window.scrollTo(0, 0)}
                   className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-800 transition-colors text-sm mt-auto"
                 >
                   Read more
@@ -722,6 +770,7 @@ const Index = () => {
           <div className="text-center">
             <Link 
               to="/news" 
+              onClick={() => window.scrollTo(0, 0)}
                               className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
