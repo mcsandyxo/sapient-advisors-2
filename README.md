@@ -60,9 +60,41 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## 🚀 Deployment & Staging
+
+This project is configured for automatic deployment using **Vercel** and **GitHub Actions**:
+
+### Environments
+- **Staging**: Deploys automatically from `staging` branch
+- **Production**: Deploys automatically from `main/master` branch or releases
+
+### Quick Setup
+1. **Set up environment variables:**
+   ```bash
+   cp env.template .env.local
+   # Edit .env.local with your HubSpot credentials
+   ```
+
+2. **For full deployment setup**, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### Available Scripts
+```bash
+npm run dev                    # Development server
+npm run build:staging          # Build for staging
+npm run build:prod             # Build for production
+npm run lint                   # Run linter
+npm run preview:staging        # Preview staging build
+```
+
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/8acfed5e-fc24-4be8-aae2-941a24c2f830) and click on Share -> Publish.
+### Option 1: Lovable (Simple)
+Simply open [Lovable](https://lovable.dev/projects/8acfed5e-fc24-4be8-aae2-941a24c2f830) and click on Share → Publish.
+
+### Option 2: Vercel + GitHub Actions (Recommended)
+1. Follow the complete setup guide in [DEPLOYMENT.md](./DEPLOYMENT.md)
+2. Push to `staging` branch for staging deployment
+3. Push to `main` branch for production deployment
 
 ## Can I connect a custom domain to my Lovable project?
 
@@ -71,3 +103,19 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## 📁 Project Structure
+
+```
+sapient-advisors-2/
+├── .github/workflows/     # GitHub Actions CI/CD
+├── src/
+│   ├── components/       # React components
+│   ├── pages/           # Page components
+│   ├── config/          # Configuration files
+│   └── services/        # API services
+├── public/              # Static assets
+├── vercel.json          # Vercel configuration
+├── env.template         # Environment variables template
+└── DEPLOYMENT.md        # Deployment guide
+```
