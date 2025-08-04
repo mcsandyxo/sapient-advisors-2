@@ -38,8 +38,8 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Page Title */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-[#1E3A8A] mb-6">Get in Touch</h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <h1 className="heading-hero mb-6">Get in Touch</h1>
+            <p className="text-hero-subtitle mx-auto leading-relaxed">
               Ready to transform your business? Our consultants are here to help you achieve your strategic goals.
             </p>
           </div>
@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-8">Contact Form</h2>
+              <h2 className="heading-secondary mb-8">Contact Form</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -173,7 +173,7 @@ const Contact = () => {
 
             {/* Why Work With Us */}
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-8">Why Work With Us</h2>
+              <h2 className="heading-secondary mb-8">Why Work With Us</h2>
               
               <div className="space-y-8">
                 <div className="flex items-start">
@@ -227,7 +227,7 @@ const Contact = () => {
               
               {/* Our Locations */}
               <div className="mt-8">
-                <h3 className="text-lg font-bold text-[#1E3A8A] mb-4">Our Locations</h3>
+                <h3 className="heading-tertiary mb-4">Our Locations</h3>
                 
                 {/* Location Icons */}
                 <div className="flex justify-center items-center space-x-16 mb-4">

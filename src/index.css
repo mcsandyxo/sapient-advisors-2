@@ -101,3 +101,72 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Sapient Advisors Typography System */
+@layer components {
+  /* Headings */
+  .heading-hero {
+    @apply text-4xl md:text-5xl font-bold text-blue-900 leading-tight;
+  }
+  
+  .heading-primary {
+    @apply text-3xl md:text-4xl font-bold text-blue-900;
+  }
+  
+  .heading-secondary {
+    @apply text-3xl font-bold text-blue-800;
+  }
+  
+  .heading-tertiary {
+    @apply text-xl font-bold text-blue-800;
+  }
+
+  /* Body Text */
+  .text-body-large {
+    @apply text-lg text-slate-700;
+  }
+  
+  .text-body {
+    @apply text-base text-slate-700;
+  }
+  
+  .text-body-small {
+    @apply text-sm text-slate-700;
+  }
+
+  /* Labels and UI Text */
+  .text-label {
+    @apply text-xs text-slate-700;
+  }
+  
+  .text-subtitle {
+    @apply text-sm font-medium text-slate-500;
+  }
+  
+  .text-name {
+    @apply font-medium text-blue-900;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply border border-blue-800 text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors;
+  }
+  
+  .btn-accent {
+    @apply bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors;
+  }
+
+  /* Categories and Tags */
+  .text-category {
+    @apply text-sm font-medium text-blue-900;
+  }
+  
+  /* Special Cases */
+  .text-hero-subtitle {
+    @apply text-lg text-slate-700 max-w-4xl;
+  }
+}

@@ -11,10 +11,10 @@ const CaseStudies = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-black text-blue-900 mb-6">
+            <h1 className="heading-hero mb-6">
               Our Case Studies
             </h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            <p className="text-hero-subtitle mx-auto">
               Explore how we've helped leading organizations transform their businesses 
               through strategic consulting and innovative solutions.
             </p>
@@ -24,7 +24,7 @@ const CaseStudies = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Project Raven */}
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
-              <h2 className="text-2xl font-black text-blue-900 mb-4">
+              <h2 className="heading-secondary mb-4">
                 Project Raven
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -50,7 +50,7 @@ const CaseStudies = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-bold text-sm">MM</span>
+                    <span className="text-name text-sm">MM</span>
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Maribeth Martorana, CFA</p>
@@ -65,7 +65,7 @@ const CaseStudies = () => {
 
             {/* Amazon Alexa "Let's Chat" */}
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
-              <h2 className="text-2xl font-black text-blue-900 mb-4">
+              <h2 className="heading-secondary mb-4">
                 Amazon Alexa "Let's Chat"
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -92,7 +92,7 @@ const CaseStudies = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-bold text-sm">PP</span>
+                    <span className="text-name text-sm">PP</span>
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Phanom Parker</p>
@@ -107,7 +107,7 @@ const CaseStudies = () => {
 
             {/* CVX */}
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
-              <h2 className="text-2xl font-black text-blue-900 mb-4">
+              <h2 className="heading-secondary mb-4">
                 CVX
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -132,7 +132,7 @@ const CaseStudies = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-bold text-sm">SM</span>
+                    <span className="text-name text-sm">SM</span>
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Sandy McCarron</p>
@@ -147,7 +147,7 @@ const CaseStudies = () => {
 
             {/* Knowledge Graphs for Risk Management */}
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
-              <h2 className="text-2xl font-black text-blue-900 mb-4">
+              <h2 className="heading-secondary mb-4">
                 Knowledge Graphs for Risk Management
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -173,7 +173,7 @@ const CaseStudies = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-bold text-sm">MM</span>
+                    <span className="text-name text-sm">MM</span>
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Maribeth Martorana, CFA</p>
@@ -189,7 +189,7 @@ const CaseStudies = () => {
 
           {/* Book@Random Section */}
           <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100">
-            <h2 className="text-2xl font-black text-blue-900 mb-6">
+            <h2 className="heading-secondary mb-6">
               Book@Random
             </h2>
             
@@ -204,7 +204,7 @@ const CaseStudies = () => {
                 {/* Contact Info */}
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
-                    <span className="text-gray-600 font-bold text-sm">SM</span>
+                    <span className="text-name text-sm">SM</span>
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Sandy McCarron</p>
@@ -226,7 +226,7 @@ const CaseStudies = () => {
 
           {/* Ready to Transform Your Business Section */}
           <div className="mt-20 text-center bg-white py-16">
-            <h2 className="text-3xl font-black text-blue-900 mb-6">
+            <h2 className="heading-primary mb-6">
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">

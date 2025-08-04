@@ -193,9 +193,9 @@ const Index = () => {
         <div className="relative w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left max-w-4xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                          <h2 className="heading-hero text-white mb-6">
               Pioneering Data & AI
-              <span className="block text-blue-400">Solutions</span>
+              <span className="block text-white">Solutions</span>
             </h2>
             <p className="text-xl md:text-2xl mb-10 text-slate-200 max-w-3xl">
               Empowering the Data-Driven Future through Scalable AI
@@ -225,20 +225,20 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:grid-rows-1">
             {/* Left Content */}
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">
+              <h2 className="heading-primary mb-6">
                 From strategy to shipped for<br/>mid-market financial services
             </h2>
-              <p className="text-lg text-slate-700 mb-8 font-medium">
+              <p className="text-body-large mb-8">
                 We help alternative asset managers, PE-backed RIA platforms & large 
                 enterprise RIAs, and commercial real estate turn AI/data investments 
                 into secure, production-ready solutions and measurable results.
               </p>
               
               <div className="mt-8">
-                <h3 className="text-3xl font-bold text-blue-900 mb-6">
+                <h3 className="heading-secondary mb-6">
                   At-a-Glance
                 </h3>
-                <p className="text-lg text-slate-700 font-medium mb-8">
+                <p className="text-body-large mb-8">
                   Sapient Advisors is a U.S.-based, women-led consultancy specializing in data, AI, and product & UX strategy, execution, and monetization for mid-market financial services.
                 </p>
 
@@ -289,7 +289,7 @@ const Index = () => {
                 <div className="pt-6">
                 <Link 
                   to="/services" 
-                  className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
+                  className="btn-primary inline-flex items-center"
                 >
                   Explore Our Services
                 </Link>
@@ -301,10 +301,10 @@ const Index = () => {
             <div className="flex flex-col space-y-8 h-full">
               {/* Form */}
               <div className="bg-white px-6 pt-6 pb-6 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold text-blue-900 mb-3">
+              <h3 className="heading-secondary mb-3">
                 Are you ready for AI?
               </h3>
-              <p className="text-slate-700 mb-4 font-medium text-sm">
+                              <p className="text-body-small mb-4">
                 Download our simple guide to evaluating your organization's data 
                 maturity and identifying opportunities for AI Implementation.
               </p>
@@ -312,7 +312,7 @@ const Index = () => {
               {/* Success Message */}
               {isSuccess && (
                 <div className="mb-3 p-2 bg-green-50 border border-green-200 rounded-lg">
-                  <div className="text-green-800 font-medium text-xs">
+                  <div className="text-green-800 text-xs">
                     ✅ Thank you! Your request has been submitted successfully.
                   </div>
                   <div className="text-green-700 text-xs mt-1">
@@ -324,7 +324,7 @@ const Index = () => {
               {/* Error Message */}
               {error && (
                 <div className="mb-3 p-2 bg-red-50 border border-red-200 rounded-lg">
-                  <div className="text-red-800 font-medium text-xs">
+                  <div className="text-red-800 text-xs">
                     ❌ Error: {error}
                   </div>
                   <button
@@ -338,7 +338,7 @@ const Index = () => {
 
               <form className="space-y-2" onSubmit={handleFormSubmit}>
                 <div>
-                  <label htmlFor="fullName" className="block text-xs font-medium text-slate-700 mb-1">
+                  <label htmlFor="fullName" className="block text-label mb-1">
                     Full Name
                   </label>
                   <input
@@ -355,7 +355,7 @@ const Index = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="businessEmail" className="block text-xs font-medium text-slate-700 mb-1">
+                  <label htmlFor="businessEmail" className="block text-label mb-1">
                     Business Email
                   </label>
                   <input
@@ -372,7 +372,7 @@ const Index = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="company" className="block text-xs font-medium text-slate-700 mb-1">
+                  <label htmlFor="company" className="block text-label mb-1">
                     Company
                   </label>
                   <input
@@ -399,7 +399,7 @@ const Index = () => {
                     disabled={isSubmitting}
                     className="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5 disabled:cursor-not-allowed"
                   />
-                  <label htmlFor="agreement" className="text-xs text-slate-700 font-medium">
+                                      <label htmlFor="agreement" className="text-label">
                     I agree to receive communications from Sapient Advisors
                   </label>
                 </div>
@@ -424,7 +424,7 @@ const Index = () => {
               {/* Testimonial below form */}
               <div className="flex-1">
                 <div className="text-left mb-6">
-                  <h3 className="text-2xl font-bold text-blue-900 mb-2">
+                  <h3 className="heading-secondary mb-2">
                     Trusted by Industry Leaders
                   </h3>
                   <p className="text-sm text-slate-700">
@@ -443,7 +443,7 @@ const Index = () => {
                     </blockquote>
                     
                     <div className="mt-6">
-                      <div className="font-semibold text-blue-900 text-sm">Yurek Vazquez</div>
+                      <div className="text-name text-sm">Yurek Vazquez</div>
                       <div className="text-slate-600 text-sm">Chief Executive Officer, Yurek.com</div>
                 </div>
               </div>
@@ -460,10 +460,10 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="heading-primary mb-4">
               Success Stories
             </h2>
-            <p className="text-lg text-slate-700 max-w-4xl mx-auto font-medium">
+            <p className="text-hero-subtitle mx-auto">
               See how our clients have transformed their data operations and achieved remarkable results.
             </p>
           </div>
@@ -479,7 +479,7 @@ const Index = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Project Raven</h3>
+                <h3 className="heading-tertiary mb-3">Project Raven</h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">
                   Helped a Fortune 500 financial services company implement a comprehensive data governance and collection using AI and NLP, resulting in improved data quality.
                 </p>
@@ -503,7 +503,7 @@ const Index = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Alexa "Let's Chat"</h3>
+                <h3 className="heading-tertiary mb-3">Alexa "Let's Chat"</h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">
                   Developed a custom analytics solution for a tech giant, enabling real-time insights and driving a 25% increase in customer engagement.
                 </p>
@@ -527,7 +527,7 @@ const Index = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-blue-900 mb-3">CVX</h3>
+                <h3 className="heading-tertiary mb-3">CVX</h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">
                   Transformed credit risk tool for a global firm through design thinking, rebuilding a scalable, secure platform to improve decision-making.
                 </p>
@@ -580,10 +580,10 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="heading-primary mb-4">
               Latest Insights
             </h2>
-            <p className="text-lg text-slate-700 max-w-4xl mx-auto font-medium">
+            <p className="text-hero-subtitle mx-auto">
               Stay updated with the latest trends and best practices in data strategy and analytics.
             </p>
           </div>
@@ -599,8 +599,8 @@ const Index = () => {
                   />
                 </div>
               <div className="p-6 flex flex-col flex-1">
-                <p className="text-sm text-blue-900 font-semibold mb-2">Future Sights</p>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">
+                <p className="text-category mb-2">Future Sights</p>
+                <h3 className="heading-tertiary mb-3">
                   The Future of AI in Data Analytics
                 </h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">
@@ -626,8 +626,8 @@ const Index = () => {
                   />
                 </div>
               <div className="p-6 flex flex-col flex-1">
-                <p className="text-sm text-blue-900 font-semibold mb-2">Webinar</p>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">
+                <p className="text-category mb-2">Webinar</p>
+                <h3 className="heading-tertiary mb-3">
                   Building Effective Data Governance
                 </h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">
@@ -653,8 +653,8 @@ const Index = () => {
                   />
                 </div>
               <div className="p-6 flex flex-col flex-1">
-                <p className="text-sm text-blue-900 font-semibold mb-2">Future Sights</p>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">
+                <p className="text-category mb-2">Future Sights</p>
+                <h3 className="heading-tertiary mb-3">
                   Data Security in the Cloud Era
                 </h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">

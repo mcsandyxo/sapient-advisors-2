@@ -12,10 +12,10 @@ const News = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-black text-blue-900 mb-4">
+            <h1 className="heading-hero mb-4">
               News & Insights
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-hero-subtitle mx-auto">
               Stay informed with the latest insights, expert analysis, and thought leadership from 
               Sapient Advisors.
             </p>
@@ -44,7 +44,7 @@ const News = () => {
                     
                     {/* Content */}
                     <div>
-                      <h2 className="text-2xl font-black text-blue-900 mb-3">
+                      <h2 className="heading-secondary mb-3">
                         Office Hours with Avatar Buddy - July 15, 2025
                       </h2>
                       <p className="text-gray-700 mb-4 leading-relaxed">
@@ -67,7 +67,7 @@ const News = () => {
 
               {/* Office Hours with Richard Vogel */}
               <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6">
-                <h3 className="text-xl font-black text-blue-900 mb-3">
+                <h3 className="heading-tertiary mb-3">
                   Office Hours with Richard Vogel - Aug 15, 2025
                 </h3>
                 <p className="text-gray-700 mb-4">
@@ -102,7 +102,7 @@ const News = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
-                      <span className="text-gray-600 font-bold text-xs">MM</span>
+                        <span className="text-name text-xs">MM</span>
                     </div>
                     <div>
                       <p className="font-black text-blue-900 text-sm">AI Things Tech Leadership</p>
@@ -127,7 +127,7 @@ const News = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
-                      <span className="text-gray-600 font-bold text-xs">CC</span>
+                        <span className="text-name text-xs">CC</span>
                     </div>
                     <div>
                       <p className="font-black text-blue-900 text-sm">Diana Moreno</p>
@@ -208,7 +208,7 @@ const News = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-black text-blue-900 mb-4">
+                <h3 className="heading-secondary mb-4">
                   Future Sights
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed">
@@ -227,7 +227,7 @@ const News = () => {
           <div className="mt-16 bg-blue-50 rounded-lg p-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
-                <h3 className="text-xl font-black text-blue-900 mb-2">
+                <h3 className="heading-tertiary mb-2">
                   Want to sponsor our monthly LinkedIn Live series, Office Hours?
                 </h3>
                 <p className="text-gray-700">
@@ -251,7 +251,7 @@ const News = () => {
           {/* Specialized Expertise Section */}
           <div className="mt-16 bg-gray-100 rounded-lg p-8">
             <div className="text-center">
-              <h3 className="text-xl font-black text-blue-900 mb-4">
+              <h3 className="heading-tertiary mb-4">
                 Looking for specialized expertise?
               </h3>
               <p className="text-gray-700 mb-6 max-w-2xl mx-auto">

@@ -163,7 +163,7 @@ const About = () => {
       <section className="text-white" style={{ backgroundColor: '#1E3A8A', padding: '3rem 0' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{ padding: '1.5rem 1rem' }}>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-left" style={{ fontWeight: 700, letterSpacing: '-0.5px' }}>About Sapient Advisors</h1>
+            <h1 className="heading-hero text-white mb-6 text-left" style={{ letterSpacing: '-0.5px' }}>About Sapient Advisors</h1>
             <p className="max-w-3xl text-left" style={{ fontWeight: 400, lineHeight: 1.75, fontSize: '1.125rem', color: '#FFFFFF' }}>
               Rooted in purpose: We lead with integrity, inclusivity, and exceptional excellence.
             </p>
@@ -216,7 +216,7 @@ const About = () => {
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-blue-800 mb-4">Our Process</h2>
+            <h2 className="heading-secondary mb-4">Our Process</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -225,7 +225,7 @@ const About = () => {
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-blue-800 text-lg font-bold">{step.number}</span>
                 </div>
-                <h3 className="text-xl font-bold text-blue-800 mb-4">{step.title}</h3>
+                <h3 className="heading-tertiary mb-4">{step.title}</h3>
                 <p className="text-slate-600 leading-relaxed text-sm">{step.description}</p>
               </div>
             ))}
@@ -237,7 +237,7 @@ const About = () => {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-8">
-            <h2 className="text-3xl font-bold text-blue-800 mb-4">Our Team</h2>
+            <h2 className="heading-secondary mb-4">Our Team</h2>
             <p className="text-xl text-slate-600">Meet the experienced professionals who lead our consulting practice and drive exceptional results for our clients.</p>
           </div>
           
@@ -251,7 +251,7 @@ const About = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-blue-800 mb-2 text-left">{member.name}</h3>
+                <h3 className="heading-tertiary mb-2 text-left">{member.name}</h3>
                 <p className="text-slate-900 font-medium mb-4 text-left text-sm">{member.role}</p>
                 <p className="text-slate-600 mb-4 text-xs leading-relaxed">{member.description}</p>
                 {member.linkedin && (
@@ -272,7 +272,7 @@ const About = () => {
       <section className="py-12 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-8">
-            <h2 className="text-3xl font-bold text-blue-800 mb-4">Trusted Advisors Network</h2>
+            <h2 className="heading-secondary mb-4">Trusted Advisors Network</h2>
             <p className="text-lg text-slate-600 max-w-4xl">
               Our Trusted Advisors Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
             </p>
@@ -281,7 +281,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {trustedNetwork.map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold text-blue-800 mb-2">{item.title}</h3>
+                <h3 className="heading-tertiary mb-2">{item.title}</h3>
                 <p className="text-slate-500 font-medium mb-4 text-sm">{item.subtitle}</p>
                 <p className="text-slate-600 leading-relaxed text-sm">{item.description}</p>
               </div>
@@ -293,18 +293,18 @@ const About = () => {
       {/* Ready to Transform Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-blue-800 mb-6">Ready to Transform Your Business?</h2>
+          <h2 className="heading-primary mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">
             Explore how our expertise can help your organization achieve sustainable growth and operational excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors">
+            <button className="btn-primary">
               Explore Our Services
             </button>
-            <button className="border border-blue-800 text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            <button className="btn-secondary">
               View Case Studies
             </button>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <button className="btn-accent">
               Read Our Insights
             </button>
           </div>
