@@ -6,7 +6,23 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!lovable-uploads|assets).*)",
+      "source": "/about",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/case-studies",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/news",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contact",
       "destination": "/index.html"
     }
   ],
