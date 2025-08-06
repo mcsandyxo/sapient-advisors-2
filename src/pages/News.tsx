@@ -2,8 +2,12 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const News = () => {
+  // Apply SEO for News page
+  useSEO(SEO_DATA.news);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
