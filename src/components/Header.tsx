@@ -1,10 +1,30 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, TrendingUp } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Function to navigate to contact form
+  const handleGetStarted = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsMenuOpen(false); // Close mobile menu if open
+    navigate('/contact');
+    
+    // Scroll to contact form after navigation
+    setTimeout(() => {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }
+    }, 100);
+  };
 
   const navigation = [
     {
@@ -78,10 +98,12 @@ const Header = () => {
             
           {/* Get Started Button - Right */}
           <div className="hidden md:flex ml-auto">
-            <button className="bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 
+            <button 
+              onClick={handleGetStarted}
+              className="bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 
                                transform transition-all duration-200 ease-out
                                hover:scale-[1.03] hover:shadow-md
-                               active:scale-[0.98]">
+                               active:scale-[0.98] cursor-pointer">
               Get Started
             </button>
           </div>
@@ -113,7 +135,9 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button 
+                onClick={handleGetStarted}
+                className="w-full mt-4 bg-white text-[#1E3A8A] px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
                 Get Started
               </button>
             </div>

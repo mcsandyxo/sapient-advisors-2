@@ -8,14 +8,14 @@ const SuccessStories = () => {
       title: "CVX",
       description: "Transformed credit risk assessment processes, resulting in 30% faster approvals and 25% reduction in defaults.",
       image: "/lovable-uploads/cvx services.png",
-      link: "#"
+      link: "/case-studies"
     },
     {
       category: "Technology",
       title: "Project Raven", 
       description: "Developed an AI-powered analytics platform that increased operational efficiency by 45% for a Fortune 500 tech company.",
       image: "/lovable-uploads/proyect raven services.png",
-      link: "#"
+      link: "/case-studies"
     }
   ];
 
@@ -47,6 +47,7 @@ const SuccessStories = () => {
                     <p className="text-slate-600 text-sm mb-4">{story.description}</p>
                     <Link 
                       to={story.link} 
+                      onClick={() => window.scrollTo(0, 0)}
                       className="text-blue-900 font-semibold text-sm hover:text-blue-800 transition-colors"
                     >
                       Read case study →
@@ -95,7 +96,8 @@ const SuccessStories = () => {
               </div>
               
               <Link 
-                to="/contact" 
+                to="/news" 
+                onClick={() => window.scrollTo(0, 0)}
                 className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center inline-block"
               >
                 Explore Our Insights

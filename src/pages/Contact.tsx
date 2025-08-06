@@ -55,7 +55,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm
+            <div id="contact-form" className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
               <h2 className="heading-secondary mb-8">Contact Form</h2>
