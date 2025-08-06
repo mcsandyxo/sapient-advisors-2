@@ -54,7 +54,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-[#1E3A8A] shadow-sm">
+    <header className="bg-[#1E3A8A] shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16 relative">
           {/* Logo - Left */}
