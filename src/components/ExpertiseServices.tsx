@@ -3,6 +3,17 @@ import { Lightbulb, Users, Settings, Wrench, Search, GraduationCap } from 'lucid
 const ExpertiseServices = () => {
   const services = [
     {
+      icon: <Settings className="h-8 w-8 text-blue-600" />,
+      title: "Product Strategy",
+      description: "We create user-validated, human-centered digital experiences that drive usability, trust, and adoption.",
+      features: [
+        "Prototyping",
+        "Design Sprints",
+        "UX Design",
+        "Ecosystem Integration"
+      ]
+    },
+    {
       icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
       title: "Data Lifecycle Strategy",
       description: "We design end-to-end data strategies from acquisition to monetization, which align with business goals and regulatory requirements.",
@@ -14,25 +25,14 @@ const ExpertiseServices = () => {
       ]
     },
     {
-      icon: <Users className="h-8 w-8 text-blue-600" />,
-      title: "MLOps & AI Readiness",
-      description: "We assess, build, and operationalize AI pipelines with built-in governance, monitoring, and scalable infrastructure from the start.",
+      icon: <Search className="h-8 w-8 text-blue-600" />,
+      title: "Data Sourcing",
+      description: "We evaluate whether to build, buy, or partner for data inputs and technology stacks.",
       features: [
-        "Leadership Development",
-        "Innovation Workshops",
-        "Team Building & Collaboration",
+        "Strategy",
+        "Build-vs-Buy",
+        "Monetization opportunities",
         "Strategic Planning Sessions"
-      ]
-    },
-    {
-      icon: <Settings className="h-8 w-8 text-blue-600" />,
-      title: "Product Strategy",
-      description: "We create user-validated, human-centered digital experiences that drive usability, trust, and adoption.",
-      features: [
-        "Prototyping",
-        "Design Sprints",
-        "UX Design",
-        "Ecosystem Integration"
       ]
     },
     {
@@ -46,13 +46,13 @@ const ExpertiseServices = () => {
       ]
     },
     {
-      icon: <Search className="h-8 w-8 text-blue-600" />,
-      title: "Data Sourcing",
-      description: "We evaluate whether to build, buy, or partner for data inputs and technology stacks.",
+      icon: <Users className="h-8 w-8 text-blue-600" />,
+      title: "MLOps & AI Readiness",
+      description: "We assess, build, and operationalize AI pipelines with built-in governance, monitoring, and scalable infrastructure from the start.",
       features: [
-        "Strategy",
-        "Build-vs-Buy",
-        "Monetization opportunities",
+        "Leadership Development",
+        "Innovation Workshops",
+        "Team Building & Collaboration",
         "Strategic Planning Sessions"
       ]
     },

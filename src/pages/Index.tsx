@@ -272,18 +272,18 @@ const Index = () => {
               <h2 className="heading-primary mb-6">
                 From strategy to shipped for<br/>mid-market financial services
             </h2>
-              <p className="text-body-large mb-8">
-                We help alternative asset managers, PE-backed RIA platforms & large 
+              <p className="text-body-large mb-8 italic">
+                We help alternative asset managers, PE‑backed RIA platforms & large 
                 enterprise RIAs, and commercial real estate turn AI/data investments 
-                into secure, production-ready solutions and measurable results.
+                into secure, production‑ready solutions and measurable results. We also support regulated industries (e.g., law) and select startups by fit.
               </p>
               
               <div className="mt-8">
                 <h3 className="heading-secondary mb-6">
-                  At-a-Glance
+                  At‑a‑Glance
                 </h3>
                 <p className="text-body-large mb-8">
-                  Sapient Advisors is a U.S.-based, women-led consultancy specializing in data, AI, and product & UX strategy, execution, and monetization for mid-market financial services.
+                  Sapient Advisors is a U.S.‑based, women‑led consultancy specializing in data, AI, and product & UX strategy, execution, and monetization for mid‑market financial services.
                 </p>
 
                 <div className="space-y-8">
@@ -301,7 +301,7 @@ const Index = () => {
                     <div>
                       <h4 className="text-blue-900 font-semibold mb-2 text-lg">What we do:</h4>
                       <p className="text-slate-700 text-base leading-relaxed">
-                        Develop comprehensive data strategies, Internal AI solutions, workflow automation, data productization.
+                        Internal AI solutions, workflow automation, data productization.
                       </p>
                     </div>
                 </div>
@@ -320,7 +320,7 @@ const Index = () => {
                     <div>
                       <h4 className="text-blue-900 font-semibold mb-2 text-lg">How we do it:</h4>
                       <p className="text-slate-700 text-base leading-relaxed">
-                        Rapidly implement solutions that transform ideas and raw data into actionable business intelligence through Design Sprints, Strategy workshops, and roadmap development.
+                        Design sprints • Data strategy & governance • Product & UX • Implementation readiness & enablement.
                       </p>
                     </div>
                 </div>
@@ -339,8 +339,8 @@ const Index = () => {
                     <div>
                       <h4 className="text-blue-900 font-semibold mb-2 text-lg">Why it works:</h4>
                       <p className="text-slate-700 text-base leading-relaxed">
-                        Faster time-to-value, lower risk, and outcomes your ops can run on day one. We support regulated industries (e.g., law) and select startups by fit.
-            </p>
+                        Faster time‑to‑value, lower risk, and outcomes your ops can run on day one.
+                      </p>
           </div>
                 </div>
               </div>
@@ -644,9 +644,10 @@ const Index = () => {
             </p>
             
             <div className="flex justify-center">
-              <Link 
-                to="/contact" 
-                onClick={() => window.scrollTo(0, 0)}
+              <a 
+                href="https://outlook.office.com/book/SapientAdvisors1@sapient-advisors.com/?ismsaljsauthenabled"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
@@ -654,13 +655,13 @@ const Index = () => {
                            inline-flex items-center"
               >
             Book Your Consultation
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Latest Insights Section */}
+      {/* Latest Insights Section - Temporarily Hidden
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -673,8 +674,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:grid-rows-1">
-                          {/* The Future of AI in Data Analytics */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                            cursor-pointer flex flex-col">
@@ -704,7 +704,6 @@ const Index = () => {
           </div>
         </div>
 
-                          {/* Building Effective Data Governance */}
               <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -735,7 +734,6 @@ const Index = () => {
               </div>
           </div>
           
-                          {/* Data Security in the Cloud Era */}
               <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -771,7 +769,7 @@ const Index = () => {
             <Link 
               to="/news" 
               onClick={() => window.scrollTo(0, 0)}
-                              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 
+              className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
                            active:scale-95 active:translate-y-0
@@ -781,7 +779,7 @@ const Index = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
