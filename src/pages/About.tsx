@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Users, Award, Globe, Clock, Eye, Lightbulb, Palette, Handshake, Linkedin, Shield, CheckCircle, FileText, Star, ArrowRight } from 'lucide-react';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const About = () => {
+  // Apply SEO for About page
+  useSEO(SEO_DATA.about);
+
   const stats = [
     { icon: <Users className="h-8 w-8 text-blue-600" />, number: "500+", label: "Clients Served" },
     { icon: <Award className="h-8 w-8 text-blue-600" />, number: "25+", label: "Years Experience" },

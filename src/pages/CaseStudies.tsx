@@ -1,7 +1,11 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const CaseStudies = () => {
+  // Apply SEO for Case Studies page
+  useSEO(SEO_DATA.caseStudies);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
