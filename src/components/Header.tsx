@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, TrendingUp } from 'lucide-react';
 
@@ -6,6 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   // Function to navigate to contact form
   const handleGetStarted = (e: React.MouseEvent) => {
@@ -54,7 +59,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-[#1E3A8A] shadow-sm">
+    <header className="bg-[#1E3A8A] shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16 relative">
           {/* Logo - Left */}

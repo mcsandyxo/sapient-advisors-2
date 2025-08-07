@@ -3,8 +3,12 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Check, MapPin } from 'lucide-react';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const Contact = () => {
+  // Apply SEO for Contact page
+  useSEO(SEO_DATA.contact);
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',

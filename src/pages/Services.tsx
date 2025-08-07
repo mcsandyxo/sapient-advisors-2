@@ -2,10 +2,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ExpertiseServices from '../components/ExpertiseServices';
 import Industries from '../components/Industries';
-import ClientSuccess from '../components/ClientSuccess';
 import SuccessStories from '../components/SuccessStories';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const Services = () => {
+  // Apply SEO for Services page
+  useSEO(SEO_DATA.services);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -15,9 +18,6 @@ const Services = () => {
 
       {/* Industries Section */}
       <Industries />
-
-      {/* Client Success Section */}
-      <ClientSuccess />
 
       {/* Success Stories Section */}
       <SuccessStories />
