@@ -101,7 +101,10 @@ const ExpertiseServices = () => {
           
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                           {services.map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
+              <div key={index} className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow flex flex-col
+                                         transform transition-all duration-300 ease-out
+                                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                                         cursor-pointer">
                 <div className="flex items-center mb-4">
                   {service.icon}
                   <h3 className="text-xl font-semibold text-blue-900 ml-3">{service.title}</h3>
