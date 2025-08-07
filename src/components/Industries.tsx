@@ -1,4 +1,4 @@
-import { Building, ShoppingCart, Gem, Building2 } from 'lucide-react';
+import { Building, ShoppingCart, Gem, Building2, Shield, Scale, FileText } from 'lucide-react';
 
 const Industries = () => {
   const industries = [
@@ -8,19 +8,24 @@ const Industries = () => {
       description: "Strategic solutions for banks, investment firms, and insurance companies."
     },
     {
-      icon: <ShoppingCart className="h-8 w-8 text-blue-600" />,
-      title: "Legal",
-      description: "Transforming customer experiences and optimizing operations."
-    },
-    {
-      icon: <Gem className="h-8 w-8 text-blue-600" />,
-      title: "Data Information",
-      description: "Improving patient outcomes and operational efficiency."
-    },
-    {
       icon: <Building2 className="h-8 w-8 text-blue-600" />,
-      title: <>Commercial<br/>Real Estate</>,
-      description: "Enhancing productivity and supply chain optimization."
+      title: "CRE",
+      description: "Enhancing productivity and supply chain optimization in commercial real estate."
+    },
+    {
+      icon: <Shield className="h-8 w-8 text-blue-600" />,
+      title: "Insurance",
+      description: "Risk management and digital transformation solutions for insurance providers."
+    },
+    {
+      icon: <Scale className="h-8 w-8 text-blue-600" />,
+      title: "Legal",
+      description: "Transforming legal operations and client experiences through technology."
+    },
+    {
+      icon: <FileText className="h-8 w-8 text-blue-600" />,
+      title: "Information Providers",
+      description: "Data management and analytics solutions for information service companies."
     }
   ];
 
@@ -34,7 +39,7 @@ const Industries = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {industries.map((industry, index) => (
             <div key={index} className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow flex flex-col h-full
                                          transform transition-all duration-300 ease-out
