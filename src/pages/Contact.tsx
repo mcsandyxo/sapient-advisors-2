@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Check, MapPin } from 'lucide-react';
@@ -159,11 +160,14 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
                   >
                     <option value="">Select a service</option>
-                    <option value="success-map">Success Map Consulting</option>
-                    <option value="ai-adoption">AI Adoption Strategy</option>
-                    <option value="fintech-education">Fintech Education & Training</option>
-                    <option value="fractional-services">Fractional Services</option>
-                    <option value="general-consulting">General Consulting</option>
+                    <option value="ai-blueprint-sprint">AI Blueprint Sprint</option>
+                    <option value="data-lifecycle-strategy">Data Lifecycle Strategy</option>
+                    <option value="fractional-advisory">Fractional Advisory</option>
+                    <option value="operational-excellence">Operational Excellence</option>
+                    <option value="ml-ops-ai-readiness">ML Ops & AI Readiness</option>
+                    <option value="design-sprints">Design Sprints</option>
+                    <option value="engineering-architecture">Engineering & Architecture</option>
+                    <option value="general-inquiry">General Inquiry</option>
                   </select>
                 </div>
 
@@ -195,7 +199,7 @@ const Contact = () => {
                   />
                   <label htmlFor="consent" className="ml-2 block text-sm text-gray-700">
                     I consent to processing my data to respond to my inquiry and agree to the{' '}
-                    <a href="#" className="text-blue-600 hover:text-blue-800">Privacy Policy</a>
+                    <Link to="/privacy-policy" className="text-blue-600 hover:text-blue-800">Privacy Policy</Link>
                   </label>
                 </div>
 
