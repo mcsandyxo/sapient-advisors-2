@@ -211,24 +211,29 @@ const News = () => {
                 </button>
               </div>
 
-              {/* Strategy Article */}
+              {/* Strategy Article - Generative AI */}
               <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
                              transform transition-all duration-300 ease-out
                              hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                              cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Strategy</span>
-                  <span className="text-gray-400 text-sm ml-4">April 2024</span>
+                  <span className="text-gray-400 text-sm ml-4">January 2025</span>
                 </div>
                 <h3 className="text-lg font-black text-blue-900 mb-3">
-                  Biophilic Design in Corporate Environments
+                  Unlocking the Potential of Generative AI: Real-World Use Cases in 2025
                 </h3>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  How incorporating natural elements into workplace design enhances employee wellbeing, creativity, and engagement.
+                  In 2025, businesses should be transitioning away from "AI-enhanced" to "AI-first" applications.
                 </p>
-                <button className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
+                <a 
+                  href="https://medium.com/future-sights/unlocking-the-potential-of-generative-ai-8e0d6051761a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >
                   Read More
-                </button>
+                </a>
               </div>
             </div>
           </div>
