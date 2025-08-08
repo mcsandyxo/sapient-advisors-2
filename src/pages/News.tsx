@@ -43,7 +43,7 @@ const News = () => {
                                cursor-pointer">
                   <div className="aspect-video bg-gray-900 relative overflow-hidden">
                     <img
-                      src="/public/lovable-uploads/34375465-fae0-4a23-a4b0-e61c4d3081ef.jpg"
+                      src="/public/lovable-uploads/office-hours-richard-vogel.jpg"
                       alt="Office Hours with Richard Vogel - Aug 13, 2025"
                       className="w-full h-full object-cover"
                     />
