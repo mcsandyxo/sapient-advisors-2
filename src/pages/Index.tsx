@@ -214,7 +214,7 @@ const Index = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/public/lovable-uploads/banner index.png" 
+            src="/lovable-uploads/banner index.png" 
             alt="Data Analytics Dashboard" 
             className="w-full h-full object-cover opacity-70"
             style={{ 
@@ -542,7 +542,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
-                  src="/public/lovable-uploads/proyect raven index.png"
+                  src="/lovable-uploads/proyect raven index.png"
                   alt="Data Analytics Dashboard"
                   className="w-full h-full object-cover"
                 />
@@ -570,7 +570,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
-                  src="/public/lovable-uploads/alexa index.png"
+                  src="/lovable-uploads/alexa index.png"
                   alt="Alexa Let's Chat Device"
                   className="w-full h-full object-cover"
                 />
@@ -598,7 +598,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
-                  src="/public/lovable-uploads/cvx index.png"
+                  src="/lovable-uploads/cvx index.png"
                   alt="Credit Analyst Workbench Credit Risk Tool"
                   className="w-full h-full object-cover"
                 />
@@ -684,7 +684,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
                 <div className="aspect-video bg-gray-900 relative overflow-hidden">
                   <img
-                    src="/public/lovable-uploads/the future of ai index.png"
+                    src="/lovable-uploads/the future of ai index.png"
                     alt="The Future of AI in Data Analytics"
                     className="w-full h-full object-cover"
                   />
@@ -714,7 +714,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
                 <div className="aspect-video bg-gray-200 relative overflow-hidden">
                   <img
-                    src="/public/lovable-uploads/building effective index.png"
+                    src="/lovable-uploads/building effective index.png"
                     alt="Building Effective Data Governance"
                     className="w-full h-full object-cover"
                   />
@@ -744,7 +744,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
                 <div className="aspect-video bg-slate-900 relative overflow-hidden">
                   <img
-                    src="/public/lovable-uploads/data security index.png"
+                    src="/lovable-uploads/data security index.png"
                     alt="Data Security in the Cloud Era"
                     className="w-full h-full object-cover"
                   />
