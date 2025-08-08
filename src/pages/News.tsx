@@ -21,7 +21,7 @@ const News = () => {
               News & Insights
             </h1>
             <p className="text-hero-subtitle mx-auto">
-              Stay informed with the latest insights, expert analysis, and thought leadership from 
+              Stay informed with the latest trends, press releases, research, and thought leadership from 
               Sapient Advisors.
             </p>
           </div>
