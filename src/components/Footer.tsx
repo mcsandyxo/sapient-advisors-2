@@ -139,7 +139,7 @@ const Footer = () => {
           <div className="flex space-x-6 mt-4 md:mt-0">
                             <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
-            <Link to="/cookie-policy" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
+            <Link to="/cookie-policy" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
             <Link to="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</Link>
           </div>
         </div>
