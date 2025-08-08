@@ -168,8 +168,12 @@ const News = () => {
                 </p>
                 
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
-                    <span className="text-xs font-semibold text-gray-600">MC</span>
+                  <div className="w-10 h-10 rounded-full mr-3 overflow-hidden border border-gray-200">
+                    <img
+                      src="/public/lovable-uploads/chen services.png"
+                      alt="Marcus Chen"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm">Marcus Chen</p>
