@@ -155,9 +155,14 @@ const News = () => {
                       <p className="font-black text-blue-900 text-sm">Diana Moreno</p>
                     </div>
                   </div>
-                  <button className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors">
-                    Read Full Post
-                  </button>
+                  <a 
+                    href="https://www.youtube.com/watch?v=ElDFx3nUpk0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block"
+                  >
+                    Watch on YouTube
+                  </a>
                 </div>
               </div>
             </div>
