@@ -178,17 +178,22 @@ const News = () => {
                              cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Technology</span>
-                  <span className="text-gray-400 text-sm ml-4">June 2024</span>
+                  <span className="text-gray-400 text-sm ml-4">January 2025</span>
                 </div>
                 <h3 className="text-lg font-black text-blue-900 mb-3">
-                  The Art of Strategic War: Navigating Uncertainty with Sun Tzu
+                  The Art of (Startup)War: Navigating Uncertainty with Sun Tzu
                 </h3>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Ancient wisdom meets modern business strategy. Discover how Sun Tzu's principles can guide strategic decision-making in uncertain times.
+                  How quantum computing will revolutionize risk assessment, fraud detection, and algorithmic trading by 2025.
                 </p>
-                <button className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
+                <a 
+                  href="https://medium.com/future-sights/the-art-of-startup-war-navigating-uncertainty-with-sun-tzu-2534313fe49a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >
                   Read More
-                </button>
+                </a>
               </div>
 
               {/* Machine Trends Article */}
