@@ -203,7 +203,8 @@ const CaseStudies = () => {
             </div>
           </div>
 
-          {/* Book@Random Section */}
+          {/* Book@Random Section - Temporarily Disabled */}
+          {/*
           <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -242,6 +243,7 @@ const CaseStudies = () => {
               </div>
             </div>
           </div>
+          */}
 
           {/* Ready to Transform Your Business Section */}
           <div className="mt-20 text-center bg-white py-16">
