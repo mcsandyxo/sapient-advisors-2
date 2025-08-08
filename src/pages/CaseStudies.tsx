@@ -158,7 +158,7 @@ const CaseStudies = () => {
               </div>
             </div>
 
-            {/* Knowledge Graphs for Risk Management */}
+            {/* Knowledge Graphs for Risk Management - Temporarily Disabled
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -172,7 +172,6 @@ const CaseStudies = () => {
                 them make informed decisions.
               </p>
               
-              {/* Tags */}
               <div className="flex flex-wrap gap-3 mb-8">
                 <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
                   Data Strategy
@@ -185,7 +184,6 @@ const CaseStudies = () => {
                 </span>
               </div>
 
-              {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
@@ -201,6 +199,7 @@ const CaseStudies = () => {
                 </button>
               </div>
             </div>
+            */}
           </div>
 
           {/* Book@Random Section - Temporarily Disabled
