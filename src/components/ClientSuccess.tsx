@@ -13,7 +13,7 @@ const ClientSuccess = () => {
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
               <img
-                src="/public/lovable-uploads/chen services.png"
+                src="/lovable-uploads/chen services.png"
                 alt="Elizabeth Chen"
                 className="w-12 h-12 rounded-full object-cover flex-shrink-0"
               />
@@ -30,7 +30,7 @@ const ClientSuccess = () => {
           
           <div className="flex justify-center">
             <img
-              src="/public/lovable-uploads/mapa services.png"
+              src="/lovable-uploads/mapa services.png"
               alt="Services Map"
               className="w-80 h-80 object-contain transform scale-100"
             />
