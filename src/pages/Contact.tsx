@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Check, MapPin } from 'lucide-react';
@@ -195,7 +196,7 @@ const Contact = () => {
                   />
                   <label htmlFor="consent" className="ml-2 block text-sm text-gray-700">
                     I consent to processing my data to respond to my inquiry and agree to the{' '}
-                    <a href="#" className="text-blue-600 hover:text-blue-800">Privacy Policy</a>
+                    <Link to="/privacy-policy" className="text-blue-600 hover:text-blue-800">Privacy Policy</Link>
                   </label>
                 </div>
 
