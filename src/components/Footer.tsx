@@ -30,7 +30,7 @@ const Footer = () => {
                 <Linkedin className="h-4 w-4 text-gray-300 hover:text-white" />
               </a>
               <a 
-                href="https://www.instagram.com/sapiensinternational/?hl=en"
+                href="https://www.instagram.com/sapient_advisors?igsh=MTlvc3JqNXRoZXp0NQ%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer transition-all duration-300 hover:scale-110"
