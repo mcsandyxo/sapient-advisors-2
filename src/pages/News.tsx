@@ -297,10 +297,7 @@ const News = () => {
                   Request A Sponsor
                 </button>
                 <div className="text-right mt-2">
-                  <p className="text-blue-600 text-sm font-semibold">We can't</p>
-                  <p className="text-blue-600 text-sm font-semibold">do this</p>
-                  <p className="text-blue-600 text-sm font-semibold">without</p>
-                  <p className="text-blue-600 text-sm font-semibold">you</p>
+                  <p className="text-blue-600 text-sm font-semibold whitespace-nowrap">We can't do this without you</p>
                 </div>
               </div>
             </div>
