@@ -115,13 +115,13 @@ const CaseStudies = () => {
               </div>
             </div>
 
-            {/* CVX */}
+            {/* Credit Analyst Workbench */}
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                          cursor-pointer">
               <h2 className="heading-secondary mb-4">
-                CVX
+                Credit Analyst Workbench
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Explore how we took an acquired startup to a fully operational, scalable 

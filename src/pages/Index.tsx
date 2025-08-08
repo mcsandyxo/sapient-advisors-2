@@ -591,7 +591,7 @@ const Index = () => {
               </div>
             </div>
 
-            {/* CVX */}
+            {/* Credit Analyst Workbench */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden 
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -599,12 +599,12 @@ const Index = () => {
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
                   src="/public/lovable-uploads/cvx index.png"
-                  alt="CVX Credit Risk Tool"
+                  alt="Credit Analyst Workbench Credit Risk Tool"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="heading-tertiary mb-3">CVX</h3>
+                <h3 className="heading-tertiary mb-3">Credit Analyst Workbench</h3>
                 <p className="text-slate-700 mb-4 text-sm flex-1">
                   Transformed credit risk tool for a global firm through design thinking, rebuilding a scalable, secure platform to improve decision-making.
                 </p>
