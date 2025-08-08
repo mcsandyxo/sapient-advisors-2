@@ -13,7 +13,7 @@ const ClientSuccess = () => {
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
               <img
-                src="/lovable-uploads/chen%20services.png"
+                src="/lovable-uploads/chen-services.png"
                 alt="Elizabeth Chen"
                 className="w-12 h-12 rounded-full object-cover flex-shrink-0"
               />
