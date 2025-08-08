@@ -26,11 +26,15 @@ const News = () => {
             </p>
           </div>
 
+          {/* Section Title */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-blue-900">Upcoming Webinars</h2>
+          </div>
+
           {/* Main Grid Layout */}
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Column - Upcoming Webinars */}
+            {/* Left Column - Webinars */}
             <div>
-              <h2 className="text-2xl font-bold text-blue-900 mb-8">Upcoming Webinars</h2>
               <div className="space-y-6">
                 {/* Office Hours with Richard Vogel */}
                 <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
