@@ -122,9 +122,14 @@ const News = () => {
                       <p className="font-black text-blue-900 text-sm">AI Things Tech Leadership</p>
                     </div>
                   </div>
-                  <button className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors">
+                  <a 
+                    href="https://www.linkedin.com/events/allthingstechleadership-product7255706164821151744"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block whitespace-nowrap"
+                  >
                     Read Full Post
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -150,9 +155,14 @@ const News = () => {
                       <p className="font-black text-blue-900 text-sm">Diana Moreno</p>
                     </div>
                   </div>
-                  <button className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors">
-                    Read Full Post
-                  </button>
+                  <a 
+                    href="https://www.youtube.com/watch?v=ElDFx3nUpk0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block whitespace-nowrap"
+                  >
+                    Watch on YouTube
+                  </a>
                 </div>
               </div>
             </div>
@@ -168,17 +178,22 @@ const News = () => {
                              cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Technology</span>
-                  <span className="text-gray-400 text-sm ml-4">June 2024</span>
+                  <span className="text-gray-400 text-sm ml-4">January 2025</span>
                 </div>
                 <h3 className="text-lg font-black text-blue-900 mb-3">
-                  The Art of Strategic War: Navigating Uncertainty with Sun Tzu
+                  The Art of (Startup)War: Navigating Uncertainty with Sun Tzu
                 </h3>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  Ancient wisdom meets modern business strategy. Discover how Sun Tzu's principles can guide strategic decision-making in uncertain times.
+                  How quantum computing will revolutionize risk assessment, fraud detection, and algorithmic trading by 2025.
                 </p>
-                <button className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
+                <a 
+                  href="https://medium.com/future-sights/the-art-of-startup-war-navigating-uncertainty-with-sun-tzu-2534313fe49a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >
                   Read More
-                </button>
+                </a>
               </div>
 
               {/* Machine Trends Article */}
@@ -201,24 +216,29 @@ const News = () => {
                 </button>
               </div>
 
-              {/* Strategy Article */}
+              {/* Strategy Article - Generative AI */}
               <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
                              transform transition-all duration-300 ease-out
                              hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                              cursor-pointer">
                 <div className="mb-4">
                   <span className="text-blue-600 font-semibold text-sm">Strategy</span>
-                  <span className="text-gray-400 text-sm ml-4">April 2024</span>
+                  <span className="text-gray-400 text-sm ml-4">January 2025</span>
                 </div>
                 <h3 className="text-lg font-black text-blue-900 mb-3">
-                  Biophilic Design in Corporate Environments
+                  Unlocking the Potential of Generative AI: Real-World Use Cases in 2025
                 </h3>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  How incorporating natural elements into workplace design enhances employee wellbeing, creativity, and engagement.
+                  In 2025, businesses should be transitioning away from "AI-enhanced" to "AI-first" applications.
                 </p>
-                <button className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">
+                <a 
+                  href="https://medium.com/future-sights/unlocking-the-potential-of-generative-ai-8e0d6051761a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+                >
                   Read More
-                </button>
+                </a>
               </div>
             </div>
           </div>
