@@ -122,9 +122,14 @@ const News = () => {
                       <p className="font-black text-blue-900 text-sm">AI Things Tech Leadership</p>
                     </div>
                   </div>
-                  <button className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors">
+                  <a 
+                    href="https://www.linkedin.com/events/allthingstechleadership-product7255706164821151744"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block"
+                  >
                     Read Full Post
-                  </button>
+                  </a>
                 </div>
               </div>
 
