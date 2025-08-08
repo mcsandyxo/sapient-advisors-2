@@ -252,7 +252,8 @@ const News = () => {
 
 
 
-          {/* Future Sights Section */}
+          {/* Future Sights Section - TEMPORARILY COMMENTED OUT */}
+          {/*
           <div className="mt-16 bg-blue-100 rounded-lg p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="bg-blue-600 rounded-lg h-32 flex items-center justify-center">
@@ -277,8 +278,10 @@ const News = () => {
               </div>
             </div>
           </div>
+          */}
 
-          {/* Sponsor Section */}
+          {/* Sponsor Section - TEMPORARILY COMMENTED OUT */}
+          {/*
           <div className="mt-16 bg-blue-50 rounded-lg p-8 shadow-sm
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -302,6 +305,7 @@ const News = () => {
               </div>
             </div>
           </div>
+          */}
 
           {/* Specialized Expertise Section */}
           <div className="mt-16 bg-gray-100 rounded-lg p-8 shadow-sm
