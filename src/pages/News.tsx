@@ -43,7 +43,7 @@ const News = () => {
                                cursor-pointer">
                   <div className="aspect-video bg-gray-900 relative overflow-hidden">
                     <img
-                      src="/lovable-uploads/Office%20Hours%20with%20Richard%20Vogel.png"
+                      src="/lovable-uploads/Office-Hours-with-Richard-Vogel.png"
                       alt="Office Hours with Richard Vogel - Aug 13, 2025"
                       className="w-full h-full object-cover"
                     />
@@ -132,7 +132,7 @@ const News = () => {
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 rounded-full mr-3 overflow-hidden border border-gray-200">
                     <img
-                      src="/lovable-uploads/All%20Things%20Tech%20Leadership%20services.png"
+                      src="/lovable-uploads/All-Things-Tech-Leadership-services.png"
                       alt="All Things Tech Leadership"
                       className="w-full h-full object-cover"
                     />
@@ -174,7 +174,7 @@ const News = () => {
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 rounded-full mr-3 overflow-hidden border border-gray-200">
                     <img
-                      src="/lovable-uploads/chen%20services.png"
+                      src="/lovable-uploads/chen-services.png"
                       alt="Marcus Chen"
                       className="w-full h-full object-cover"
                     />
