@@ -203,8 +203,7 @@ const CaseStudies = () => {
             </div>
           </div>
 
-          {/* Book@Random Section - Temporarily Disabled */}
-          {/*
+          {/* Book@Random Section - Temporarily Disabled
           <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -214,14 +213,12 @@ const CaseStudies = () => {
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Left side - Quote and Contact */}
               <div>
                 <div className="text-4xl text-blue-900 mb-4">"</div>
                 <p className="text-gray-700 mb-8 text-lg leading-relaxed italic">
                   Put a quote here about the original data cleanup proj
                 </p>
                 
-                {/* Contact Info */}
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
                     <span className="text-name text-sm">SM</span>
@@ -233,7 +230,6 @@ const CaseStudies = () => {
                 </div>
               </div>
 
-              {/* Right side - Bookstore Image */}
               <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center border border-gray-200">
                 <div className="text-center text-gray-500">
                   <div className="text-4xl mb-2">📚</div>
