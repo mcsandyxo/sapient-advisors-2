@@ -7,14 +7,14 @@ const SuccessStories = () => {
       category: "Financial Services",
       title: "Credit Analyst Workbench",
       description: "Transformed credit risk assessment processes, resulting in 30% faster approvals and 25% reduction in defaults.",
-      image: "/public/lovable-uploads/cvx services.png",
+      image: "/lovable-uploads/cvx%20services.png",
       link: "/case-studies"
     },
     {
       category: "Technology",
       title: "Project Raven", 
       description: "Developed an AI-powered analytics platform that increased operational efficiency by 45% for a Fortune 500 tech company.",
-      image: "/public/lovable-uploads/proyect raven services.png",
+      image: "/lovable-uploads/proyect%20raven%20services.png",
       link: "/case-studies"
     }
   ];
