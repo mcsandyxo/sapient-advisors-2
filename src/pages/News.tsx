@@ -108,82 +108,78 @@ const News = () => {
             {/* Right Column - Articles & Insights */}
             <div className="space-y-6">
               {/* AI Things Tech Leadership */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
                              transform transition-all duration-300 ease-out
                              hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                              cursor-pointer">
-                <div className="bg-blue-600 text-white px-4 py-2">
-                  <span className="text-sm font-semibold">Video</span>
+                <div className="mb-4">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Video</span>
+                  <span className="text-gray-500 text-xs ml-4">October 2024</span>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
-                    All Things Tech Leadership - Product Leadership with Maribeth Martorana
-                  </h3>
-                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                    Explore how AI, data analytics, and sustainability are reshaping the consulting 
-                    landscape and creating new opportunities for business growth.
-                  </p>
-                  
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
-                      <span className="text-xs font-semibold text-gray-600">AL</span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm">All Things Tech Leadership</p>
-                      <p className="text-gray-500 text-xs">October 2024</p>
-                    </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  All Things Tech Leadership - Product Leadership with Maribeth Martorana
+                </h3>
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                  Explore how AI, data analytics, and sustainability are reshaping the consulting 
+                  landscape and creating new opportunities for business growth.
+                </p>
+                
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
+                    <span className="text-xs font-semibold text-gray-600">AL</span>
                   </div>
-                  
-                  <a 
-                    href="https://www.linkedin.com/events/allthingstechleadership-product7255706164821151744"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-900 text-white px-6 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block w-full text-center"
-                  >
-                    Read Full Article
-                  </a>
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">All Things Tech Leadership</p>
+                  </div>
                 </div>
+                
+                <a 
+                  href="https://www.linkedin.com/events/allthingstechleadership-product7255706164821151744"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block w-full text-center"
+                >
+                  Read Full Article
+                </a>
               </div>
 
               {/* Curiosity Code */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
                              transform transition-all duration-300 ease-out
                              hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                              cursor-pointer">
-                <div className="bg-green-600 text-white px-4 py-2">
-                  <span className="text-sm font-semibold">Podcast</span>
+                <div className="mb-4">
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Podcast</span>
+                  <span className="text-gray-500 text-xs ml-4">June 2025</span>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
-                    Curiosity Code
-                  </h3>
-                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                    The Curiosity Code Podcast dives into the ideas and people shaping the future 
-                    of fintech hosted by Alex and featuring product leaders, founders, and 
-                    executives transforming financial services from the inside out.
-                  </p>
-                  
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
-                      <span className="text-xs font-semibold text-gray-600">MC</span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm">Marcus Chen</p>
-                      <p className="text-gray-500 text-xs">June 2025</p>
-                    </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  Curiosity Code
+                </h3>
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                  The Curiosity Code Podcast dives into the ideas and people shaping the future 
+                  of fintech hosted by Alex and featuring product leaders, founders, and 
+                  executives transforming financial services from the inside out.
+                </p>
+                
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gray-100 rounded-full mr-3 flex items-center justify-center border border-gray-200">
+                    <span className="text-xs font-semibold text-gray-600">MC</span>
                   </div>
-                  
-                  <a 
-                    href="https://www.youtube.com/watch?v=ElDFx3nUpk0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-900 text-white px-6 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block w-full text-center"
-                  >
-                    Watch on YouTube
-                  </a>
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">Marcus Chen</p>
+                  </div>
                 </div>
+                
+                <a 
+                  href="https://www.youtube.com/watch?v=ElDFx3nUpk0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block w-full text-center"
+                >
+                  Watch on YouTube
+                </a>
               </div>
 
               {/* Unlocking Generative AI */}
