@@ -5,7 +5,7 @@ const SuccessStories = () => {
   const stories = [
     {
       category: "Financial Services",
-      title: "CVX",
+      title: "Credit Analyst Workbench",
       description: "Transformed credit risk assessment processes, resulting in 30% faster approvals and 25% reduction in defaults.",
       image: "/lovable-uploads/cvx services.png",
       link: "/case-studies"
