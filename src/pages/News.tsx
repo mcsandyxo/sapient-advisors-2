@@ -308,30 +308,32 @@ const News = () => {
           */}
 
           {/* Specialized Expertise Section */}
-          <div className="mt-16 bg-gray-100 rounded-lg p-8 shadow-sm
-                         transform transition-all duration-300 ease-out
-                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
-                         cursor-pointer">
-            <div className="text-center">
-              <h3 className="heading-tertiary mb-4">
-                Looking for specialized expertise?
-              </h3>
-              <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-                Connect with our team of experienced professionals who can address your project's unique consulting needs.
-                We offer research as a service, connect on our custom reporting.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-16 bg-blue-50 rounded-lg p-8">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              {/* Left side - Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">
+                  Looking for specialized expertise?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Explore our case studies to see how we've helped organizations like yours achieve remarkable results. 
+                  We offer research as a service, contact us for custom reporting.
+                </p>
+              </div>
+              
+              {/* Right side - Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 lg:flex-shrink-0">
                 <Link 
                   to="/case-studies" 
                   onClick={() => window.scrollTo(0, 0)}
-                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center justify-center"
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center justify-center whitespace-nowrap"
                 >
                   View Case Studies
                 </Link>
                 <Link 
                   to="/contact" 
                   onClick={() => window.scrollTo(0, 0)}
-                  className="border-2 border-blue-900 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center"
+                  className="border-2 border-gray-400 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors inline-flex items-center justify-center whitespace-nowrap"
                 >
                   Contact Us
                 </Link>
