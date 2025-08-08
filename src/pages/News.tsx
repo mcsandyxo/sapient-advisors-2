@@ -126,7 +126,7 @@ const News = () => {
                     href="https://www.linkedin.com/events/allthingstechleadership-product7255706164821151744"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block"
+                    className="bg-blue-900 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block whitespace-nowrap"
                   >
                     Read Full Post
                   </a>
@@ -159,7 +159,7 @@ const News = () => {
                     href="https://www.youtube.com/watch?v=ElDFx3nUpk0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-900 text-white px-4 py-1 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block"
+                    className="bg-blue-900 text-white px-3 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block whitespace-nowrap"
                   >
                     Watch on YouTube
                   </a>
