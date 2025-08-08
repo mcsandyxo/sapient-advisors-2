@@ -306,7 +306,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                {/* Map Image */}
+                {/* Map Image - Temporarily Removed
                 <div className="w-full">
                   <img 
                     src="/lovable-uploads/locations-map.png" 
@@ -315,6 +315,7 @@ const Contact = () => {
                     style={{ maxHeight: 'none', width: '100%', objectFit: 'contain' }}
                   />
                 </div>
+                */}
               </div>
             </div>
           </div>

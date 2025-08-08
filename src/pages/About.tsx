@@ -45,14 +45,14 @@ const About = () => {
       description: "Avatar Buddy creates AI-powered digital experiences that help businesses build stronger customer relationships through personalized interactions and data-driven insights."
     },
     {
-      title: "Neural Seek",
+      title: "NeuralSeek",
       subtitle: "AI-Powered Knowledge Management",
-      description: "Neural Seek specializes in AI-driven knowledge management solutions that help organizations unlock insights from their data and improve decision-making processes."
+      description: "NeuralSeek specializes in AI-driven knowledge management solutions that help organizations unlock insights from their data and improve decision-making processes."
     },
     {
-      title: "NRoad",
+      title: "nRoad",
       subtitle: "Collaborative Digital Management",
-      description: "NRoad provides collaborative digital management platforms that streamline workflows and enhance team productivity through innovative technology solutions."
+      description: "nRoad provides collaborative digital management platforms that streamline workflows and enhance team productivity through innovative technology solutions."
     },
     {
       title: "Salesfy",
@@ -109,13 +109,7 @@ const About = () => {
       linkedin: true,
       image: "/team/sandy-mccarron.png"
     },
-    {
-      name: "Zaid Marji",
-      role: "Chief Technology Officer",
-      description: "Zaid is a builder, strategist and systems thinker with 30 years experience at the frontier of technology, partnering with teams to scale -- not just scaling or building -- they're redefining how things work.",
-      linkedin: true,
-      image: "/team/zaid-marji.png"
-    },
+
     {
       name: "Phanom Noelani Parker",
       role: "Chief AI, Operations & Product Strategy",
@@ -133,21 +127,21 @@ const About = () => {
     {
       name: "Kristine Parrinelli",
       role: "Agile Product Manager & Chief of Staff",
-      description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
+      description: "Kristine Parrinelli specializes in agile product management, digital systems, and cross-functional execution. As Chief of Staff, she drives clarity, collaboration, and delivery across strategic initiatives, from AI integration to marketing operations.",
       linkedin: true,
       image: "/team/kristine-parrinelli.png"
     },
     {
-      name: "Daniel Zook",
+      name: "Daniel Zock",
       role: "Business Development Lead",
-      description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
+      description: "Daniel Zock helps foster strategic relationships with business leaders exploring AI integration to unlock meaningful economic value. He is pursuing an MSc in Finance at Babson College's F.W. Olin Graduate School of Business.",
       linkedin: true,
       image: "/team/daniel-zook.png"
     },
     {
       name: "Mary Beth Quinn",
       role: "Product & Marketing Operations Manager",
-      description: "Richard brings 25 years of financial expertise, having held leadership positions at top consulting firms and led financial transformation initiatives for multinational corporations.",
+      description: "Mary Beth bridges strategic vision with operational rigor to ensure our clients' content workflows and tools deliver clarity, consistency, and impact. Mary Beth excels at building frameworks that make content accessible, scalable, and on-brand.",
       linkedin: true,
       image: "/team/mary-beth-quinn.png"
     },
@@ -180,18 +174,15 @@ const About = () => {
       <section className="bg-white" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '1.5rem', padding: '1.5rem 1rem' }}>
-            {/* Our Mission */}
+            {/* Mission */}
             <div>
-              <h2 className="mb-8" style={{ color: '#0D1B2A', fontWeight: 700, fontSize: '1.875rem', lineHeight: '2.25rem' }}>Our Mission</h2>
+              <h2 className="mb-8" style={{ color: '#0D1B2A', fontWeight: 700, fontSize: '1.875rem', lineHeight: '2.25rem' }}>Mission</h2>
               <div className="space-y-6">
                 <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
-                  Sapient Advisors is a globally experienced consultancy focused on data-driven, AI-enabled B2B products and services.
+                  We turn messy data and half-formed AI ideas into revenue-ready realities fast. Sapient Advisors empowers mid-market financial-services teams to validate, prototype, and launch AI-enabled products and solutions in weeks, not quarters, through battle-tested sprints and relentless execution.
                 </p>
                 <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
-                  At Sapient Advisors, our mission is to <span style={{ fontWeight: 600, color: '#0D1B2A' }}>empower organizations to achieve sustainable growth through data-driven strategies and operational excellence.</span> We partner with our clients to navigate complex challenges and capitalize on emerging opportunities in an ever-changing business landscape.
-                </p>
-                <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
-                  We believe that successful transformation requires both analytical rigor and human-centered approaches, which is why our team brings diverse expertise across industries and functions.
+                  Our cross-functional crew of product strategists, data vets, UX sprint leaders, and fractional tech talent aligns stakeholders, de-risks investment, and builds the roadmap that carries you from "what if" to working MVP.
                 </p>
               </div>
             </div>
@@ -285,13 +276,13 @@ const About = () => {
         </div>
       </section>
 
-      {/* Trusted Advisors Network Section */}
+      {/* Trusted Partners Network Section */}
       <section className="py-12 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-8">
-            <h2 className="heading-secondary mb-4">Trusted Advisors Network</h2>
+            <h2 className="heading-secondary mb-4">Trusted Partners Network</h2>
             <p className="text-lg text-slate-600 max-w-4xl">
-              Our Trusted Advisors Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
+              Our Trusted Partners Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
             </p>
           </div>
           
