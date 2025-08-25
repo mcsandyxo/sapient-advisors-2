@@ -36,33 +36,31 @@ const News = () => {
             {/* Left Column - Webinars */}
             <div>
               <div className="space-y-6">
-                {/* Office Hours with Richard Vogel */}
+                {/* Office Hours with Dave Merwin - New Featured */}
                 <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
                                transform transition-all duration-300 ease-out
                                hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                                cursor-pointer">
-                  <div className="aspect-video bg-gray-900 relative overflow-hidden">
-                    <img
-                      src="/lovable-uploads/Office-Hours-with-Richard-Vogel.png"
-                      alt="Office Hours with Richard Vogel - Aug 13, 2025"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute top-4 right-4 bg-blue-900 text-white px-3 py-1 rounded text-sm font-semibold">
-                      📅 June 15, 2023
+                  <div className="aspect-video bg-gradient-to-br from-blue-900 to-blue-700 relative overflow-hidden flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <h4 className="text-2xl font-bold mb-2">Office Hours</h4>
+                      <p className="text-blue-200">Live LinkedIn Session</p>
+                    </div>
+                    <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded text-sm font-semibold">
+                      📅 Sept 16 @1pm EST
                     </div>
                   </div>
                   
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      Office Hours with Richard Vogel - Aug 13, 2025
+                      Office Hours with Dave Merwin
                     </h3>
                     <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                      Our Chief Data Strategist Richard Vogel talks about how to set up your 
-                      data for successful AI implementation
+                      Dave Merwin shares his real-world journey in vibecoding and his unique approach to blending creativity and technology to help small businesses harness the power of AI to grow, adapt, and thrive.
                     </p>
                     
                     <div className="flex items-center text-sm text-gray-600 mb-4">
-                      <span className="mr-4">🕒 12:00 PM - 1:00 PM EST</span>
+                      <span className="mr-4">🕒 1:00 PM - 2:00 PM EST</span>
                       <span>1-hour LinkedIn Live session with Q&A</span>
                     </div>
                     
@@ -70,6 +68,29 @@ const News = () => {
                       Register Now
                     </button>
                   </div>
+                </div>
+
+                {/* Office Hours with Richard Vogel - Past Event */}
+                <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                               transform transition-all duration-300 ease-out
+                               hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                               cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Aug 13, 2025</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Office Hours with Richard Vogel
+                  </h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                    Our Chief Data Strategist Richard Vogel talks about how to set up your 
+                    data for successful AI implementation
+                  </p>
+                  
+                  <button className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full">
+                    Watch on LinkedIn
+                  </button>
                 </div>
 
                 {/* Office Hours with Avatar Buddy */}
