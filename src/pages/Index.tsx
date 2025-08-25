@@ -510,7 +510,7 @@ const Index = () => {
                     
                     <div className="mt-6">
                       <div className="text-name text-sm">Yurek Vazquez</div>
-                      <div className="text-slate-600 text-sm">Chief Executive Officer, Yurek.com</div>
+                      <div className="text-slate-600 text-sm">Chief Executive Officer, iYurek.com</div>
                 </div>
               </div>
                 </div>

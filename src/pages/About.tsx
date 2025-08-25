@@ -100,6 +100,7 @@ const About = () => {
       role: "Co-Founder & Chief Executive Officer",
       description: "Maribeth is an accomplished product leader with over two decades of experience driving growth, alignment, and transformation at the intersection of finance, data, and technology.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/maribeth-martorana/",
       image: "/team/maribeth-martorana.png"
     },
     {
@@ -107,14 +108,16 @@ const About = () => {
       role: "Co-Founder & Chief Operating Officer", 
       description: "Sandy is a visionary leader in digital transformation across industries, including transformation initiatives at Penguin Random House, Bloomberg BusinessWeek, S&P Global, and Moody's Analytics.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/sandymccarron/",
       image: "/team/sandy-mccarron.png"
     },
 
     {
       name: "Phanom Noelani Parker",
       role: "Chief AI, Operations & Product Strategy",
-      description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
+      description: "", // "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/phanom-parker/", // URL placeholder, needs confirmation
       image: "/team/phanom-parker.png"
     },
     {
@@ -122,6 +125,7 @@ const About = () => {
       role: "Chief Data Strategy",
       description: "Richard brings 25 years of financial expertise, having held leadership positions at top consulting firms and led financial transformation initiatives for multinational corporations.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/richard-vogel/", // URL placeholder, needs confirmation
       image: "/team/richard-vogel.png"
     },
     {
@@ -129,6 +133,7 @@ const About = () => {
       role: "Agile Product Manager & Chief of Staff",
       description: "Kristine Parrinelli specializes in agile product management, digital systems, and cross-functional execution. As Chief of Staff, she drives clarity, collaboration, and delivery across strategic initiatives, from AI integration to marketing operations.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/kristine-parrinelli/",
       image: "/team/kristine-parrinelli.png"
     },
     {
@@ -136,6 +141,7 @@ const About = () => {
       role: "Business Development Lead",
       description: "Daniel Zock helps foster strategic relationships with business leaders exploring AI integration to unlock meaningful economic value. He is pursuing an MSc in Finance at Babson College's F.W. Olin Graduate School of Business.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/zock/",
       image: "/team/daniel-zook.png"
     },
     {
@@ -143,15 +149,28 @@ const About = () => {
       role: "Product & Marketing Operations Manager",
       description: "Mary Beth bridges strategic vision with operational rigor to ensure our clients' content workflows and tools deliver clarity, consistency, and impact. Mary Beth excels at building frameworks that make content accessible, scalable, and on-brand.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/mary-beth-quinn-03477840/",
       image: "/team/mary-beth-quinn.png"
     },
     {
       name: "Fede Crespo",
       role: "Lead Data Scientist",
-      description: "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
+      description: "Full Stack Developer & Business Developer from Tandil, Argentina. Passionate about tech, music, and creating innovative digital solutions.",
       linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/fedecrespo/",
       image: "/team/fede-crespo.png"
     }
+    // Zaid Marji (temporarily hidden)
+    /*
+    {
+      name: "Zaid Marji",
+      role: "TBD",
+      description: "TBD",
+      linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/zaidmarji/",
+      image: "/team/zaid-marji.png"
+    }
+    */
   ];
 
   return (
@@ -173,16 +192,19 @@ const About = () => {
       {/* Mission & Values Section */}
       <section className="bg-white" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '1.5rem', padding: '1.5rem 1rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '1.5rem', padding: '1.5rem 1rem', alignItems: 'center' }}>
             {/* Mission */}
             <div>
               <h2 className="mb-8" style={{ color: '#0D1B2A', fontWeight: 700, fontSize: '1.875rem', lineHeight: '2.25rem' }}>Mission</h2>
               <div className="space-y-6">
                 <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
-                  We turn messy data and half-formed AI ideas into revenue-ready realities fast. Sapient Advisors empowers mid-market financial-services teams to validate, prototype, and launch AI-enabled products and solutions in weeks, not quarters, through battle-tested sprints and relentless execution.
+                  At Sapient Advisors, we turn messy data and untested AI ideas into scalable, revenue-ready solutions—fast, and with integrity. We are an authority in AI strategy, data engineering, UI design, and deep technical execution, partnering with forward-thinking financial services teams to validate, prototype, and launch AI-enabled products in weeks, not quarters. Our mission is built on three pillars: work with great clients, treat people with respect, and deliver outstanding results.
                 </p>
                 <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
-                  Our cross-functional crew of product strategists, data vets, UX sprint leaders, and fractional tech talent aligns stakeholders, de-risks investment, and builds the roadmap that carries you from "what if" to working MVP.
+                  Our seasoned team of product strategists, data experts, UX leaders, and engineers works as an extension of your organization, aligning stakeholders and de-risking every step of the process. Through proven sprints and disciplined execution, we transform uncertainty into clear roadmaps and working MVPs. Every solution we deliver is designed to be scalable, secure, and compliant—built for real-world performance in demanding markets.
+                </p>
+                <p style={{ fontSize: '1.125rem', lineHeight: 1.75, color: '#4A4F55' }}>
+                  When the challenge is complex and the stakes are high, we bring the clarity, speed, and technical depth to make it happen. Whether you need to refine data workflows, create a new AI-driven product, or redesign a user experience for greater adoption and ROI, Sapient Advisors delivers the expertise, velocity, and trust you can count on to achieve lasting impact.
                 </p>
               </div>
             </div>
@@ -261,13 +283,18 @@ const About = () => {
                 <p className="text-slate-600 mb-4 text-xs leading-relaxed">{member.description}</p>
                 {member.linkedin && (
                   <div className="text-left">
-                    <button className="inline-flex items-center text-blue-800 hover:text-blue-900 font-medium text-xs
-                                      transform transition-all duration-200 ease-out
-                                      hover:scale-105 hover:translate-x-1">
+                    <a 
+                      href={member.linkedinUrl || "#"} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-800 hover:text-blue-900 font-medium text-xs
+                                transform transition-all duration-200 ease-out
+                                hover:scale-105 hover:translate-x-1"
+                    >
                       <Linkedin className="h-3 w-3 mr-1 transition-transform duration-200 
                                           group-hover:rotate-12" />
                       Connect on LinkedIn
-                    </button>
+                    </a>
                   </div>
                 )}
               </div>
@@ -281,9 +308,13 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-8">
             <h2 className="heading-secondary mb-4">Trusted Partners Network</h2>
-            <p className="text-lg text-slate-600 max-w-4xl">
-              Our Trusted Partners Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="lg:col-span-3">
+                <p className="text-lg text-slate-600">
+                  Our Trusted Partners Network drops elite data, AI, and product specialists into your project with one contract, zero vendor headaches. You get cutting-edge expertise on demand while we handle all the scouting and wrangling.
+                </p>
+              </div>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
