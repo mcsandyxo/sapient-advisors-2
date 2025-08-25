@@ -366,7 +366,7 @@ const News = () => {
                 </p>
                 
                 <button 
-                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full"
+                  className="bg-gray-300 text-gray-500 px-6 py-3 rounded-lg font-semibold w-full cursor-not-allowed"
                   disabled
                 >
                   Coming Soon
