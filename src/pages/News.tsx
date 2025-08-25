@@ -64,9 +64,14 @@ const News = () => {
                       <span>1-hour LinkedIn Live session with Q&A</span>
                     </div>
                     
-                    <button className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full">
+                    <a 
+                      href="https://www.linkedin.com/events/designingai-digitalproductsthat7361582136681762816/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                    >
                       Register Now
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -88,9 +93,14 @@ const News = () => {
                     data for successful AI implementation
                   </p>
                   
-                  <button className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full">
+                  <a 
+                    href="https://www.linkedin.com/events/it-snottheai-it-sthedata-therea7349414910876872704/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
                     Watch on LinkedIn
-                  </button>
+                  </a>
                 </div>
 
                 {/* Office Hours with Avatar Buddy */}
@@ -107,9 +117,14 @@ const News = () => {
                     business value.
                   </p>
                   
-                  <button className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full">
+                  <a 
+                    href="https://www.linkedin.com/video/live/urn:li:ugcPost:7349493159497809921/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
                     Watch on LinkedIn
-                  </button>
+                  </a>
                 </div>
 
                 {/* Want to appear section */}
@@ -169,7 +184,7 @@ const News = () => {
                   rel="noopener noreferrer"
                   className="bg-blue-900 text-white px-6 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition-colors inline-block w-full text-center"
                 >
-                  Read Full Article
+                  Watch on LinkedIn
                 </a>
               </div>
 
