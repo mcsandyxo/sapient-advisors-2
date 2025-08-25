@@ -116,8 +116,8 @@ const About = () => {
       name: "Phanom Noelani Parker",
       role: "Chief AI, Operations & Product Strategy",
       description: "", // "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
-      linkedin: true,
-      linkedinUrl: "https://www.linkedin.com/in/phanom-parker/", // URL placeholder, needs confirmation
+      linkedin: false, // temporarily hidden
+      // linkedinUrl: "https://www.linkedin.com/in/phanom-parker/", // URL placeholder, needs confirmation
       image: "/team/phanom-parker.png"
     },
     {

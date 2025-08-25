@@ -56,17 +56,26 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-name text-sm">MM</span>
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/maribeth-martorana.png" 
+                      alt="Maribeth Martorana" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Maribeth Martorana, CFA</p>
                     <p className="text-sm text-gray-600">CEO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                <a 
+                  href="/case-studies/Case-Study-Project-Raven-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
                   Read Case Study
-                </button>
+                </a>
               </div>
             </div>
 
@@ -110,9 +119,14 @@ const CaseStudies = () => {
                   </div>
                 </div> */}
                 <div></div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                <a 
+                  href="/case-studies/Case-Study-Project-Lets-Chat-Alexa.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
                   Read Case Study
-                </button>
+                </a>
               </div>
             </div>
 
@@ -145,17 +159,26 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-name text-sm">SM</span>
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/sandy-mccarron.png" 
+                      alt="Sandy McCarron" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Sandy McCarron</p>
                     <p className="text-sm text-gray-600">COO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                <a 
+                  href="/case-studies/Case-Study-Project-CVX-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
                   Read Case Study
-                </button>
+                </a>
               </div>
             </div>
 
