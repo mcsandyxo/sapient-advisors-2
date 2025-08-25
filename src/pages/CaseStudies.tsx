@@ -64,9 +64,14 @@ const CaseStudies = () => {
                     <p className="text-sm text-gray-600">CEO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                <a 
+                  href="/case-studies/Case-Study-Project-Raven-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
                   Read Case Study
-                </button>
+                </a>
               </div>
             </div>
 
@@ -110,9 +115,14 @@ const CaseStudies = () => {
                   </div>
                 </div> */}
                 <div></div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                <a 
+                  href="/case-studies/Case-Study-Project-Lets-Chat-Alexa.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
                   Read Case Study
-                </button>
+                </a>
               </div>
             </div>
 
@@ -153,9 +163,14 @@ const CaseStudies = () => {
                     <p className="text-sm text-gray-600">COO</p>
                   </div>
                 </div>
-                <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
+                <a 
+                  href="/case-studies/Case-Study-Project-CVX-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
                   Read Case Study
-                </button>
+                </a>
               </div>
             </div>
 
