@@ -343,6 +343,60 @@ const News = () => {
           </div>
           */}
 
+          {/* Sapient Advisors in the News Section */}
+          <div className="mt-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-blue-900 mb-4">Sapient Advisors in the News</h2>
+              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+                Sapient Advisors has been featured for its strategic partnerships and data-driven solutions, helping fintech, insurance and CRE clients modernize operations through AI, analytics, and digital transformation.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              {/* News Card 1 */}
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Strategic Partnership Announcement
+                </h3>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  Avatar Buddy and Sapient Advisors Announce Strategic Partnership to Revolutionize Internal AI Projects
+                </p>
+                
+                <button 
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full"
+                  disabled
+                >
+                  Coming Soon
+                </button>
+              </div>
+
+              {/* News Card 2 */}
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                             transform transition-all duration-300 ease-out
+                             hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                             cursor-pointer">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  WJBF Press Release Coverage
+                </h3>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  Avatar Buddy and Sapient Advisors Announce Strategic Partnership to Revolutionize Internal AI Projects
+                </p>
+                
+                <a 
+                  href="https://www.wjbf.com/business/press-releases/ein-presswire/821257649/avatar-buddy-and-sapient-advisors-announce-strategic-partnership-to-revolutionize-internal-ai-projects/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                >
+                  Read Full Article
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Specialized Expertise Section */}
           <div className="mt-16 bg-blue-50 rounded-lg p-8">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
