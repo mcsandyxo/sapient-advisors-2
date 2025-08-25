@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <a 
-                href="https://www.linkedin.com/company/sapiens/?originalSubdomain=il"
+                href="https://www.linkedin.com/company/sapient-advisors-llc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer transition-all duration-300 hover:scale-110"
@@ -121,13 +121,14 @@ const Footer = () => {
                                  group-hover:scale-110 group-hover:rotate-12" />
                 <span>+1 (646) 234-4268</span>
               </div>
-              <div className="flex items-start text-gray-300 hover:text-white transition-all duration-300
-                              transform hover:translate-x-1 group cursor-pointer">
+              <a href="mailto:info@sapientadvisors.com" 
+                 className="flex items-start text-gray-300 hover:text-white transition-all duration-300
+                            transform hover:translate-x-1 group cursor-pointer">
                 <Mail className="h-4 w-4 mr-2 flex-shrink-0 mt-1 text-gray-300 
                                 transition-all duration-300 group-hover:text-white 
                                 group-hover:scale-110 group-hover:rotate-12" />
                 <span>info@sapientadvisors.com</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -138,9 +139,9 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
                             <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+            {/* <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link> */}
             <Link to="/cookie-policy" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
-            <Link to="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</Link>
+            {/* <Link to="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</Link> */}
           </div>
         </div>
       </div>

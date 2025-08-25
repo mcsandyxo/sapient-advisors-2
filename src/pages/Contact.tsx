@@ -1,6 +1,4 @@
 
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Check, MapPin } from 'lucide-react';
@@ -9,39 +7,6 @@ import { useSEO, SEO_DATA } from '../hooks/useSEO';
 const Contact = () => {
   // Apply SEO for Contact page
   useSEO(SEO_DATA.contact);
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    company: '',
-    service: '',
-    message: '',
-    consent: false
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      console.log('Form submitted:', formData);
-      // Handle form submission here
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value, type } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
-    });
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -64,165 +29,9 @@ const Contact = () => {
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
               <h2 className="heading-secondary mb-8">Contact Form</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2 
-                         transition-colors duration-200 hover:text-blue-600">
-                    Full Name*
-                  </label>
-                  <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    required
-                    value={formData.fullName}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
-                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                               transition-all duration-300 ease-out
-                               hover:border-blue-400 hover:shadow-md
-                               focus:scale-[1.02] focus:shadow-lg"
-                    placeholder="John Smith"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2 
-                         transition-colors duration-200 hover:text-blue-600">
-                    Email Address*
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
-                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                               transition-all duration-300 ease-out
-                               hover:border-blue-400 hover:shadow-md
-                               focus:scale-[1.02] focus:shadow-lg"
-                    placeholder="john.smith@company.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2 
-                         transition-colors duration-200 hover:text-blue-600">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
-                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                               transition-all duration-300 ease-out
-                               hover:border-blue-400 hover:shadow-md
-                               focus:scale-[1.02] focus:shadow-lg"
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2 
-                         transition-colors duration-200 hover:text-blue-600">
-                    Company Name
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md 
-                               focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                               transition-all duration-300 ease-out
-                               hover:border-blue-400 hover:shadow-md
-                               focus:scale-[1.02] focus:shadow-lg"
-                    placeholder="Your Company, Inc."
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2 
-                         transition-colors duration-200 hover:text-blue-600">
-                    Service of Interest
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
-                  >
-                    <option value="">Select a service</option>
-                    <option value="ai-blueprint-sprint">AI Blueprint Sprint</option>
-                    <option value="data-lifecycle-strategy">Data Lifecycle Strategy</option>
-                    <option value="fractional-advisory">Fractional Advisory</option>
-                    <option value="operational-excellence">Operational Excellence</option>
-                    <option value="ml-ops-ai-readiness">ML Ops & AI Readiness</option>
-                    <option value="design-sprints">Design Sprints</option>
-                    <option value="engineering-architecture">Engineering & Architecture</option>
-                    <option value="general-inquiry">General Inquiry</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2 
-                         transition-colors duration-200 hover:text-blue-600">
-                    Your Message*
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                    placeholder="Tell us about your project or inquiry..."
-                  />
-                </div>
-
-                <div className="flex items-start">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    name="consent"
-                    checked={formData.consent}
-                    onChange={handleChange}
-                    className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                  />
-                  <label htmlFor="consent" className="ml-2 block text-sm text-gray-700">
-                    I consent to processing my data to respond to my inquiry and agree to the{' '}
-                    <Link to="/privacy-policy" className="text-blue-600 hover:text-blue-800">Privacy Policy</Link>
-                  </label>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-[#1E3A8A] text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-800 
-                             transform transition-all duration-300 ease-out
-                             hover:scale-105 hover:shadow-lg hover:-translate-y-1
-                             active:scale-95 active:translate-y-0
-                             focus:ring-4 focus:ring-blue-300 focus:outline-none
-                             disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
-                >
-                  {isSubmitting ? (
-                    <div className="flex items-center justify-center">
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                      Submitting...
-                    </div>
-                  ) : (
-                    'Submit Inquiry'
-                  )}
-                </button>
-              </form>
+              
+              {/* HubSpot Form */}
+              <div className="hs-form-frame" data-region="na2" data-form-id="c18f283e-835c-48f7-a809-01b4a64b2802" data-portal-id="242128623"></div>
             </div>
 
             {/* Why Work With Us */}

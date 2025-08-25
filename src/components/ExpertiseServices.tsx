@@ -38,7 +38,7 @@ const ExpertiseServices = () => {
     {
       icon: <Wrench className="h-8 w-8 text-blue-600" />,
       title: "Engineering & Architecture",
-      description: "We build scalable data pipelines, cloud-native infrastructure, and analytics environments optimized for AI readiness.",
+      description: "We build scalable data pipelines, cloud-native infrastructure, and analytics environments optimized for AI readiness using Agile methodologies.",
       features: [
         "Strategic Planning & Execution",
         "Digital Transformation",
@@ -50,10 +50,9 @@ const ExpertiseServices = () => {
       title: "MLOps & AI Readiness",
       description: "We assess, build, and operationalize AI pipelines with built-in governance, monitoring, and scalable infrastructure from the start.",
       features: [
-        "Leadership Development",
-        "Innovation Workshops",
-        "Team Building & Collaboration",
-        "Strategic Planning Sessions"
+        "Technology Partnerships",
+        "Implementation Support",
+        "Joint Solution Development"
       ]
     },
     {
@@ -61,9 +60,10 @@ const ExpertiseServices = () => {
       title: "Talent Development & Training",
       description: "Workshops, webinars, bootcamps, and programs designed to build skills and capabilities in data and AI.",
       features: [
-        "Technology Partnerships",
-        "Implementation Support",
-        "Joint Solution Development"
+        "Leadership Development",
+        "Innovation Workshops",
+        "Team Building & Collaboration",
+        "Strategic Planning Sessions"
       ]
     }
   ];
@@ -81,7 +81,7 @@ const ExpertiseServices = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Expertise & Services</h2>
-            <p className="text-xl text-slate-600 max-w-3xl">
+            <p className="text-xl text-slate-600">
               We deliver strategic, data-driven solutions tailored to your business needs, helping you navigate complex challenges and achieve sustainable growth.
             </p>
           </div>
