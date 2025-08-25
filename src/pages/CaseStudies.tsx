@@ -100,7 +100,7 @@ const CaseStudies = () => {
 
               {/* Contact Info */}
               <div className="flex items-center justify-between">
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
                     <span className="text-name text-sm">PP</span>
                   </div>
@@ -108,7 +108,8 @@ const CaseStudies = () => {
                     <p className="font-black text-blue-900">Phanom Parker</p>
                     <p className="text-sm text-gray-600">Chief MLOps</p>
                   </div>
-                </div>
+                </div> */}
+                <div></div>
                 <button className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm">
                   Read Case Study
                 </button>
