@@ -56,8 +56,12 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-name text-sm">MM</span>
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/maribeth-martorana.png" 
+                      alt="Maribeth Martorana" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Maribeth Martorana, CFA</p>
@@ -155,8 +159,12 @@ const CaseStudies = () => {
               {/* Contact Info */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-100 rounded-full mr-4 flex items-center justify-center border border-gray-200">
-                    <span className="text-name text-sm">SM</span>
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/sandy-mccarron.png" 
+                      alt="Sandy McCarron" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-black text-blue-900">Sandy McCarron</p>
