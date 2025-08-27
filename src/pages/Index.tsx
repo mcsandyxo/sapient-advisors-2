@@ -826,7 +826,7 @@ const Index = () => {
               <ul className="list-disc ml-4 mt-2">
                 <li>Maribeth Martorana, CFA - Founder & CEO with 25+ years fintech experience</li>
                 <li>Sandy McCarron - Chief Marketing Officer</li>
-                <li>Phanom Noelani Parker - Chief AI, Operations & Product Strategy</li>
+                {/* <li>Phanom Noelani Parker - Chief AI, Operations & Product Strategy</li> */}
                 <li>Kristine Parrinelli - Agile Product Manager & Chief of Staff</li>
                 <li>Daniel Zock - Business Development Lead</li>
                 <li>Mary Beth Quinn - Product & Marketing Operations Manager</li>

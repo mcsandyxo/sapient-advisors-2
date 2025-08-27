@@ -114,7 +114,7 @@ const CaseStudies = () => {
                     <span className="text-name text-sm">PP</span>
                   </div>
                   <div>
-                    <p className="font-black text-blue-900">Phanom Parker</p>
+                    <p className="font-black text-blue-900">Maribeth Martorana, CFA</p>
                     <p className="text-sm text-gray-600">Chief MLOps</p>
                   </div>
                 </div> */}
