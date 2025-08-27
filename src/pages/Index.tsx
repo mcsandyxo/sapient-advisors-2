@@ -830,7 +830,7 @@ const Index = () => {
                 <li>Kristine Parrinelli - Agile Product Manager & Chief of Staff</li>
                 <li>Daniel Zock - Business Development Lead</li>
                 <li>Mary Beth Quinn - Product & Marketing Operations Manager</li>
-                <li>Fede Crespo - Lead Data Scientist</li>
+                <li>Fede Crespo - Tech Leader</li>
               </ul>
             </div>
 

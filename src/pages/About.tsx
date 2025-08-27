@@ -154,7 +154,7 @@ const About = () => {
     },
     {
       name: "Fede Crespo",
-      role: "Lead Data Scientist",
+      role: "Tech Leader",
       description: "Full Stack Developer & Business Developer from Tandil, Argentina. Passionate about tech, music, and creating innovative digital solutions.",
       linkedin: true,
       linkedinUrl: "https://www.linkedin.com/in/fedecrespo/",
