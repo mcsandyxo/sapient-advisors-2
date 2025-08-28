@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText } from 'lucide-react';
+import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, Check } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useState, useEffect } from 'react';
@@ -10,35 +10,9 @@ const Index = () => {
   // Apply SEO for Home page
   useSEO(SEO_DATA.home);
 
-  // Force HubSpot form to load after component mount
-  useEffect(() => {
-    const loadHubSpotForm = () => {
-      // Wait for HubSpot script to be available
-      if (window.hbspt && window.hbspt.forms) {
-        // Clear any existing form
-        const formContainer = document.getElementById('home-form-real');
-        if (formContainer) {
-          formContainer.innerHTML = '';
-        }
-        
-        // Create the form
-        window.hbspt.forms.create({
-          region: "na2",
-          portalId: "242128623",
-          formId: "fe9a9751-2931-4367-afc8-80602fead0b3",
-          target: "#home-form-real"
-        });
-      } else {
-        // Retry after 500ms if HubSpot isn't ready yet
-        setTimeout(loadHubSpotForm, 500);
-      }
-    };
 
-    // Start loading after a short delay
-    const timer = setTimeout(loadHubSpotForm, 100);
-    
-    return () => clearTimeout(timer);
-  }, []);
+
+
 
 
 
@@ -281,8 +255,8 @@ const Index = () => {
                     </svg>
                   </div>
                     <div>
-                      <h4 className="text-blue-900 font-semibold mb-2 text-lg">What we do:</h4>
-                      <p className="text-slate-700 text-base leading-relaxed">
+                      <h4 className="text-blue-900 font-semibold mb-1 text-base">What we do:</h4>
+                      <p className="text-slate-700 text-sm leading-relaxed">
                         Internal AI solutions, workflow automation, data productization.
                       </p>
                     </div>
@@ -300,8 +274,8 @@ const Index = () => {
                     </svg>
                   </div>
                     <div>
-                      <h4 className="text-blue-900 font-semibold mb-2 text-lg">How we do it:</h4>
-                      <p className="text-slate-700 text-base leading-relaxed">
+                      <h4 className="text-blue-900 font-semibold mb-1 text-base">How we do it:</h4>
+                      <p className="text-slate-700 text-sm leading-relaxed">
                         Design sprints • Data strategy & governance • Product & UX • Implementation readiness & enablement.
                       </p>
                     </div>
@@ -319,8 +293,8 @@ const Index = () => {
                     </svg>
                   </div>
                     <div>
-                      <h4 className="text-blue-900 font-semibold mb-2 text-lg">Why it works:</h4>
-                      <p className="text-slate-700 text-base leading-relaxed">
+                      <h4 className="text-blue-900 font-semibold mb-1 text-base">Why it works:</h4>
+                      <p className="text-slate-700 text-sm leading-relaxed">
                         Faster time‑to‑value, lower risk, and outcomes your ops can run on day one.
                       </p>
           </div>
@@ -339,48 +313,56 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right Content - Form and Testimonial */}
-            <div className="space-y-8">
-                              {/* Form - WORKING STRUCTURE */}
-                <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <h3 className="heading-secondary mb-3">Are you ready for AI?</h3>
-                  
-                  {/* HubSpot Form Container - Clean version */}
-                  <div id="home-form-real" className="hs-form-frame min-h-[200px]" data-region="na2" data-form-id="fe9a9751-2931-4367-afc8-80602fead0b3" data-portal-id="242128623"></div>
-                </div>
+            {/* Right Content - Testimonial moved here */}
+            <div className="bg-blue-50 p-8 rounded-lg shadow-sm
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
+              <h3 className="heading-secondary mb-8">Trusted by Industry Leaders</h3>
               
-              {/* Testimonial below form */}
-              <div className="flex-1">
-                <div className="text-left mb-6">
-                  <h3 className="heading-secondary mb-2">
-                    Trusted by Industry Leaders
-                  </h3>
-                  <p className="text-sm text-slate-700">
-                    We've helped organizations across industries transform their approach to data and analytics.
-            </p>
-          </div>
-          
-                <div className="flex items-start space-x-3">
-                  <div className="w-1 h-32 bg-blue-900 rounded-full flex-shrink-0"></div>
-                  <div className="flex-1">
-                    <blockquote className="text-base text-slate-700 mb-3 italic leading-relaxed">
-                      "Working with you both has been one of the highest-leverage decisions we've made so far. You jumped in, understood our product architecture, user dynamics, and go-to-market goals faster than anyone—and helped us identify and close critical gaps..."
-                    </blockquote>
-                    <blockquote className="text-base text-slate-700 mb-0 italic leading-relaxed">
-                      "Your ability to cut through complexity, align the team, and keep momentum high made a real difference. As we head into the scaling phase, I'm genuinely excited to continue building with you. Your partnership isn't just valuable—it's foundational."
-                    </blockquote>
-                    
-                    <div className="mt-6">
-                      <div className="text-name text-sm">Yurek Vazquez</div>
-                      <div className="text-slate-600 text-sm">Chief Executive Officer, iYurek.com</div>
-                </div>
-              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-1 h-32 bg-blue-900 rounded-full flex-shrink-0"></div>
+                <div className="flex-1">
+                  <blockquote className="text-base text-gray-700 mb-3 italic leading-relaxed">
+                    "Working with you both has been one of the highest-leverage decisions we've made so far. You jumped in, understood our product architecture, user dynamics, and go-to-market goals faster than anyone—and helped us identify and close critical gaps..."
+                  </blockquote>
+                  <blockquote className="text-base text-gray-700 mb-0 italic leading-relaxed">
+                    "Your ability to cut through complexity, align the team, and keep momentum high made a real difference. As we head into the scaling phase, I'm genuinely excited to continue building with you. Your partnership isn't just valuable—it's foundational."
+                  </blockquote>
+                  
+                  <div className="mt-6">
+                    <div className="text-name text-sm">Yurek Vazquez</div>
+                    <div className="text-gray-600 text-sm">Chief Executive Officer, iYurek.com</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           
 
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="heading-primary mb-4">Are you ready for AI?</h2>
+            <p className="text-hero-subtitle mx-auto">
+              Get in touch with our experts to discuss your AI transformation journey.
+            </p>
+          </div>
+
+          {/* Centered Contact Form */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-md bg-white p-8 rounded-lg border border-gray-200 shadow-sm
+                           transform transition-all duration-300 ease-out
+                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
+
+              
+              {/* HubSpot Form - HOME FORM ID */}
+              <div className="hs-form-frame" data-region="na2" data-form-id="fe9a9751-2931-4367-afc8-80602fead0b3" data-portal-id="242128623"></div>
+            </div>
+          </div>
         </div>
       </section>
 
