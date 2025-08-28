@@ -1,17 +1,16 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText, CheckCircle, Loader2 } from 'lucide-react';
+import { ArrowRight, Users, Target, Brain, TrendingUp, GraduationCap, Zap, Search, BarChart3, Lightbulb, Rocket, Eye, FileText } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useState, useEffect } from 'react';
 import { useSEO, SEO_DATA } from '../hooks/useSEO';
-import useHubSpot from '../hooks/useHubSpot';
+
 
 const Index = () => {
   // Apply SEO for Home page
   useSEO(SEO_DATA.home);
 
-  // HubSpot integration
-  const { isSubmitting, isSuccess, error, submitForm, reset } = useHubSpot();
+
   const navigate = useNavigate();
 
   // Function to navigate to contact form
@@ -71,60 +70,7 @@ const Index = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  // Form state
-  const [formData, setFormData] = useState({
-    fullName: '',
-    businessEmail: '',
-    company: '',
-    agreement: false,
-  });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
-  };
-
-  const handleFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validate form
-    if (!formData.fullName || !formData.businessEmail || !formData.company) {
-      alert('Please fill in all required fields');
-      return;
-    }
-    
-    if (!formData.agreement) {
-      alert('Please agree to receive communications');
-      return;
-    }
-
-    // Split full name into first and last name
-    const nameParts = formData.fullName.trim().split(' ');
-    const firstName = nameParts[0] || '';
-    const lastName = nameParts.slice(1).join(' ') || '';
-
-    // Submit to HubSpot
-    await submitForm({
-      firstName,
-      lastName,
-      email: formData.businessEmail,
-      company: formData.company,
-      message: 'Data Readiness Assessment Request',
-    });
-
-    // Reset form if successful
-    if (isSuccess) {
-      setFormData({
-        fullName: '',
-        businessEmail: '',
-        company: '',
-        agreement: false,
-      });
-    }
-  };
 
   const highlights = [
     {
@@ -375,116 +321,10 @@ const Index = () => {
                 maturity and identifying opportunities for AI Implementation.
               </p>
               
-              {/* Success Message */}
-              {isSuccess && (
-                <div className="mb-3 p-2 bg-green-50 border border-green-200 rounded-lg">
-                  <div className="text-green-800 text-xs">
-                    ✅ Thank you! Your request has been submitted successfully.
-                  </div>
-                  <div className="text-green-700 text-xs mt-1">
-                    We'll send you the Data Readiness Assessment shortly.
-                  </div>
-                </div>
-              )}
 
-              {/* Error Message */}
-              {error && (
-                <div className="mb-3 p-2 bg-red-50 border border-red-200 rounded-lg">
-                  <div className="text-red-800 text-xs">
-                    ❌ Error: {error}
-                  </div>
-                  <button
-                    onClick={reset}
-                    className="text-red-600 text-xs mt-1 hover:text-red-800"
-                  >
-                    Try again
-                  </button>
-                </div>
-              )}
 
-              <form className="space-y-2" onSubmit={handleFormSubmit}>
-                <div>
-                  <label htmlFor="fullName" className="block text-label mb-1">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    value={formData.fullName}
-                    onChange={handleInputChange}
-                    placeholder="John Smith"
-                    required
-                    disabled={isSubmitting}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed text-sm"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="businessEmail" className="block text-label mb-1">
-                    Business Email
-                  </label>
-                  <input
-                    type="email"
-                    id="businessEmail"
-                    name="businessEmail"
-                    value={formData.businessEmail}
-                    onChange={handleInputChange}
-                    placeholder="john@company.com"
-                    required
-                    disabled={isSubmitting}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed text-sm"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="company" className="block text-label mb-1">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleInputChange}
-                    placeholder="Your Company"
-                    required
-                    disabled={isSubmitting}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none disabled:bg-gray-50 disabled:cursor-not-allowed text-sm"
-                  />
-                </div>
-                
-                <div className="flex items-start space-x-2 pt-1">
-                  <input
-                    type="checkbox"
-                    id="agreement"
-                    name="agreement"
-                    checked={formData.agreement}
-                    onChange={handleInputChange}
-                    required
-                    disabled={isSubmitting}
-                    className="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 mt-0.5 disabled:cursor-not-allowed"
-                  />
-                                      <label htmlFor="agreement" className="text-label">
-                    I agree to receive communications from Sapient Advisors
-                  </label>
-                </div>
-                
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors mt-4 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center text-sm"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 className="w-4 h-4 animate-spin mr-2" />
-                      Submitting...
-                    </>
-                  ) : (
-                    'Download Now'
-                  )}
-                </button>
-              </form>
+              {/* HubSpot Form */}
+              <div className="hs-form-frame" data-region="na2" data-form-id="c18f283e-835c-48f7-a809-01b4a64b2802" data-portal-id="242128623"></div>
             </div>
               
               {/* Testimonial below form */}
