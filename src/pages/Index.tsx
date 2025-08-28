@@ -242,7 +242,7 @@ const Index = () => {
                   Sapient Advisors is a U.S.‑based, women‑led consultancy specializing in data, AI, and product & UX strategy, execution, and monetization for mid‑market financial services.
                 </p>
 
-                <div className="space-y-8">
+                <div className="space-y-3">
                   <div className="flex items-start space-x-4">
                     <div className="w-7 h-7 bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1
                                     transform transition-all duration-300 ease-out
@@ -255,8 +255,8 @@ const Index = () => {
                     </svg>
                   </div>
                     <div>
-                      <h4 className="text-blue-900 font-semibold mb-1 text-base">What we do:</h4>
-                      <p className="text-slate-700 text-sm leading-relaxed">
+                      <h4 className="text-blue-900 font-semibold mb-0.5 text-lg">What we do:</h4>
+                      <p className="text-slate-700 text-base leading-relaxed">
                         Internal AI solutions, workflow automation, data productization.
                       </p>
                     </div>
@@ -274,8 +274,8 @@ const Index = () => {
                     </svg>
                   </div>
                     <div>
-                      <h4 className="text-blue-900 font-semibold mb-1 text-base">How we do it:</h4>
-                      <p className="text-slate-700 text-sm leading-relaxed">
+                      <h4 className="text-blue-900 font-semibold mb-0.5 text-lg">How we do it:</h4>
+                      <p className="text-slate-700 text-base leading-relaxed">
                         Design sprints • Data strategy & governance • Product & UX • Implementation readiness & enablement.
                       </p>
                     </div>
@@ -293,8 +293,8 @@ const Index = () => {
                     </svg>
                   </div>
                     <div>
-                      <h4 className="text-blue-900 font-semibold mb-1 text-base">Why it works:</h4>
-                      <p className="text-slate-700 text-sm leading-relaxed">
+                      <h4 className="text-blue-900 font-semibold mb-0.5 text-lg">Why it works:</h4>
+                      <p className="text-slate-700 text-base leading-relaxed">
                         Faster time‑to‑value, lower risk, and outcomes your ops can run on day one.
                       </p>
           </div>
@@ -313,26 +313,34 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right Content - Testimonial moved here */}
-            <div className="bg-blue-50 p-8 rounded-lg shadow-sm
-                           transform transition-all duration-300 ease-out
-                           hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
-              <h3 className="heading-secondary mb-8">Trusted by Industry Leaders</h3>
-              
-              <div className="flex items-start space-x-3">
-                <div className="w-1 h-32 bg-blue-900 rounded-full flex-shrink-0"></div>
-                <div className="flex-1">
-                  <blockquote className="text-base text-gray-700 mb-3 italic leading-relaxed">
-                    "Working with you both has been one of the highest-leverage decisions we've made so far. You jumped in, understood our product architecture, user dynamics, and go-to-market goals faster than anyone—and helped us identify and close critical gaps..."
-                  </blockquote>
-                  <blockquote className="text-base text-gray-700 mb-0 italic leading-relaxed">
-                    "Your ability to cut through complexity, align the team, and keep momentum high made a real difference. As we head into the scaling phase, I'm genuinely excited to continue building with you. Your partnership isn't just valuable—it's foundational."
-                  </blockquote>
+                        {/* Right Content - Compact testimonial */}
+                <div>
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="heading-secondary mb-4">Trusted by Industry Leaders</h3>
+          
+                                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-1 h-16 bg-blue-900 rounded-full flex-shrink-0"></div>
+                    <div className="flex-1">
+                      <blockquote className="text-base text-gray-700 italic leading-relaxed">
+                        "Working with you both has been one of the highest-leverage decisions we've made so far. You jumped in, understood our product architecture, user dynamics, and go-to-market goals faster than anyone—and helped us identify and close critical gaps..."
+                      </blockquote>
+            </div>
+          </div>
+          
+                <div className="flex items-start space-x-3">
+                    <div className="w-1 h-16 bg-blue-900 rounded-full flex-shrink-0"></div>
+                  <div className="flex-1">
+                      <blockquote className="text-base text-gray-700 italic leading-relaxed">
+                      "Your ability to cut through complexity, align the team, and keep momentum high made a real difference. As we head into the scaling phase, I'm genuinely excited to continue building with you. Your partnership isn't just valuable—it's foundational."
+                    </blockquote>
+                </div>
+              </div>
                   
-                  <div className="mt-6">
+                  <div className="mt-4 ml-4">
                     <div className="text-name text-sm">Yurek Vazquez</div>
                     <div className="text-gray-600 text-sm">Chief Executive Officer, iYurek.com</div>
-                  </div>
+              </div>
                 </div>
               </div>
             </div>
