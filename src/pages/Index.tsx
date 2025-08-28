@@ -10,6 +10,38 @@ const Index = () => {
   // Apply SEO for Home page
   useSEO(SEO_DATA.home);
 
+  // Force HubSpot form to load after component mount
+  useEffect(() => {
+    const loadHubSpotForm = () => {
+      // Wait for HubSpot script to be available
+      if (window.hbspt && window.hbspt.forms) {
+        // Clear any existing form
+        const formContainer = document.getElementById('home-form-real');
+        if (formContainer) {
+          formContainer.innerHTML = '';
+        }
+        
+        // Create the form
+        window.hbspt.forms.create({
+          region: "na2",
+          portalId: "242128623",
+          formId: "fe9a9751-2931-4367-afc8-80602fead0b3",
+          target: "#home-form-real"
+        });
+      } else {
+        // Retry after 500ms if HubSpot isn't ready yet
+        setTimeout(loadHubSpotForm, 500);
+      }
+    };
+
+    // Start loading after a short delay
+    const timer = setTimeout(loadHubSpotForm, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+
+
 
   const navigate = useNavigate();
 
@@ -308,24 +340,14 @@ const Index = () => {
             </div>
             
             {/* Right Content - Form and Testimonial */}
-            <div className="flex flex-col space-y-8 h-full">
-              {/* Form */}
-              <div className="bg-white px-6 pt-6 pb-6 rounded-lg shadow-lg
-                             transform transition-all duration-300 ease-out
-                             hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01]">
-              <h3 className="heading-secondary mb-3">
-                Are you ready for AI?
-              </h3>
-                              <p className="text-body-small mb-4">
-                Download our simple guide to evaluating your organization's data 
-                maturity and identifying opportunities for AI Implementation.
-              </p>
-              
-
-
-              {/* HubSpot Form */}
-              <div id="home-form" className="hs-form-frame" data-region="na2" data-form-id="fe9a9751-2931-4367-afc8-80602fead0b3" data-portal-id="242128623"></div>
-            </div>
+            <div className="space-y-8">
+                              {/* Form - WORKING STRUCTURE */}
+                <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <h3 className="heading-secondary mb-3">Are you ready for AI?</h3>
+                  
+                  {/* HubSpot Form Container - Clean version */}
+                  <div id="home-form-real" className="hs-form-frame min-h-[200px]" data-region="na2" data-form-id="fe9a9751-2931-4367-afc8-80602fead0b3" data-portal-id="242128623"></div>
+                </div>
               
               {/* Testimonial below form */}
               <div className="flex-1">
