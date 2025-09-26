@@ -18,7 +18,8 @@ const queryClient = new QueryClient();
 
 // Verificar si el modo de mantenimiento está activado via variable de entorno
 // Cambiar VITE_MAINTENANCE_MODE=false en .env.local cuando el sitio esté disponible nuevamente
-const MAINTENANCE_MODE = import.meta.env.VITE_MAINTENANCE_MODE === 'true';
+// TEMPORAL: Forzar mantenimiento hasta configurar variable de entorno en Vercel
+const MAINTENANCE_MODE = import.meta.env.VITE_MAINTENANCE_MODE === "true" || import.meta.env.PROD;
 
 const App = () => {
   // Si está en modo mantenimiento, mostrar solo la página de mantenimiento
