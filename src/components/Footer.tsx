@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Linkedin, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -36,6 +36,14 @@ const Footer = () => {
                 className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer transition-all duration-300 hover:scale-110"
               >
                 <Instagram className="h-4 w-4 text-gray-300 hover:text-white" />
+              </a>
+               <a 
+                href="https://www.youtube.com/@SapientAdvisors/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-gray-600 cursor-pointer transition-all duration-300 hover:scale-110"
+              >
+                <Youtube className="h-4 w-4 text-gray-300 hover:text-white" />
               </a>
             </div>
           </div>
@@ -135,7 +143,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Sapient Advisors. All rights reserved.
+            © 2026 Sapient Advisors. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
                             <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>

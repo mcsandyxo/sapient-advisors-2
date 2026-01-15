@@ -161,7 +161,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      {/* Pioneering Data & AI Solutions Section */}
+      {/* From AI Strategy Section */}
       <section className="relative py-48 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -185,16 +185,14 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left max-w-4xl">
                           <h2 className="heading-hero text-white mb-6">
-              Pioneering Data & AI
-              <span className="block text-white">Solutions</span>
+              From AI Strategy to Real-World Impact
             </h2>
             <p className="text-xl md:text-2xl mb-10 text-slate-200 max-w-3xl">
-              Empowering the Data-Driven Future through Scalable AI
+              We help financial, insurance, and real estate firms turn AI ambition into action — building the strategy, data foundations, and products that make transformation work in the real world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="/contact" 
-                onClick={handleGetStarted}
+              <Link 
+                to="/contact" 
                 className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
@@ -202,7 +200,7 @@ const Index = () => {
                            inline-flex items-center justify-center shadow-lg cursor-pointer"
               >
                 Get Started
-              </a>
+              </Link>
               <Link 
                 to="/about" 
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 
@@ -226,20 +224,22 @@ const Index = () => {
             {/* Left Content */}
             <div className="space-y-6">
               <h2 className="heading-primary mb-6">
-                From strategy to shipped for<br/>mid-market financial services
+                Sapient Advisors helps regulated industries turn AI ambition into real transformation
             </h2>
               <p className="text-body-large mb-8 italic">
-                We help alternative asset managers, PE‑backed RIA platforms & large 
-                enterprise RIAs, and commercial real estate turn AI/data investments 
-                into secure, production‑ready solutions and measurable results. We also support regulated industries (e.g., law) and select startups by fit.
-              </p>
+                We work with mid-market companies in financial services, insurance, and commercial real estate to turn data and AI from abstract ambition into measurable business impact. 
+
+Our team bridges strategy and execution to help clients at every stage of their AI transformation: defining the roadmap, validating use cases, designing data and technical architecture, and commercializing new products and revenue streams. 
+
+ </p>
               
               <div className="mt-8">
                 <h3 className="heading-secondary mb-6">
                   At‑a‑Glance
                 </h3>
                 <p className="text-body-large mb-8">
-                  Sapient Advisors is a U.S.‑based, women‑led consultancy specializing in data, AI, and product & UX strategy, execution, and monetization for mid‑market financial services.
+                  Guided by agile and design-thinking methods, we partner with cutting-edge technology providers to accelerate delivery without sacrificing trust, compliance, or control. 
+             
                 </p>
 
                 <div className="space-y-3">
@@ -257,7 +257,7 @@ const Index = () => {
                     <div>
                       <h4 className="text-blue-900 font-semibold mb-0.5 text-lg">What we do:</h4>
                       <p className="text-slate-700 text-base leading-relaxed">
-                        Internal AI solutions, workflow automation, data productization.
+                        Internal AI solutions, workflow automation, data productization, full SDLC.
                       </p>
                     </div>
                 </div>
@@ -276,7 +276,7 @@ const Index = () => {
                     <div>
                       <h4 className="text-blue-900 font-semibold mb-0.5 text-lg">How we do it:</h4>
                       <p className="text-slate-700 text-base leading-relaxed">
-                        Design sprints • Data strategy & governance • Product & UX • Implementation readiness & enablement.
+                        Design sprints • Data strategy & governance • Product & UX • Implementation readiness & enablement• Dynamic scaling through partnerships.
                       </p>
                     </div>
                 </div>
@@ -382,7 +382,7 @@ const Index = () => {
               Success Stories
             </h2>
             <p className="text-hero-subtitle mx-auto">
-              See how our clients have transformed their data operations and achieved remarkable results.
+              See how our clients have transformed and achieved remarkable results.
             </p>
           </div>
           
@@ -394,7 +394,7 @@ const Index = () => {
                            cursor-pointer flex flex-col">
               <div className="aspect-video bg-gray-900 relative overflow-hidden">
                 <img
-                  src="/lovable-uploads/proyect%20raven%20index.png"
+                  src="/lovable-uploads/raven20services.png"
                   alt="Data Analytics Dashboard"
                   className="w-full h-full object-cover"
                 />

@@ -40,34 +40,28 @@ const About = () => {
 
   const trustedNetwork = [
     {
-      title: "Avatar Buddy",
-      subtitle: "Digital Twin Experience",
-      description: "Avatar Buddy creates AI-powered digital experiences that help businesses build stronger customer relationships through personalized interactions and data-driven insights."
+      title: "Digital Twin Experience",
+      description: "AI-powered digital experiences that help businesses build stronger customer relationships through personalized interactions and data-driven insights."
     },
     {
-      title: "NeuralSeek",
-      subtitle: "AI-Powered Knowledge Management",
-      description: "NeuralSeek specializes in AI-driven knowledge management solutions that help organizations unlock insights from their data and improve decision-making processes."
+      title: "AI-Powered Knowledge Management",
+      description: "Platform specializes in AI-driven knowledge management solutions that help organizations unlock insights from their data and improve decision-making processes."
     },
     {
-      title: "nRoad",
-      subtitle: "Collaborative Digital Management",
-      description: "nRoad provides collaborative digital management platforms that streamline workflows and enhance team productivity through innovative technology solutions."
+      title: "Collaborative Digital Management",
+      description: "Provides collaborative digital management platforms that streamline workflows and enhance team productivity through innovative technology solutions."
     },
     {
-      title: "Salesfy",
-      subtitle: "Sales Transformation",
-      description: "Salesfy focuses on sales process optimization and CRM implementation, helping organizations accelerate revenue growth through data-driven sales strategies."
+      title: "Sales Transformation",
+      description: "Focuses on sales process optimization and CRM implementation, helping organizations accelerate revenue growth through data-driven sales strategies."
     },
     {
-      title: "Superposition",
-      subtitle: "Project Alignment and Facilitation",
-      description: "Superposition brings expertise in project alignment and facilitation, helping teams coordinate complex initiatives and achieve strategic objectives efficiently."
+      title: "Project Alignment and Facilitation",
+      description: "Expertise in project alignment and facilitation, helping teams coordinate complex initiatives and achieve strategic objectives efficiently."
     },
     {
-      title: "Working Line",
-      subtitle: "Data Transformation",
-      description: "Working Line specializes in data transformation services, helping organizations modernize their data infrastructure and analytics capabilities for better business outcomes."
+      title: "Data Transformation",
+      description: "Specializes in data transformation services, helping organizations modernize their data infrastructure and analytics capabilities for better business outcomes."
     }
   ];
 
@@ -114,16 +108,24 @@ const About = () => {
 
     // {
     //   name: "Phanom Noelani Parker",
-    //   role: "Chief AI, Operations & Product Strategy",
+    //   role: "Chief AI/ML Ops & Product Strategy",
     //   description: "", // "Phanom is a seasoned AI and product executive with experience transforming complex business challenges into scalable, data-driven solutions across enterprise, cloud, and consumer platforms.",
     //   linkedin: false, // temporarily hidden
     //   // linkedinUrl: "https://www.linkedin.com/in/phanom-parker/", // URL placeholder, needs confirmation
     //   image: "/team/phanom-parker.png"
     // },
     {
+      name: "Zaid Marji",
+      role: "Chief Technology Officer",
+      description: "Zaid leads our technology vision, combining strong AI and cloud engineering skills with an innovative, hands-on approach to building scalable solutions. .",
+      linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/zaidmarji/", // URL placeholder, needs confirmation
+      image: "/team/zaid-marji.png"
+    },
+        {
       name: "Richard Vogel",
       role: "Chief Data Strategy",
-      description: "Richard brings 25 years of financial expertise, having held leadership positions at top consulting firms and led financial transformation initiatives for multinational corporations.",
+      description: "Richard brings 25 years of data, finance and operational expertise, having held leadership positions for transformational initiatives at major credit, risk and investment banks",
       linkedin: true,
       linkedinUrl: "https://www.linkedin.com/in/richard-vogel/", // URL placeholder, needs confirmation
       image: "/team/richard-vogel.png"
@@ -137,12 +139,20 @@ const About = () => {
       image: "/team/kristine-parrinelli.png"
     },
     {
-      name: "Daniel Zock",
-      role: "Business Development Lead",
-      description: "Daniel Zock helps foster strategic relationships with business leaders exploring AI integration to unlock meaningful economic value. He is pursuing an MSc in Finance at Babson College's F.W. Olin Graduate School of Business.",
+      name: "Daniel Rodriguez",
+      role: "Intern, UX Associate",
+      description: "Daniel Rodriguez is our intern and jack of all trades, jumping in to learn new tools to edit videos and create marketing materials. ",
       linkedin: true,
-      linkedinUrl: "https://www.linkedin.com/in/zock/",
-      image: "/team/daniel-zook.png"
+      linkedinUrl: "https://www.linkedin.com/in/daniel-rodriguez-63a627354/",
+      image: "/team/daniel-rodriguez.png"
+    },
+       {
+      name: "Alex Zinny",
+      role: "VP Sales",
+      description: "Alex Zinny helps foster strategic relationships with business leaders exploring AI integration to unlock meaningful economic value.",
+      linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/in/alexzinny/",
+      image: "/team/alex-zinny.png"
     },
     {
       name: "Mary Beth Quinn",

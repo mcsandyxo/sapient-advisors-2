@@ -36,7 +36,7 @@ const News = () => {
             {/* Left Column - Webinars */}
             <div>
               <div className="space-y-6">
-                {/* Office Hours with Dave Merwin - New Featured */}
+                {/* Office Hours with Joyce Shen - New Featured */}
                 <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
                                transform transition-all duration-300 ease-out
                                hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -47,25 +47,25 @@ const News = () => {
                       <p className="text-blue-200">Live LinkedIn Session</p>
                     </div>
                     <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded text-sm font-semibold">
-                      📅 Sept 16 @1pm EST
+                      📅 Jan 20 @12pm EDT
                     </div>
                   </div>
                   
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      Office Hours with Dave Merwin
+                      Office Hours with Joyce Shen
                     </h3>
                     <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                      Dave Merwin shares his real-world journey in vibecoding and his unique approach to blending creativity and technology to help small businesses harness the power of AI to grow, adapt, and thrive.
+                      Joyce Shen  is our guest as we discuss data and AI trends shaping up in 2026.
                     </p>
                     
                     <div className="flex items-center text-sm text-gray-600 mb-4">
-                      <span className="mr-4">🕒 1:00 PM - 2:00 PM EST</span>
+                      <span className="mr-4">🕒 12:00 PM - 1:00 PM EDT</span>
                       <span>1-hour LinkedIn Live session with Q&A</span>
                     </div>
                     
                     <a 
-                      href="https://www.linkedin.com/events/designingai-digitalproductsthat7361582136681762816/"
+                      href="https://www.linkedin.com/events/7405326529783685122/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
@@ -73,6 +73,113 @@ const News = () => {
                       Register Now
                     </a>
                   </div>
+                </div>
+
+                {/* Office Hours with Aashish Mehta - Past Event */}
+                <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                               transform transition-all duration-300 ease-out
+                               hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                               cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Dec 9, 2025</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Office Hours with Aashish Mehta
+                  </h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                    Aashish Mehta  is our guest as we discuss: The AI Advantage in Finance: What Every Leader Must Know Going Into 2026
+                  </p>
+                  
+                  <a 
+                    href="https://www.linkedin.com/events/theaiadvantageinfinance-whateve7394554390981791744/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
+                    Watch on LinkedIn
+                  </a>
+                </div>
+                {/* Office Hours with SRS - Past Event */}
+                <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                               transform transition-all duration-300 ease-out
+                               hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                               cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Nov 15, 2025</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Office Hours with Raymond Clarke and Alex Vengerovsky
+                  </h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                    We spoke with Raymond and Alex from Spatial Risk Systmes on GeoAI meets real-world risk: how location and environmental data reshape investment, lending, and development decisions
+                  </p>
+                  
+                  <a 
+                    href="https://www.linkedin.com/events/7384230455660847128/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
+                    Watch on LinkedIn
+                  </a>
+                </div>
+
+                {/* Office Hours with Lawrence Patrizio - Past Event */}
+                <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                               transform transition-all duration-300 ease-out
+                               hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                               cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Oct 15, 2025</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Office Hours with Lawrence Patrizio
+                  </h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                    We spoke with Lawrence Patrizio about enterprise AI adoption in regulated industries, orchestration & governance, and the emerging trends shaping how companies (and consumers) put AI to work.
+                  </p>
+                  
+                  <a 
+                    href="https://www.linkedin.com/events/enterpriseai-orchestration-emer7373536321598025728/theater/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
+                    Watch on LinkedIn
+                  </a>
+                </div>
+
+{/* Office Hours with Dave Merwin - Past Event */}
+                <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                               transform transition-all duration-300 ease-out
+                               hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                               cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Sep 16, 2025</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Office Hours with Dave Merwin
+                  </h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                    Dave Merwin shares his real-world journey in vibecoding and his unique approach to blending creativity and technology to help small businesses harness the power of AI to grow, adapt, and thrive.
+                  </p>
+                  
+                  <a 
+                    href="https://www.linkedin.com/events/designingai-digitalproductsthat7361582136681762816/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
+                    Watch on LinkedIn
+                  </a>
                 </div>
 
                 {/* Office Hours with Richard Vogel - Past Event */}
@@ -108,13 +215,15 @@ const News = () => {
                                transform transition-all duration-300 ease-out
                                hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                                cursor-pointer">
+                                <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Jul 11, 2025</span>
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    Office Hours with Avatar Buddy - July 11, 2025
+                    Office Hours with Avatar Buddy
                   </h3>
                   <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                    Join our panel of industry experts as they discuss practical strategies for 
-                    implementing meaningful digital transformation initiatives that drive real 
-                    business value.
+                  Our chat with the powerhouse team from Avatar Buddy, for a conversation that's real, relevant, and ready to shift how we think about internal AI.
                   </p>
                   
                   <a 
@@ -127,7 +236,8 @@ const News = () => {
                   </a>
                 </div>
 
-                {/* Want to appear section */}
+                {/* Want to appear section - TEMPORARILY HIDDEN */}
+                {/*
                 <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                   <h3 className="text-lg font-bold text-blue-900 mb-3">
                     Want to appear on our monthly LinkedIn Live series, Office Hours?
@@ -142,6 +252,7 @@ const News = () => {
                     Be Our Guest
                   </button>
                 </div>
+                */}
               </div>
             </div>
 
@@ -208,15 +319,9 @@ const News = () => {
                 </p>
                 
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full mr-3 overflow-hidden border border-gray-200">
-                    <img
-                      src="/lovable-uploads/chen-services.png"
-                      alt="Marcus Chen"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                  
                   <div>
-                    <p className="font-semibold text-gray-900 text-sm">Marcus Chen</p>
+                    <p className="font-semibold text-gray-900 text-sm">Curiosity Code Podcast</p>
                   </div>
                 </div>
                 
@@ -316,8 +421,7 @@ const News = () => {
           </div>
           */}
 
-          {/* Sponsor Section - TEMPORARILY COMMENTED OUT */}
-          {/*
+          {/* SponsortoGuest Section */}
           <div className="mt-16 bg-blue-50 rounded-lg p-8 shadow-sm
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -325,30 +429,33 @@ const News = () => {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
                 <h3 className="heading-tertiary mb-2">
-                  Want to sponsor our monthly LinkedIn Live series, Office Hours?
+                  Want to appear our monthly LinkedIn Live series, Office Hours?
                 </h3>
                 <p className="text-gray-700">
-                  Connect with industry leaders and build meaningful connections while reaching our engaged audience and the future of strategic innovation.
-                </p>
+                  
+                    Sapient Advisors hosts Office Hours with panelists driving thought leadership 
+                    on AI, Strategy, and the future of work. We are seeking visionaries to speak 
+                    and share thought leadership on our informative series.                </p>
               </div>
               <div className="flex-shrink-0">
-                <button className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
-                  Request A Sponsor
-                </button>
-                <div className="text-right mt-2">
-                  <p className="text-blue-600 text-sm font-semibold whitespace-nowrap">We can't do this without you</p>
-                </div>
+                <a 
+                  href="https://outlook.office.com/book/SapientAdvisors1@sapient-advisors.com/?ismsaljsauthenabled"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-block text-center"
+                >
+                  Be Our Guest
+                </a>
               </div>
             </div>
           </div>
-          */}
 
           {/* Sapient Advisors in the News Section */}
           <div className="mt-16">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Sapient Advisors in the News</h2>
               <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                Sapient Advisors has been featured for its strategic partnerships and data-driven solutions, helping fintech, insurance and CRE clients modernize operations through AI, analytics, and digital transformation.
+                Sapient Advisors has been featured for its partnerships and data-driven solutions, helping fintech, insurance and CRE clients modernize operations through AI, analytics, and digital transformation.
               </p>
             </div>
 
@@ -359,18 +466,20 @@ const News = () => {
                              hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                              cursor-pointer">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Strategic Partnership Announcement
+                  AI Transformation Practice Announcement
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Avatar Buddy and Sapient Advisors Announce Strategic Partnership to Revolutionize Internal AI Projects
+                  As Firms Enter 2026, Sapient Advisors launches its AI Transformation Practice, to help Financial Services, Insurance, and Real Estate Firms Turn AI Experiments into Enterprise Results
                 </p>
                 
-                <button 
-                  className="bg-gray-300 text-gray-500 px-6 py-3 rounded-lg font-semibold w-full cursor-not-allowed"
-                  disabled
+               <a 
+                  href="https://nynewswire.net/article/release/ef7e52860fec/as-firms-enter-2026,-sapient-advisors-helps-financial-services,-insurance,-and-real-estate-firms-turn-ai-experiments-into-enterprise-results"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
                 >
-                  Coming Soon
-                </button>
+                  Read Full Article
+                </a>
               </div>
 
               {/* News Card 2 */}
@@ -379,7 +488,7 @@ const News = () => {
                              hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                              cursor-pointer">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  WJBF Press Release Coverage
+                  Avatar Buddy and Sapient Advisors Press Release
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Avatar Buddy and Sapient Advisors Announce Strategic Partnership to Revolutionize Internal AI Projects

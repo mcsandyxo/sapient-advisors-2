@@ -82,7 +82,7 @@ const ExpertiseServices = () => {
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Expertise & Services</h2>
             <p className="text-xl text-slate-600">
-              We deliver strategic, data-driven solutions tailored to your business needs, helping you navigate complex challenges and achieve sustainable growth.
+              In a market full of AI hype, Sapient Advisors stands out as the builders of real transformation. We turn data into a strategic asset and AI into lasting enterprise capability.
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ const ExpertiseServices = () => {
             <div className="mb-12">
               <h3 id="our-services" className="text-2xl font-bold text-blue-900 mb-4">Our Services</h3>
               <p className="text-lg text-slate-600">
-                At Sapient Advisors, we offer comprehensive consulting services designed to transform your business operations, enhance strategic decision-making, and drive sustainable growth across various industries.
+                At Sapient Advisors, we offer comprehensive consulting services designed to transform your business operations, enhance strategic decision-making, and drive sustainable growth across various industries. Guiding regulated mid-market firms through their AI transformation, from roadmap to rollout.
               </p>
             </div>
           
@@ -122,11 +122,6 @@ const ExpertiseServices = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-4">
-                  <button className="text-blue-900 font-semibold text-sm hover:text-blue-800 transition-colors">
-                    Learn more →
-                  </button>
-                </div>
               </div>
             ))}
             </div>

@@ -24,6 +24,10 @@
     {
       "source": "/contact",
       "destination": "/index.html"
+    },
+    {
+      "source": "/leadmagnet",
+      "destination": "/index.html"
     }
   ],
   "headers": [

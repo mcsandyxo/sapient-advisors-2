@@ -71,9 +71,9 @@ const Contact = () => {
                     <Check className="h-4 w-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Outside Perspective, Inside Focus</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Partner Ecosystem Integration</h3>
                     <p className="text-gray-600 leading-relaxed">
-                      We offer a clear, neutral lens that helps teams challenge assumptions, prioritize needs, and move confidently toward the right solution.
+                      We've vetted, cutting-edge technology and implementation partners to accelerate delivery.
                     </p>
                   </div>
                 </div>

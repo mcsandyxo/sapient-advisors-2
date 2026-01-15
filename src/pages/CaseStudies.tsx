@@ -32,7 +32,7 @@ const CaseStudies = () => {
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                          cursor-pointer">
               <h2 className="heading-secondary mb-4">
-                Project Raven
+                Moody's Analytics Project Raven
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 A single conversation on product discovery inspired our first design 
@@ -129,7 +129,57 @@ const CaseStudies = () => {
                 </a>
               </div>
             </div>
+{/* Quiqspread */}
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
+              <h2 className="heading-secondary mb-4">
+                Moody's Analytics Quiqspread
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Moody's first machine-learning product- from architecture to sales enablement- generating $5M in new revenue.
 
+              </p>
+              
+              {/* Tags */}
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  AI / ML Development
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Product Strategy
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Cloud Computing
+                </span>
+              </div>
+
+              {/* Contact Info */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/zaid-marji.png" 
+                      alt="Zaid Marji" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Zaid Marji</p>
+                    <p className="text-sm text-gray-600">CTO</p>
+                  </div>
+                </div>
+                <a 
+                  href="/case-studies/Case-Study-Project-QuiqSpread-SapientAdvisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
+                  Read Case Study
+                </a>
+              </div>
+            </div>
             {/* Credit Analyst Workbench */}
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
@@ -181,8 +231,211 @@ const CaseStudies = () => {
                 </a>
               </div>
             </div>
+      {/* DGN */}
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
+              <h2 className="heading-secondary mb-4">
+                Dodge Global Network
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Explore how we took an acquired startup to a fully operational, scalable 
+                product using design sprints and collaborative Agile development.
+              </p>
+              
+              {/* Tags */}
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  AI Development
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  UX Research
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Rapid prototyping
+                </span>
+              </div>
 
-            {/* Knowledge Graphs for Risk Management - Temporarily Disabled
+              {/* Contact Info */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/sandy-mccarron.png" 
+                      alt="Sandy McCarron" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Sandy McCarron</p>
+                    <p className="text-sm text-gray-600">COO</p>
+                  </div>
+                </div>
+                <a 
+                  href="/case-studies/Case-Study-Project-DGN-Sapient Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
+                  Read Case Study
+                </a>
+              </div>
+            </div>
+{/* JP Morgan */}
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
+              <h2 className="heading-secondary mb-4">
+                DX Reference JP Morgan
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Designed and built a centralized, metadata-driven global research library standardizing data, UX, and access—
+                becoming a mission-critical, bank-wide platform used globally across product lines.
+              </p>
+              
+              {/* Tags */}
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Data Taxonomy
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Research
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Data
+                </span>
+              </div>
+
+              {/* Contact Info */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/richard-vogel.png" 
+                      alt="Richard Vogel" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Richard Vogel</p>
+                    <p className="text-sm text-gray-600">Chief Data Strategist</p>
+                  </div>
+                </div>
+                <a 
+                  href="/case-studies/Case-Study-JPMorganChase-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
+                  Read Case Study
+                </a>
+              </div>
+            </div>
+
+            {/* Bank Focus */}
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
+              <h2 className="heading-secondary mb-4">
+                Moody's Bank Focus
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Designed and built an automated, high-volume bank financials processing capability—driven by machine learning, a 
+                2,400-point data taxonomy, and global offshore operations 
+              </p>
+              
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Data Operations
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Machine Learning
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Data Taxonomy
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/richard-vogel.png" 
+                      alt="Richard Vogel" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Richard Vogel</p>
+                    <p className="text-sm text-gray-600">Chief Data Strategist</p>
+                  </div>
+                </div>
+                <a 
+                  href="/case-studies/Case-Study-Moodys-Analytics-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
+                  Read Case Study
+                </a>
+              </div>
+            </div>
+
+            {/* Project Iron */}
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
+                         transform transition-all duration-300 ease-out
+                         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                         cursor-pointer">
+              <h2 className="heading-secondary mb-4">
+                Project Iron
+              </h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Internal AI Business development tool created for Amazon Web Services.
+
+              </p>
+              
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  AI / ML Development
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Product Strategy
+                </span>
+                <span className="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200">
+                  Cloud Computing
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/zaid-marji.png" 
+                      alt="Zaid Marji" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-black text-blue-900">Zaid Marji</p>
+                    <p className="text-sm text-gray-600">CTO</p>
+                  </div>
+                </div>
+                <a 
+                  href="/case-studies/Case-Study-Project-Iron-Sapient-Advisors.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
+                >
+                  Read Case Study
+                </a>
+              </div>
+            </div>
+
+            {/* Knowledge Graphs for Risk Management - Temporarily Disabled */}
+            {/*
             <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -226,43 +479,51 @@ const CaseStudies = () => {
             */}
           </div>
 
-          {/* Book@Random Section - Temporarily Disabled
+          {/* The Strategy Signal Section */}
           <div className="mt-16 bg-white rounded-lg shadow-md p-8 border border-gray-100
                          transform transition-all duration-300 ease-out
                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                          cursor-pointer">
             <h2 className="heading-secondary mb-6">
-              Book@Random
+              Read The Strategy Signal Newsletter
             </h2>
             
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="text-4xl text-blue-900 mb-4">"</div>
+                <div className="text-4xl text-blue-900 mb-4"></div>
                 <p className="text-gray-700 mb-8 text-lg leading-relaxed italic">
-                  Put a quote here about the original data cleanup proj
+                  "I help leaders get clarity to cut through the chaos to execute AI transformation successfully. Turn data into scalable AI for real growth."
                 </p>
                 
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
-                    <span className="text-name text-sm">SM</span>
+                  <div className="w-12 h-12 rounded-full mr-4 overflow-hidden border border-gray-200">
+                    <img 
+                      src="/team/maribeth-martorana.png" 
+                      alt="Maribeth Martorana" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
-                    <p className="font-black text-blue-900">Sandy McCarron</p>
-                    <p className="text-sm text-gray-600">Member of Random House web team Book@Random</p>
+                    <p className="font-black text-blue-900">Maribeth Martorana</p>
+                    <p className="text-sm text-gray-600">Cut through the AI hype: turn signals into strategy, and strategy into growth for your business.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center border border-gray-200">
-                <div className="text-center text-gray-500">
-                  <div className="text-4xl mb-2">📚</div>
-                  <p className="text-sm font-medium">Bookstore with Digital Display</p>
-                  <p className="text-xs mt-1 text-gray-400">Library/Bookstore Interior</p>
-                </div>
-              </div>
+              <a 
+                href="https://maribethmartorana.substack.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-100 rounded-lg h-64 flex items-center justify-center border border-gray-200 overflow-hidden block"
+              >
+                <img 
+                  src="/lovable-uploads/strategy-signal.png" 
+                  alt="The Strategy Signal" 
+                  className="w-full h-full object-cover"
+                />
+              </a>
             </div>
           </div>
-          */}
 
           {/* Ready to Transform Your Business Section */}
           <div className="mt-20 text-center bg-white py-16">
