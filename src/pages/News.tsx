@@ -36,7 +36,7 @@ const News = () => {
             {/* Left Column - Webinars */}
             <div>
               <div className="space-y-6">
-                {/* Office Hours with Joyce Shen - New Featured */}
+                {/* Office Hours with Zaid Marji - New Featured */}
                 <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden
                                transform transition-all duration-300 ease-out
                                hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
@@ -47,16 +47,16 @@ const News = () => {
                       <p className="text-blue-200">Live LinkedIn Session</p>
                     </div>
                     <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded text-sm font-semibold">
-                      📅 Jan 20 @12pm EDT
+                      📅 Feb 19 @12pm EDT
                     </div>
                   </div>
                   
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">
-                      Office Hours with Joyce Shen
+                      Office Hours with Zaid Marji
                     </h3>
                     <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                      Joyce Shen  is our guest as we discuss data and AI trends shaping up in 2026.
+                      Designing AI-Native Enterprises: From Pilots to Scalable Systems with Zaid Marji, Chief Technology Officer at Sapient Advisors.
                     </p>
                     
                     <div className="flex items-center text-sm text-gray-600 mb-4">
@@ -65,7 +65,7 @@ const News = () => {
                     </div>
                     
                     <a 
-                      href="https://www.linkedin.com/events/7405326529783685122/"
+                      href="https://www.linkedin.com/event/manage/7419409362449784833/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
@@ -73,6 +73,33 @@ const News = () => {
                       Register Now
                     </a>
                   </div>
+                </div>
+
+                {/* Office Hours with Joyce Shen - Past Event */}
+                <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6
+                               transform transition-all duration-300 ease-out
+                               hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
+                               cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Jan 20, 2026</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Office Hours with Joyce Shen
+                  </h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                    Joyce Shen  is our guest as we discuss data and AI trends shaping up in 2026.
+                  </p>
+                  
+                  <a 
+                    href="https://www.linkedin.com/events/7405326529783685122/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center"
+                  >
+                    Watch on LinkedIn
+                  </a>
                 </div>
 
                 {/* Office Hours with Aashish Mehta - Past Event */}

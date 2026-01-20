@@ -16,7 +16,7 @@ const CaseStudies = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="heading-hero mb-6">
-              Our Case Studies
+              Our Success Stories
             </h1>
             <p className="text-hero-subtitle mx-auto">
               Explore how we've helped leading organizations transform their businesses 
@@ -492,7 +492,7 @@ const CaseStudies = () => {
               <div>
                 <div className="text-4xl text-blue-900 mb-4"></div>
                 <p className="text-gray-700 mb-8 text-lg leading-relaxed italic">
-                  "I help leaders get clarity to cut through the chaos to execute AI transformation successfully. Turn data into scalable AI for real growth."
+                  "I help leaders get clarity and cut through chaos to execute AI transformation successfully. Your data is a scalable asset for AI and real growth."
                 </p>
                 
                 <div className="flex items-center">
