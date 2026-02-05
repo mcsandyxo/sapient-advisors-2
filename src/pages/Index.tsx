@@ -188,19 +188,21 @@ const Index = () => {
               From AI Strategy to Real-World Impact
             </h2>
             <p className="text-xl md:text-2xl mb-10 text-slate-200 max-w-3xl">
-              We help financial, insurance, and real estate firms turn AI ambition into action — building the strategy, data foundations, and products that make transformation work in the real world.
+              We help financial, insurance, and real estate firms turn AI ambition into action by building the strategy, data foundations, and products that make transformation work in the real world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                to="/contact" 
+              <a 
+                href="https://sapient-advisors.scoreapp.com" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 
                            transform transition-all duration-300 ease-out
                            hover:scale-105 hover:shadow-lg hover:-translate-y-1
                            active:scale-95 active:translate-y-0
                            inline-flex items-center justify-center shadow-lg cursor-pointer"
               >
-                Get Started
-              </Link>
+                Ready for AI?
+              </a>
               <Link 
                 to="/about" 
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 
@@ -315,6 +317,15 @@ Our team bridges strategy and execution to help clients at every stage of their 
             
                         {/* Right Content - Compact testimonial */}
                 <div>
+              <div className="mb-6">
+                <a href="https://sapient-advisors.scoreapp.com" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="/lovable-uploads/AI-Readiness-for-Leadership.png" 
+                    alt="AI Readiness for Leadership"
+                    className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer"
+                  />
+                </a>
+              </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="heading-secondary mb-4">Trusted by Industry Leaders</h3>
           
@@ -351,7 +362,7 @@ Our team bridges strategy and execution to help clients at every stage of their 
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="heading-primary mb-4">Are you ready for AI?</h2>
@@ -361,18 +372,18 @@ Our team bridges strategy and execution to help clients at every stage of their 
           </div>
 
           {/* Centered Contact Form */}
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <div className="w-full max-w-md bg-white p-8 rounded-lg border border-gray-200 shadow-sm
                            transform transition-all duration-300 ease-out
                            hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]">
 
               
               {/* HubSpot Form - HOME FORM ID */}
-              <div className="hs-form-frame" data-region="na2" data-form-id="fe9a9751-2931-4367-afc8-80602fead0b3" data-portal-id="242128623"></div>
+          {/*    <div className="hs-form-frame" data-region="na2" data-form-id="fe9a9751-2931-4367-afc8-80602fead0b3" data-portal-id="242128623"></div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Success Stories Section */}
       <section className="py-16 bg-white">
