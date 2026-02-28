@@ -99,7 +99,7 @@ const About = () => {
     },
     {
       name: "Sandy McCarron",
-      role: "Co-Founder & Chief Operating Officer", 
+      role: "Co-Founder & Chief Design Officer", 
       description: "Sandy is a visionary leader in digital transformation across industries, including transformation initiatives at Penguin Random House, Bloomberg BusinessWeek, S&P Global, and Moody's Analytics.",
       linkedin: true,
       linkedinUrl: "https://www.linkedin.com/in/sandymccarron/",
@@ -138,14 +138,8 @@ const About = () => {
       linkedinUrl: "https://www.linkedin.com/in/kristine-parrinelli/",
       image: "/team/kristine-parrinelli.png"
     },
-    {
-      name: "Daniel Rodriguez",
-      role: "Intern, UX Associate",
-      description: "Daniel Rodriguez is our intern and jack of all trades, jumping in to learn new tools to edit videos and create marketing materials. ",
-      linkedin: true,
-      linkedinUrl: "https://www.linkedin.com/in/daniel-rodriguez-63a627354/",
-      image: "/team/daniel-rodriguez.png"
-    },
+
+  
        {
       name: "Alex Zinny",
       role: "VP Sales",
@@ -162,14 +156,7 @@ const About = () => {
       linkedinUrl: "https://www.linkedin.com/in/mary-beth-quinn-03477840/",
       image: "/team/mary-beth-quinn.png"
     },
-    {
-      name: "Fede Crespo",
-      role: "Tech Leader",
-      description: "Full Stack Developer & Business Developer from Tandil, Argentina. Passionate about tech, music, and creating innovative digital solutions.",
-      linkedin: true,
-      linkedinUrl: "https://www.linkedin.com/in/fedecrespo/",
-      image: "/team/fede-crespo.png"
-    }
+   
     // Zaid Marji (temporarily hidden)
     /*
     {
@@ -334,7 +321,6 @@ const About = () => {
                                          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01]
                                          cursor-pointer">
                 <h3 className="heading-tertiary mb-2">{item.title}</h3>
-                <p className="text-slate-500 font-medium mb-4 text-sm">{item.subtitle}</p>
                 <p className="text-slate-600 leading-relaxed text-sm">{item.description}</p>
               </div>
             ))}
