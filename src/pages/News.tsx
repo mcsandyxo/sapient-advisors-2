@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const News = () => {
+  // Force rebuild for production deployment
   useSEO(SEO_DATA.news);
 
   return (
