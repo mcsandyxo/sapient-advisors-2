@@ -58,10 +58,10 @@ const Contact = () => {
       <section className="bg-slate-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Let's Talk Fintech & AI</h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Ready to transform your business? Get in touch with our experts 
-              to discuss your challenges and explore solutions.
+              Ready to accelerate your AI adoption? Get in touch with our fintech experts 
+              to discuss your strategic objectives and explore specialized solutions.
             </p>
           </div>
         </div>
@@ -147,12 +147,11 @@ const Contact = () => {
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Select a service</option>
-                    <option value="strategy">Business Strategy</option>
-                    <option value="digital">Digital Transformation</option>
-                    <option value="analytics">Data Analytics</option>
-                    <option value="operations">Operational Excellence</option>
-                    <option value="technology">Technology Consulting</option>
-                    <option value="change">Change Management</option>
+                    <option value="success-map">Success Map Consulting</option>
+                    <option value="ai-adoption">AI Adoption Strategy</option>
+                    <option value="fintech-education">Fintech Education & Training</option>
+                    <option value="fractional-services">Fractional Services</option>
+                    <option value="general-consulting">General Consulting</option>
                   </select>
                 </div>
                 
@@ -183,10 +182,10 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Get in Touch</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Connect with Our Experts</h2>
               <p className="text-lg text-slate-600 mb-8">
-                We'd love to hear from you. Choose the most convenient way to reach us 
-                and our team will respond promptly to discuss your needs.
+                With 25+ years of fintech experience, we're here to help you navigate AI adoption 
+                and digital transformation. Reach out and let's discuss your strategic goals.
               </p>
               
               <div className="space-y-6">
