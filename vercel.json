@@ -28,6 +28,16 @@
     {
       "source": "/leadmagnet",
       "destination": "/index.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html",
+      "has": [
+        {
+          "type": "pathname",
+          "value": "(?!^/clients).*"
+        }
+      ]
     }
   ],
   "headers": [
