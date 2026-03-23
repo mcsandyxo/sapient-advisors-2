@@ -37,7 +37,6 @@ Crawl-delay: 1
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
-Disallow: /clients/
 Disallow: /*.json$
 Disallow: /*?*debug*
 Disallow: /*?*test*
