@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Life Energy — Operational & AI Enablement | Sapient Advisors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #0f1117; --ink-mid: #3a3d4a; --ink-light: #6b7080;
+    --rule: #e2e4ea; --surface: #f7f8fa; --white: #ffffff;
+    --green: #1a7a52; --amber: #b86b00; --amber-light: #fef3e2;
+    --blue: #1a4f8a;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--white); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+  nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 60px; background: rgba(255,255,255,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--rule); }
+  .nav-brand { font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a { font-size: 13px; color: var(--ink-light); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-cta { font-size: 13px; font-weight: 500; color: var(--green); text-decoration: none; border: 1px solid var(--green); padding: 7px 18px; border-radius: 4px; transition: all 0.2s; }
+  .nav-cta:hover { background: var(--green); color: white; }
+
+  .hero { padding: 100px 48px 80px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 380px; gap: 80px; align-items: center; }
+  .hero-eyebrow { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--green); }
+  h1 { font-family: 'DM Serif Display', serif; font-size: 52px; line-height: 1.1; color: var(--ink); margin-bottom: 24px; }
+  h1 em { font-style: italic; color: var(--green); }
+  .hero-body { font-size: 17px; color: var(--ink-mid); line-height: 1.7; margin-bottom: 36px; max-width: 520px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; }
+  .btn-primary { background: var(--ink); color: white; padding: 13px 28px; border-radius: 4px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 0.2s; }
+  .btn-primary:hover { background: var(--green); }
+  .btn-secondary { color: var(--ink-mid); font-size: 14px; text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 2px; transition: all 0.2s; }
+  .btn-secondary:hover { color: var(--ink); border-color: var(--ink); }
+  .hero-card { background: var(--ink); border-radius: 12px; padding: 32px; color: white; }
+  .hero-card-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 6px; }
+  .hero-card-val { font-family: 'DM Serif Display', serif; font-size: 40px; color: white; line-height: 1; margin-bottom: 4px; }
+  .hero-card-sub { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 28px; }
+  .hero-card-divider { height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 28px; }
+  .hero-stat-row { display: flex; justify-content: space-between; margin-bottom: 20px; }
+  .hero-stat-label { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 3px; }
+  .hero-stat-val { font-size: 22px; font-weight: 500; color: white; }
+  .hero-stat-val.green { color: #4fd19a; }
+
+  .section { padding: 80px 48px; max-width: 1100px; margin: 0 auto; }
+  .section-divider { border: none; border-top: 1px solid var(--rule); }
+  .section-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .section-eyebrow::before { content: ''; display: block; width: 16px; height: 1px; background: var(--ink-light); }
+  h2 { font-family: 'DM Serif Display', serif; font-size: 38px; color: var(--ink); margin-bottom: 16px; line-height: 1.15; }
+  h2 em { font-style: italic; color: var(--green); }
+  .section-intro { font-size: 17px; color: var(--ink-mid); max-width: 560px; line-height: 1.7; margin-bottom: 52px; }
+
+  .phases { display: flex; flex-direction: column; }
+  .phase { display: grid; grid-template-columns: 210px 1fr; border-top: 1px solid var(--rule); padding: 36px 0; }
+  .phase-meta { padding-right: 48px; }
+  .phase-num { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 8px; }
+  .phase-name { font-family: 'DM Serif Display', serif; font-size: 21px; color: var(--ink); margin-bottom: 6px; line-height: 1.2; }
+  .phase-duration { font-size: 12px; color: var(--ink-light); margin-bottom: 14px; }
+  .phase-price-original { font-size: 12px; color: var(--ink-light); text-decoration: line-through; }
+  .phase-price { font-size: 18px; font-weight: 500; color: var(--green); }
+  .phase-price-note { font-size: 11px; color: var(--green); margin-top: 2px; }
+  .phase-tag { display: inline-block; font-size: 11px; padding: 3px 10px; border-radius: 3px; font-weight: 500; margin-top: 12px; }
+  .tag-optional { background: var(--amber-light); color: var(--amber); }
+  .phase-body { padding-left: 48px; border-left: 1px solid var(--rule); }
+  .phase-desc { font-size: 15px; color: var(--ink-mid); margin-bottom: 20px; line-height: 1.65; }
+  .deliverables { display: flex; flex-direction: column; gap: 8px; }
+  .deliverable { font-size: 13px; color: var(--ink-mid); display: flex; gap: 10px; align-items: flex-start; }
+  .deliverable::before { content: '—'; color: var(--green); flex-shrink: 0; font-weight: 500; }
+
+  .roi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .roi-card { border: 1px solid var(--rule); border-radius: 10px; padding: 32px; }
+  .roi-stream { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
+  .roi-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--ink); margin-bottom: 14px; line-height: 1.2; }
+  .roi-big { font-size: 42px; font-family: 'DM Serif Display', serif; line-height: 1; margin-bottom: 4px; }
+  .roi-big span { font-size: 20px; }
+  .roi-note { font-size: 13px; color: var(--ink-light); margin-bottom: 24px; }
+  .roi-row { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 13px; }
+  .roi-row:last-child { border-bottom: none; }
+  .roi-row-label { color: var(--ink-light); }
+  .roi-row-val { font-weight: 500; color: var(--ink); }
+  .roi-row-val.green { color: var(--green); }
+  .accel-list { display: flex; flex-direction: column; gap: 14px; }
+  .accel-item { display: flex; gap: 14px; align-items: flex-start; }
+  .accel-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .accel-item-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 3px; }
+  .accel-item-desc { font-size: 13px; color: var(--ink-light); line-height: 1.55; }
+
+  .slider-section { background: var(--surface); border-radius: 12px; padding: 36px; margin-top: 48px; }
+  .slider-section h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 6px; }
+  .slider-section p { font-size: 14px; color: var(--ink-light); margin-bottom: 28px; }
+  .slider-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 48px; margin-bottom: 28px; }
+  .slider-label { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); margin-bottom: 8px; }
+  .slider-val { font-size: 22px; font-weight: 500; color: var(--ink); margin-bottom: 10px; }
+  input[type=range] { width: 100%; accent-color: var(--green); }
+  .result-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .result-card { background: white; border-radius: 8px; padding: 20px; border: 1px solid var(--rule); }
+  .result-label { font-size: 11px; color: var(--ink-light); margin-bottom: 6px; }
+  .result-val { font-family: 'DM Serif Display', serif; font-size: 30px; color: var(--ink); }
+  .result-val.green { color: var(--green); }
+
+  .invest-table { width: 100%; border-collapse: collapse; }
+  .invest-table th { text-align: left; font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-light); padding: 0 0 16px; border-bottom: 1px solid var(--rule); }
+  .invest-table td { padding: 20px 0; border-bottom: 1px solid var(--rule); vertical-align: top; font-size: 14px; }
+  .invest-table tr:last-child td { border-bottom: none; }
+  .invest-table td:first-child { font-weight: 500; color: var(--ink); width: 220px; }
+  .invest-table td:nth-child(2) { color: var(--ink-mid); padding-right: 32px; }
+  .invest-table td:last-child { text-align: right; white-space: nowrap; min-width: 130px; }
+  .price-struck { font-size: 12px; color: var(--ink-light); text-decoration: line-through; margin-bottom: 3px; }
+  .price-final { font-size: 16px; font-weight: 500; color: var(--green); }
+  .invest-total { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding: 24px 28px; background: var(--surface); border-radius: 8px; }
+  .invest-total-label { font-size: 14px; color: var(--ink-mid); }
+
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .why-card { padding: 28px; border: 1px solid var(--rule); border-radius: 10px; }
+  .why-num { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--rule); margin-bottom: 14px; }
+  .why-card h4 { font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+  .why-card p { font-size: 13px; color: var(--ink-light); line-height: 1.6; }
+
+  footer { background: var(--ink); color: rgba(255,255,255,0.5); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+  footer strong { color: white; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero > * { animation: fadeUp 0.6s ease both; }
+  .hero > *:nth-child(2) { animation-delay: 0.15s; }
+
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; } .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 60px 24px 48px; gap: 40px; }
+    h1 { font-size: 36px; }
+    .section { padding: 60px 24px; }
+    .phase { grid-template-columns: 1fr; }
+    .phase-body { padding-left: 0; border-left: none; border-top: 1px solid var(--rule); padding-top: 24px; margin-top: 8px; }
+    .roi-grid, .slider-grid, .result-row, .why-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#">Sapient Advisors</a>
+  <div class="nav-links">
+    <a href="#approach">Approach</a>
+    <a href="#roi">ROI Case</a>
+    <a href="#investment">Investment</a>
+    <a href="#total-cost">Total cost</a>
+  </div>
+  <a class="nav-cta" href="#investment">View Proposal</a>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="hero-eyebrow">Prepared for Green Life Energy · March 2026</div>
+    <h1>Operational &amp; AI Enablement <em>Program</em></h1>
+    <p class="hero-body">Green Life is at a pivotal stage. You have the market position, the team, and a clear growth target. What you need now is the operational infrastructure to get to $40M without adding headcount — and to get there faster than planned.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#approach">See the approach</a>
+      <a class="btn-secondary" href="#roi">View ROI case →</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-card-label">Revenue goal</div>
+    <div class="hero-card-val">$40M</div>
+    <div class="hero-card-sub">from $20M today</div>
+    <div class="hero-card-divider"></div>
+    <div class="hero-stat-row">
+      <div><div class="hero-stat-label">Current team</div><div class="hero-stat-val">25 people</div></div>
+      <div style="text-align:right"><div class="hero-stat-label">Target headcount</div><div class="hero-stat-val green">25 people</div></div>
+    </div>
+    <div class="hero-stat-row">
+      <div><div class="hero-stat-label">Revenue / FTE today</div><div class="hero-stat-val">$800k</div></div>
+      <div style="text-align:right"><div class="hero-stat-label">Revenue / FTE at goal</div><div class="hero-stat-val green">$1.6M</div></div>
+    </div>
+    <div style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:4px;">Engagement: 6–8 weeks · Sapient Advisors</div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<div class="section" id="approach">
+  <div class="section-eyebrow">How we work</div>
+  <h2>A structured path from <em>reactive</em> to scalable</h2>
+  <p class="section-intro">Four phases designed to move quickly, deliver tangible outputs at every step, and build a foundation that makes your growth goal not just achievable — but defensible at exit.</p>
+
+  <div class="phases">
+    <div class="phase">
+      <div class="phase-meta">
+        <div class="phase-num">Phase 01</div>
+        <div class="phase-name">Discovery &amp; Process Mapping</div>
+        <div class="phase-duration">2–3 weeks</div>
+        <div class="phase-price-original">$15,000</div>
+        <div class="phase-price">$13,125</div>
+        <div class="phase-price-note">12.5% discount applied</div>
+      </div>
+      <div class="phase-body">
+        <p class="phase-desc">We go deep into how Green Life actually operates today — not how it's supposed to work, but how work really flows. Stakeholder interviews, process walkthroughs, and a full tech stack audit to establish the real baseline.</p>
+        <div class="deliverables">
+          <div class="deliverable">Current-state process maps (visual, Miro-based)</div>
+          <div class="deliverable">Pain point &amp; bottleneck analysis</div>
+          <div class="deliverable">Tech stack audit — build vs. buy framing</div>
+          <div class="deliverable">Initial opportunity roadmap (unprioritized)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-meta">
+        <div class="phase-num">Phase 02</div>
+        <div class="phase-name">Opportunity Design &amp; Prioritization</div>
+        <div class="phase-duration">2–3 weeks</div>
+        <div class="phase-price-original">$15,000</div>
+        <div class="phase-price">$13,125</div>
+        <div class="phase-price-note">12.5% discount applied</div>
+      </div>
+      <div class="phase-body">
+        <p class="phase-desc">We translate findings into a prioritized action plan. Co-design sessions with your team surface the highest-impact opportunities — automation, AI use cases, and workflow redesigns — each evaluated by effort vs. return.</p>
+        <div class="deliverables">
+          <div class="deliverable">Future-state process designs with human-in-the-loop mapping</div>
+          <div class="deliverable">Prioritized initiative backlog (effort vs. impact scored)</div>
+          <div class="deliverable">AI &amp; automation use case portfolio with ROI estimates</div>
+          <div class="deliverable">Sprint Zero technical foundations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-meta">
+        <div class="phase-num">Phase 03</div>
+        <div class="phase-name">Roadmap &amp; Implementation Plan</div>
+        <div class="phase-duration">2 weeks</div>
+        <div class="phase-price-original">$10,000</div>
+        <div class="phase-price">$8,750</div>
+        <div class="phase-price-note">12.5% discount applied</div>
+      </div>
+      <div class="phase-body">
+        <p class="phase-desc">Ideas become execution. We build a 90-day roadmap with clear owners, dependencies, and KPIs — plus a change management approach so the plan actually lands with your team.</p>
+        <div class="deliverables">
+          <div class="deliverable">90-day execution roadmap with owners &amp; timelines</div>
+          <div class="deliverable">KPI &amp; performance measurement framework</div>
+          <div class="deliverable">Resourcing plan — internal and vendor</div>
+          <div class="deliverable">Change management playbook</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-meta">
+        <div class="phase-num">Phase 04</div>
+        <div class="phase-name">Execution Support</div>
+        <div class="phase-duration">Ongoing · sprint-based</div>
+        <div class="phase-price-original">$12,000 / mo</div>
+        <div class="phase-price">$10,500 / mo</div>
+        <div class="phase-price-note">12.5% discount applied</div>
+        <div class="phase-tag tag-optional">Optional</div>
+      </div>
+      <div class="phase-body">
+        <p class="phase-desc">For clients who want Sapient alongside them during implementation. Sprint-based guidance ensures the roadmap doesn't sit on a shelf — we stay accountable to outcomes, not hours.</p>
+        <div class="deliverables">
+          <div class="deliverable">Sprint-based implementation guidance</div>
+          <div class="deliverable">Vendor &amp; tool selection support</div>
+          <div class="deliverable">Workflow configuration &amp; team training</div>
+          <div class="deliverable">Performance tracking against KPIs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<div class="section" id="roi">
+  <div class="section-eyebrow">The business case</div>
+  <h2>Two streams of <em>measurable</em> return</h2>
+  <p class="section-intro">The investment in operational infrastructure pays back in two distinct ways — headcount you never have to add, and a growth trajectory that becomes faster and more valuable at exit.</p>
+
+  <div class="roi-grid">
+    <div class="roi-card">
+      <div class="roi-stream" style="color:var(--green);">Stream 1 — Headcount avoidance</div>
+      <h3>Roles you never have to hire</h3>
+      <div class="roi-big" style="color:var(--ink);">$780<span>k</span></div>
+      <div class="roi-note">3-year savings · 4 roles avoided at $65k avg</div>
+      <div class="roi-row"><span class="roi-row-label">Year 1 savings</span><span class="roi-row-val">$260k</span></div>
+      <div class="roi-row"><span class="roi-row-label">3-year cumulative</span><span class="roi-row-val green">$780k</span></div>
+      <div class="roi-row"><span class="roi-row-label">Exit value impact (2× multiple)</span><span class="roi-row-val green">$1.6M+</span></div>
+      <div class="roi-row"><span class="roi-row-label">Return on total investment</span><span class="roi-row-val green">~5×</span></div>
+    </div>
+    <div class="roi-card">
+      <div class="roi-stream" style="color:var(--blue);">Stream 2 — Goal acceleration</div>
+      <h3>Getting to $40M faster &amp; cleaner</h3>
+      <div class="accel-list" style="margin-top:8px;">
+        <div class="accel-item"><div class="accel-dot" style="background:#1a4f8a;"></div><div><div class="accel-item-title">Faster job cycle times</div><div class="accel-item-desc">10% throughput gain on $20M base = $2M in incremental annual capacity with the same crew.</div></div></div>
+        <div class="accel-item"><div class="accel-dot" style="background:#1a7a52;"></div><div><div class="accel-item-title">Subsidy capture &amp; compliance</div><div class="accel-item-desc">NJ program documentation requirements are margin-critical. Automation reduces errors and missed reimbursements.</div></div></div>
+        <div class="accel-item"><div class="accel-dot" style="background:#b86b00;"></div><div><div class="accel-item-title">Premium residential pathway</div><div class="accel-item-desc">Clean ops + a segmented CRM makes expanding to higher-margin residential significantly lower risk.</div></div></div>
+        <div class="accel-item"><div class="accel-dot" style="background:#7f5cc4;"></div><div><div class="accel-item-title">Exit readiness &amp; valuation</div><div class="accel-item-desc">Documented processes and predictable ops reduce perceived risk for acquirers — directly improving your exit multiple.</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-section">
+    <h3>Model your own numbers</h3>
+    <p>Adjust the assumptions to match your situation. The ROI updates in real time.</p>
+    <div class="slider-grid">
+      <div>
+        <div class="slider-label">Roles avoided</div>
+        <div class="slider-val" id="s-roles-out">4 roles</div>
+        <input type="range" min="1" max="10" value="4" step="1" id="s-roles" oninput="updateCalc()">
+      </div>
+      <div>
+        <div class="slider-label">Avg cost per role / year</div>
+        <div class="slider-val" id="s-salary-out">$65,000</div>
+        <input type="range" min="55000" max="75000" value="65000" step="1000" id="s-salary" oninput="updateCalc()">
+      </div>
+    </div>
+    <div class="result-row">
+      <div class="result-card"><div class="result-label">Year 1 savings</div><div class="result-val" id="s-yr1">$260k</div></div>
+      <div class="result-card"><div class="result-label">3-year cumulative</div><div class="result-val green" id="s-yr3">$780k</div></div>
+      <div class="result-card"><div class="result-label">Return on investment</div><div class="result-val green" id="s-roi">~5×</div></div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<div class="section" id="investment">
+  <div class="section-eyebrow">Engagement model</div>
+  <h2>Fixed-fee, <em>milestone-gated</em></h2>
+  <p class="section-intro">You only pay for what's delivered and approved. No hourly ambiguity — each phase has a clear deliverable set and a defined payment trigger.</p>
+
+  <table class="invest-table">
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Duration &amp; deliverables</th>
+        <th style="text-align:right;">Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Phase 1 — Discovery</td>
+        <td>2–3 weeks · Process maps, pain point analysis, tech audit, opportunity list<br><span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">50% at start · 50% on sign-off</span></td>
+        <td><div class="price-struck">$15,000</div><div class="price-final">$13,125</div></td>
+      </tr>
+      <tr>
+        <td>Phase 2 — Design</td>
+        <td>2–3 weeks · Future-state designs, prioritized backlog, AI use case portfolio<br><span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">100% on deliverable sign-off</span></td>
+        <td><div class="price-struck">$15,000</div><div class="price-final">$13,125</div></td>
+      </tr>
+      <tr>
+        <td>Phase 3 — Roadmap</td>
+        <td>2 weeks · 90-day execution plan, KPIs, resourcing, change management<br><span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">100% on roadmap presentation</span></td>
+        <td><div class="price-struck">$10,000</div><div class="price-final">$8,750</div></td>
+      </tr>
+      <tr>
+        <td>Phase 4 — Execution <span style="font-size:11px;font-weight:400;color:#b86b00;background:#fef3e2;padding:2px 7px;border-radius:3px;margin-left:6px;">Optional</span></td>
+        <td>Ongoing · Sprint-based implementation, vendor selection, training<br><span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">Monthly retainer · 3-month minimum recommended</span></td>
+        <td><div class="price-struck">$12,000 / mo</div><div class="price-final">$10,500 / mo</div></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="invest-total">
+    <div>
+      <div class="invest-total-label">Phases 1–3 total (6–8 weeks)</div>
+      <div style="font-size:13px;color:#aaa;margin-top:2px;">Fixed-fee · milestone-gated · no surprises</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:14px;color:var(--ink-light);text-decoration:line-through;margin-bottom:4px;">$40,000</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:32px;color:var(--green);">$35,000</div>
+      <div style="font-size:12px;color:var(--green);margin-top:3px;">12.5% early engagement discount</div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<div class="section" id="total-cost">
+  <div class="section-eyebrow">Total investment picture</div>
+  <h2>What you're <em>actually</em> spending</h2>
+  <p class="section-intro">The Sapient engagement and the implementation are two separate budgets. Here's the full picture so there are no surprises.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:28px;">
+    <div style="border:1px solid var(--rule);border-radius:10px;padding:32px;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--green);margin-bottom:12px;">What you pay Sapient Advisors</div>
+      <div style="font-size:13px;color:var(--ink-light);text-decoration:line-through;margin-bottom:2px;">$40,000</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:42px;color:var(--green);line-height:1;margin-bottom:4px;">$35,000</div>
+      <div style="font-size:13px;color:var(--ink-light);margin-bottom:24px;">Phases 1–3 · 6–8 weeks · 12.5% discount applied</div>
+      <div style="font-size:13px;color:var(--ink-mid);line-height:1.7;">To diagnose what's broken, design what to build, and hand you a prioritized execution roadmap — so the money you spend on tools and partners goes to the right things in the right order.</div>
+    </div>
+    <div style="border:1px solid var(--rule);border-radius:10px;padding:32px;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;">What you pay to build &amp; buy</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:42px;color:var(--ink);line-height:1;margin-bottom:4px;">$65k–$135k</div>
+      <div style="font-size:13px;color:var(--ink-light);margin-bottom:24px;">Year 1 · tools, licenses, dev partners, configuration</div>
+      <div style="display:flex;flex-direction:column;">
+        <div style="display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-bottom:1px solid var(--rule);"><span style="color:var(--ink-light);">Quick wins — dashboards, SOPs, comms</span><span style="font-weight:500;">$10k–$25k</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-bottom:1px solid var(--rule);"><span style="color:var(--ink-light);">Medium lift — intake, scheduling, FSM platform</span><span style="font-weight:500;">$30k–$60k</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;padding:9px 0;"><span style="color:var(--ink-light);">One AI use case — reporting or scoping</span><span style="font-weight:500;">$25k–$50k</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--ink);border-radius:10px;padding:36px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;">
+    <div style="padding-right:32px;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;">All-in year 1 outlay</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:white;line-height:1;margin-bottom:6px;">$100k–$170k</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.4);">Sapient fee + tools + implementation partners</div>
+    </div>
+    <div style="border-left:1px solid rgba(255,255,255,0.1);padding-left:32px;padding-right:32px;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;">3-year headcount savings</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:#4fd19a;line-height:1;margin-bottom:6px;">$780k+</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.4);">~5× return · before exit value impact</div>
+    </div>
+    <div style="border-left:1px solid rgba(255,255,255,0.1);padding-left:32px;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;">Sapient as % of total spend</div>
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:white;line-height:1;margin-bottom:6px;">~25%</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.4);">to make sure the other 75% isn't wasted</div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<div class="section">
+  <div class="section-eyebrow">Why Sapient Advisors</div>
+  <h2>Practical partners, <em>not theorists</em></h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-num">01</div>
+      <h4>Hands-on execution focus</h4>
+      <p>We don't deliver strategy decks and walk away. Every recommendation is scoped for practical implementation with your actual team and resources.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">02</div>
+      <h4>AI + ops expertise</h4>
+      <p>We bring deep experience in operational transformation and applied AI — identifying use cases that create real value, not theoretical ones.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-num">03</div>
+      <h4>Growth without chaos</h4>
+      <p>Doubling revenue is hard. Doing it with the same team is harder. We've helped growing companies scale operations cleanly — without the firefighting, burnout, and margin erosion that typically comes with rapid growth.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div><strong>Sapient Advisors</strong> · Prepared for Green Life Energy · March 2026</div>
+  <div>Confidential — for internal discussion only</div>
+</footer>
+
+<script>
+function updateCalc() {
+  const roles = parseInt(document.getElementById('s-roles').value);
+  const salary = parseInt(document.getElementById('s-salary').value);
+  document.getElementById('s-roles-out').textContent = roles + ' role' + (roles > 1 ? 's' : '');
+  document.getElementById('s-salary-out').textContent = '$' + salary.toLocaleString();
+  const yr1 = roles * salary;
+  const yr3 = yr1 * 3;
+  const roi = Math.round(yr3 / 135000);
+  document.getElementById('s-yr1').textContent = '$' + Math.round(yr1/1000) + 'k';
+  document.getElementById('s-yr3').textContent = '$' + Math.round(yr3/1000) + 'k';
+  document.getElementById('s-roi').textContent = '~' + roi + '\u00d7';
+}
+</script>
+</body>
+</html>
