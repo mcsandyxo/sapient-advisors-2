@@ -30,22 +30,32 @@ const News = () => {
                 <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden transform transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01] cursor-pointer">
                   <div className="aspect-video bg-gradient-to-br from-blue-900 to-blue-700 relative overflow-hidden flex items-center justify-center">
                     <div className="text-center text-white">
-                      <h4 className="text-2xl font-bold mb-2">Office Hours with Melissa Medina & Burhan Sebin</h4>
+                      <h4 className="text-2xl font-bold mb-2">Office Hours with David Cohen</h4>
                       <p className="text-blue-200">Live LinkedIn Session</p>
                     </div>
-                    <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded text-sm font-semibold">📅 Mar 19 @12pm EDT</div>
+                    <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded text-sm font-semibold">📅 Apr 28 @12pm EDT</div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">Office Hours with Melissa Medina & Burhan Sebin</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">Office Hours with David Cohen</h3>
                     <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-                      Miami's Innovation Platform:haping Florida’s Tech future with Melissa Medina and Burhan Sebin from Emerge Americas.
-                    </p>
+AI Playbook- How Leaders Move from Ideas to Implementation                    </p>
                     <div className="flex items-center text-sm text-gray-600 mb-4">
                       <span className="mr-4">🕒 12:00 PM - 1:00 PM ET</span>
                       <span>1-hour LinkedIn Live session with Q&A</span>
                     </div>
-                    <a href="https://www.linkedin.com/event/manage/7430294679012876288/" target="_blank" rel="noopener noreferrer" className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center">Register Now</a>
+                    <a href="https://www.linkedin.com/event/manage/7439686497991221248/" target="_blank" rel="noopener noreferrer" className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center">Register Now</a>
                   </div>
+                </div>
+              <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6 transform transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01] cursor-pointer">
+                  <div className="mb-4">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">Past Event</span>
+                    <span className="text-gray-500 text-xs ml-4">Mar 19, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Office Hours with Melissa Medina & Burhan Sebin</h3>
+                  <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+                      Miami's Innovation Platform: Shaping Florida's Tech future with Melissa Medina and Burhan Sebin from Emerge Americas.
+                  </p>
+                  <a href="https://www.linkedin.com/event/manage/7430294679012876288/" target="_blank" rel="noopener noreferrer" className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full inline-block text-center">Watch on LinkedIn</a>
                 </div>
 
                 <div className="bg-white rounded-lg shadow-md border border-gray-100 p-6 transform transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01] cursor-pointer">
@@ -154,8 +164,7 @@ const News = () => {
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Sapient Advisors Appoints Zaid Marji as Chief Technology Officer</h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                  Leading consulting firm announces inaugural AI Strategy Summit bringing together industry leaders to discuss enterprise AI implementation.
-                </p>
+Marji will lead technology strategy and execution, helping financial services, insurance, and commercial real estate firms move from AI strategy to real-world impact through scalable data foundations, AI architecture, and product delivery.                </p>
                 <a href="https://24junction.com/article/release/76645b01c76b/sapient-advisors-appoints-zaid-marji-as-chief-technology-officer" className="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors">Read Press Release →</a>
               </div>
 

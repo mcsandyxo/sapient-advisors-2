@@ -6,17 +6,22 @@ Allow: /case-studies
 Allow: /news
 Allow: /contact
 
-# AI crawlers and LLMs
-User-agent: GPTBot
-Allow: /
+# Blocks Anthropic's crawler from /clients folder
+User-agent: anthropic-ai
+Disallow: /clients/
 
+# Block AI training crawlers from /clients folder
+User-agent: GPTBot
+Disallow: /clients/
+
+User-agent: Google-Extended
+Disallow: /clients/
+
+# AI crawlers allowed on main site
 User-agent: ChatGPT-User
 Allow: /
 
 User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
 Allow: /
 
 User-agent: Claude-Web
@@ -32,6 +37,7 @@ Crawl-delay: 1
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
+Disallow: /clients/
 Disallow: /*.json$
 Disallow: /*?*debug*
 Disallow: /*?*test*

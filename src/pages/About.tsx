@@ -99,7 +99,7 @@ const About = () => {
     },
     {
       name: "Sandy McCarron",
-      role: "Co-Founder & Chief Design Officer", 
+      role: "Co-Founder & Chief Client Design & Delivery", 
       description: "Sandy is a visionary leader in digital transformation across industries, including transformation initiatives at Penguin Random House, Bloomberg BusinessWeek, S&P Global, and Moody's Analytics.",
       linkedin: true,
       linkedinUrl: "https://www.linkedin.com/in/sandymccarron/",
