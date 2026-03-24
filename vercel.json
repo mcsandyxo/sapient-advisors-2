@@ -3,27 +3,41 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm ci",
-  "framework": "vite",
+  "cleanUrls": false,
   "routes": [
     {
-      "src": "/clients/(.*)",
-      "dest": "/clients/$1"
+      "src": "/assets/.*",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "src": "/lovable-uploads/.*",
+      "headers": {
+        "cache-control": "public, max-age=3600"
+      }
     },
     {
-      "src": "/lovable-uploads/(.*)",
-      "dest": "/lovable-uploads/$1"
+      "src": "/team/.*",
+      "headers": {
+        "cache-control": "public, max-age=86400"
+      }
     },
     {
-      "src": "/team/(.*)",
-      "dest": "/team/$1"
+      "src": "/case-studies/.*",
+      "headers": {
+        "cache-control": "public, max-age=86400"
+      }
     },
     {
-      "src": "/case-studies/(.*)",
-      "dest": "/case-studies/$1"
+      "src": "/clients/.*",
+      "headers": {
+        "cache-control": "public, max-age=3600"
+      }
+    },
+    {
+      "src": "/.*\\.(js|css|ico|png|jpg|jpeg|svg|gif|webp|json)$",
+      "dest": "/$0"
     },
     {
       "src": "/robots.txt",
@@ -34,11 +48,7 @@
       "dest": "/sitemap.xml"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/(.*)",
+      "src": ".*",
       "dest": "/index.html"
     }
   ]
