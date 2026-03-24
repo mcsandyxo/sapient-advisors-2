@@ -14,8 +14,28 @@
       "dest": "/assets/$1"
     },
     {
+      "src": "/lovable-uploads/(.*)",
+      "dest": "/lovable-uploads/$1"
+    },
+    {
+      "src": "/team/(.*)",
+      "dest": "/team/$1"
+    },
+    {
+      "src": "/case-studies/(.*)",
+      "dest": "/case-studies/$1"
+    },
+    {
       "src": "/robots.txt",
       "dest": "/robots.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
     },
     {
       "src": "/(.*)",
