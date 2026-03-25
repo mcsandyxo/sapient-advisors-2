@@ -273,7 +273,7 @@ const CaseStudies = () => {
                   </div>
                 </div>
                 <a 
-                  href="/case-studies/Case-Study-Project-DGN-Sapient Advisors.pdf" 
+                  href="/case-studies/Case-Study-Project-DGN-Sapient%20Advisors.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-colors shadow-sm inline-block text-center"
